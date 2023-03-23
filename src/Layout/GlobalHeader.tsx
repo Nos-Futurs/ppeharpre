@@ -7,6 +7,7 @@ function GlobalHeader() {
     <div class="header">
       <div class="navigation">
         <button
+          class="button"
           onclick={() => {
             navigate("/");
           }}
@@ -14,25 +15,36 @@ function GlobalHeader() {
           Accueil
         </button>
         <button
+          class="button"
           onclick={() => {
             navigate("/method");
           }}
         >
-          Method
+          Accompagnement
         </button>
         <button
+          class="button"
+          onclick={() => {
+            navigate("/gestalt");
+          }}
+        >
+          Gestalt thérapie
+        </button>
+        <button
+          class="button"
           onclick={() => {
             navigate("/about");
           }}
         >
-          About
+          A propos de moi
         </button>
         <button
+          class="button"
           onclick={() => {
             navigate("/contact");
           }}
         >
-          Contact
+          Contactez moi
         </button>
       </div>
     </div>
