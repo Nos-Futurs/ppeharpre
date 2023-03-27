@@ -1,51 +1,43 @@
 import { useNavigate } from "@solidjs/router";
+import { colors } from "../../assets/colors";
+import MenuButton from "../buttons/MenuButton";
 import "./Header.css";
 
 function GlobalHeader() {
   const navigate = useNavigate();
   return (
-    <div class="header">
+    <div class="header" style={{ "background-color": colors.blue0 }}>
       <div class="navigation">
-        <button
-          class="button"
-          onclick={() => {
+        <MenuButton
+          name="Accueil"
+          onClick={() => {
             navigate("/");
           }}
-        >
-          Accueil
-        </button>
-        <button
-          class="button"
-          onclick={() => {
+        />
+        <MenuButton
+          name="Accompagnement"
+          onClick={() => {
             navigate("/method");
           }}
-        >
-          Accompagnement
-        </button>
-        <button
-          class="button"
-          onclick={() => {
+        />
+        <MenuButton
+          name="Gestalt thérapie"
+          onClick={() => {
             navigate("/gestalt");
           }}
-        >
-          Gestalt thérapie
-        </button>
-        <button
-          class="button"
-          onclick={() => {
-            navigate("/about");
+        />
+        <MenuButton
+          name="A propos de moi"
+          onClick={() => {
+            navigate("/method");
           }}
-        >
-          A propos de moi
-        </button>
-        <button
-          class="button"
-          onclick={() => {
+        />
+        <MenuButton
+          name="Contactez moi"
+          onClick={() => {
             navigate("/contact");
           }}
-        >
-          Contactez moi
-        </button>
+        />
       </div>
     </div>
   );
