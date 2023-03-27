@@ -1,7 +1,7 @@
 import type { JSXElement } from "solid-js";
 
-import GlobalFooter from "./GlobalFooter";
-import GlobalHeader from "./GlobalHeader";
+import GlobalFooter from "../components/footer/GlobalFooter";
+import GlobalHeader from "../components/header/GlobalHeader";
 import "./Layout.css";
 
 interface LayoutProps {
