@@ -1,5 +1,5 @@
 import { Component } from "solid-js";
-import Layout from "../Layout/Layout";
+import Layout from "../layout/Layout";
 
 
 const AboutMyself: Component = () => {
