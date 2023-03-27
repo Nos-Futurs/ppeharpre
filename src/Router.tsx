@@ -1,10 +1,10 @@
 import { Route, Router, Routes } from "@solidjs/router";
 import type { Component } from "solid-js";
-import AboutMyself from "./Pages/AboutMyself";
-import Contact from "./Pages/Contact";
-import Gestalt from "./Pages/Gestalt";
-import Home from "./Pages/Home";
-import MyMethod from "./Pages/MyMethod";
+import AboutMyself from "./pages/AboutMyself";
+import Contact from "./pages/Contact";
+import Gestalt from "./pages/Gestalt";
+import Home from "./pages/Home";
+import MyMethod from "./pages/MyMethod";
 
 const AppRouter: Component = () => {
   return (
