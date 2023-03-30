@@ -1,22 +1,33 @@
 import { colors } from "../../assets/colors";
+import Contact from "../Contact/Contact";
 import "./Footer.css";
 
 function GlobalFooter() {
   return (
-    <div class="footer" style={{ "background-color": colors.blue0 }}>
+    <div
+      class="footer"
+      style={{
+        "background-color": colors.blue0,
+        "column-gap": "10%",
+        "justify-content": "center",
+      }}
+    >
       <div
-        style={{ display: "flex", "flex-direction": "column", padding: "3%", width: "100%" }}
+        style={{
+          "background-color": colors.blue2,
+          display: "flex",
+          height: "100%",
+          width: "10%",
+        }}
       >
-        <div
-          style={{
-            "background-color": colors.blue2,
-            display: "flex",
-            height: "100%",
-            width: "10%",
-          }}
-        >
-          Logo
-        </div>
+        Logo
+      </div>
+      <div
+        style={{
+          width: "70%",
+        }}
+      >
+        <Contact />
       </div>
     </div>
   );

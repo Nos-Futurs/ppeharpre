@@ -1,10 +1,28 @@
+.presentation {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+}
+
 .name {
-  width: 100%;
+  width: 30%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  font-size: 60px;
-  padding: 50px 0px 30px 0px;
+  align-items: center;
+  text-align: center;
+  font-size: 100px;
   font-weight: bold;
+}
+
+.description {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
 }
 
 .paragraphe {
@@ -15,10 +33,20 @@
 }
 
 .citation {
+  font-size: 40px;
+  padding: 10px 0px 10px 0px;
+  font-style: italic;
+}
+
+.container-citation{
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 40px;
-  padding: 50px 0px 50px 0px;
-  font-style: italic;
+  align-items: center;
+  padding: 80px 0px 50px 0px;
+}
+
+.author{
+  padding: 15px 0px 10px 0px;
 }
