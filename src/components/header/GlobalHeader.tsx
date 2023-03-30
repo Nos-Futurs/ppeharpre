@@ -29,7 +29,7 @@ function GlobalHeader() {
         <MenuButton
           name="A propos de moi"
           onClick={() => {
-            navigate("/method");
+            navigate("/about");
           }}
         />
         <MenuButton
