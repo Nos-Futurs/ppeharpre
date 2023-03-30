@@ -8,7 +8,7 @@ function GlobalFooter() {
       class="footer"
       style={{
         "background-color": colors.blue0,
-        "column-gap": "10%",
+        "column-gap": "5%",
         "justify-content": "center",
       }}
     >
