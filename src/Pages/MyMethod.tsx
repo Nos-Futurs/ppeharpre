@@ -59,6 +59,61 @@ const MyMethod: Component = () => {
           pour moi, j'apporte ma sensibilité et mon humanité sur un chemin
           parfois difficile mais tellement riche de promesses et de mieux être.
         </div>
+        <div class="title" style={{ "margin-top": "200px" }}>
+          Pourquoi se faire accompagner ?
+        </div>
+        <div class="paragraphe">
+          Une personne qui décide d'être accompagnée s'accorde un temps pour
+          elle afin d'être écoutée et soutenue. Elles veulent être{" "}
+          <ul>
+            <li>
+              plus en conscience de ce qui se joue pour elle et pour leur
+              environnement,
+            </li>
+            <li>mieux connaître leurs propres désirs,</li>
+            <li>mieux se sentir au quotidien.</li>
+          </ul>
+        </div>
+        <div class="paragraphe">
+          Les besoins des personnes qui viennent me voir peuvent être :{" "}
+          <ul>
+            <li>
+              améliorer leur lien aux autres (au sein de la famille, du
+              couple, de l'entreprise)
+            </li>
+            <li>
+              mieux vivre leur équilibre vie professionnelle – vie
+              personnelle.
+            </li>
+            <li>
+              faire face à leur stress, leurs angoisses, leurs peurs, à
+              l'épuisement professionnel, à un sentiment de rejet.
+            </li>
+            <li>être en quête d'un mieux vivre</li>{" "}
+            <li>
+              trouver leur propre sens à la vie face aux grandes questions
+              existentielles (le sens, la solitude, la finitude, la
+              responsabilité, l'imperfection)
+            </li>{" "}
+            <li>
+              gérer une transition de vie, un déménagement, un départ à la
+              retraite, un nouveau poste, un nouveau métier
+            </li>{" "}
+            <li>faire face à un deuil</li>{" "}
+            <li>restaurer ou installer une confiance en elle même</li>{" "}
+            <li>apaiser une souffrance . initier un changement</li>
+          </ul>
+        </div>
+        <div class="title" style={{ "margin-top": "200px" }}>
+          Comment cela se déroule un accompagnement ?
+        </div>
+        <div class="paragraphe">
+          Les séances se déroulent dans le cadre sécurisé de mon cabinet. Elles
+          durent autour de 50mns et sont habituellement hebdomadaires ou bi
+          mensuelles. <br />
+          Les séances se font en individuel. <br />
+          J'accompagne uniquement des adultes.
+        </div>
       </div>
     </Layout>
   );
