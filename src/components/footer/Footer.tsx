@@ -1,8 +1,8 @@
 import { colors } from "../../assets/colors";
+import "../../styles/components/Footer.scss";
 import Contact from "../Contact/Contact";
-import "./Footer.scss";
 
-function GlobalFooter() {
+function Footer() {
   return (
     <div
       class="footer"
@@ -33,4 +33,4 @@ function GlobalFooter() {
   );
 }
 
-export default GlobalFooter;
+export default Footer;

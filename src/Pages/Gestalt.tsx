@@ -4,7 +4,7 @@ import Layout from "../layout/Layout";
 
 import lighthouse from "./../assets/images/lighthouse.png";
 
-import "./pagesCss/myMethod.scss";
+import "../styles/myMethod.scss";
 
 const Gestalt: Component = () => {
   return (

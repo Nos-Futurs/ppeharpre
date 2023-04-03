@@ -4,7 +4,7 @@ import Layout from "../layout/Layout";
 
 import cabinet from "./../assets/images/cabinet.png";
 
-import "./pagesCss/myMethod.scss";
+import "../styles/myMethod.scss";
 
 const AboutMyself: Component = () => {
   return (

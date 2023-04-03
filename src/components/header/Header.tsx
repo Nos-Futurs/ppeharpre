@@ -1,9 +1,9 @@
 import { useNavigate } from "@solidjs/router";
 import { colors } from "../../assets/colors";
+import "../../styles/components/Header.scss";
 import MenuButton from "../buttons/MenuButton";
-import "./Header.scss";
 
-function GlobalHeader() {
+function Header() {
   const navigate = useNavigate();
   return (
     <div class="header" style={{ "background-color": colors.blue0 }}>
@@ -43,4 +43,4 @@ function GlobalHeader() {
   );
 }
 
-export default GlobalHeader;
+export default Header;
