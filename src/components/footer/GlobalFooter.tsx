@@ -1,6 +1,6 @@
 import { colors } from "../../assets/colors";
 import Contact from "../Contact/Contact";
-import "./Footer.css";
+import "./Footer.scss";
 
 function GlobalFooter() {
   return (

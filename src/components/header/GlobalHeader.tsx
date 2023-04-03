@@ -1,7 +1,7 @@
 import { useNavigate } from "@solidjs/router";
 import { colors } from "../../assets/colors";
 import MenuButton from "../buttons/MenuButton";
-import "./Header.css";
+import "./Header.scss";
 
 function GlobalHeader() {
   const navigate = useNavigate();

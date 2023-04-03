@@ -4,7 +4,7 @@ import Layout from "../layout/Layout";
 
 import sea_rocks from "./../assets/images/sea_rocks.png";
 
-import "./pagesCss/myMethod.css";
+import "./pagesCss/myMethod.scss";
 
 const MyMethod: Component = () => {
   return (
