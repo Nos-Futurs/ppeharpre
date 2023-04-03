@@ -3,7 +3,7 @@ import { colors } from "../assets/colors";
 import Layout from "../layout/Layout";
 import sea_rocks from "./../assets/images/sea_rocks.png";
 
-import "../styles/home.scss";
+import "../sass/pages/home.scss";
 
 const Home: Component = () => {
   return (

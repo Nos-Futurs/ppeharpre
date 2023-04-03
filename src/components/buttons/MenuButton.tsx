@@ -1,4 +1,4 @@
-import "../../styles/components/buttons.scss";
+import "../../sass/components/buttons.scss";
 
 interface menuButtonProps {
     name: string; 

@@ -1,5 +1,5 @@
 import { colors } from "../../assets/colors";
-import "../../styles/components/Footer.scss";
+import "../../sass/components/Footer.scss";
 import Contact from "../Contact/Contact";
 
 function Footer() {
