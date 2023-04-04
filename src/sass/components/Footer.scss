@@ -1,11 +1,10 @@
 @import "../abstracts/colors";
 
 .footer {
-  height: 25%;
+  height: 200px;
   display: flex;
-  padding: 50px;
+  padding: 10px 50px 10px 50px;
   align-items: center;
   background-color: map-get($palette, darkblue);
-  column-gap: 5%;
   justify-content: center;
 }

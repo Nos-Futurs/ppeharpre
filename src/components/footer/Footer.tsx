@@ -1,3 +1,4 @@
+import logo from "../../assets/images/logo.png";
 import "../../sass/components/footer.scss";
 import Contact from "../Contact/Contact";
 
@@ -6,17 +7,19 @@ function Footer() {
     <div class="footer">
       <div
         style={{
-          // "background-color": colors.blue2,
-          display: "flex",
           height: "100%",
-          width: "10%",
+          width: "20%",
+          display: "flex",
+          "justify-content": "center",
+          "align-items": "center",
         }}
       >
-        Logo
+        <img src={logo} style={{ "max-height": "75%" }} />
       </div>
       <div
         style={{
           width: "70%",
+          margin: "0% 15% 0% 5%",
         }}
       >
         <Contact />

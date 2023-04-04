@@ -2,10 +2,23 @@ import { useNavigate } from "@solidjs/router";
 import "../../sass/components/header.scss";
 import MenuButton from "../buttons/MenuButton";
 
+import logo from "../../assets/images/logo.png";
+
 function Header() {
   const navigate = useNavigate();
   return (
     <div class="header">
+      <div
+        style={{
+          height: "100%",
+          width: "20%",
+          display: "flex",
+          "justify-content": "center",
+          "align-items": "center",
+        }}
+      >
+        <img src={logo} style={{ height: "75%" }} />
+      </div>
       <div class="navigation">
         <MenuButton
           name="Accueil"
