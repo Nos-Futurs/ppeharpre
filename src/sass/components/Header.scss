@@ -1,8 +1,11 @@
+@import "../abstracts/colors";
+
 .header {
   width: 100%;
   height: 100px;
   display: flex;
   position: sticky;
+  background-color: map-get($palette, darkblue);;
   right: 0;
   top: 0;
 }

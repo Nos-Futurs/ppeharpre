@@ -1,12 +1,11 @@
 import { useNavigate } from "@solidjs/router";
-import { colors } from "../../assets/colors";
-import "../../sass/components/Header.scss";
+import "../../sass/components/header.scss";
 import MenuButton from "../buttons/MenuButton";
 
 function Header() {
   const navigate = useNavigate();
   return (
-    <div class="header" style={{ "background-color": colors.blue0 }}>
+    <div class="header">
       <div class="navigation">
         <MenuButton
           name="Accueil"

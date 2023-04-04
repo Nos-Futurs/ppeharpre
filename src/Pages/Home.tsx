@@ -1,5 +1,4 @@
 import { Component } from "solid-js";
-import { colors } from "../assets/colors";
 import Layout from "../layout/Layout";
 import sea_rocks from "./../assets/images/sea_rocks.png";
 
@@ -8,29 +7,20 @@ import "../sass/pages/home.scss";
 const Home: Component = () => {
   return (
     <Layout>
-      <div
-        style={{
-          width: "full",
-          height: "full",
-          "background-color": colors.background,
-          "justify-content": "center",
-          padding: "5%",
-        }}
-      >
         <div class="presentation">
-          <div class="name">Philippe Péharpré</div>
-          <div class="description">
+          <div class="presentation__name">Philippe Péharpré</div>
+          <div class="presentation__description">
             Praticien en Gestalt Thérapie A Saint Malo
           </div>
         </div>
         <div>
           <img src={sea_rocks} style={{ width: "100%" }} />
         </div>
-        <div class="container-citation">
-          <div class="citation">
+        <div class="citation">
+          <div class="citation__text">
             « La conscience de soi est au cœur du mieux être. »
           </div>
-          <div class="author">Bessel Van der Kolk, le corps n'oublie rien</div>
+          <div class="citation__author">Bessel Van der Kolk, le corps n'oublie rien</div>
         </div>
         <div class="paragraphe">
           Nous traversons tous des moments difficiles, de questionnements, de
@@ -41,7 +31,6 @@ const Home: Component = () => {
           suis à votre disposition pour vous rencontrer et vous soutenir sur ce
           chemin.
         </div>
-      </div>
     </Layout>
   );
 };

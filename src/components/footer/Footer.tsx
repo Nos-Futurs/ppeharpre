@@ -1,20 +1,12 @@
-import { colors } from "../../assets/colors";
-import "../../sass/components/Footer.scss";
+import "../../sass/components/footer.scss";
 import Contact from "../Contact/Contact";
 
 function Footer() {
   return (
-    <div
-      class="footer"
-      style={{
-        "background-color": colors.blue0,
-        "column-gap": "5%",
-        "justify-content": "center",
-      }}
-    >
+    <div class="footer">
       <div
         style={{
-          "background-color": colors.blue2,
+          // "background-color": colors.blue2,
           display: "flex",
           height: "100%",
           width: "10%",

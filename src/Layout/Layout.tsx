@@ -2,6 +2,7 @@ import type { JSXElement } from "solid-js";
 
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
+import "../sass/layout/layout.scss";
 
 interface LayoutProps {
   children: JSXElement;
@@ -9,11 +10,11 @@ interface LayoutProps {
 
 function Layout(props: LayoutProps) {
   return (
-    <div>
+    <>
       <Header />
-      {props.children}
+        <div class="layout">{props.children}</div>
       <Footer />
-    </div>
+    </>
   );
 }
 
