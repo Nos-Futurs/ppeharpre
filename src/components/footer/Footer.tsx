@@ -1,5 +1,5 @@
 import logo from "../../assets/images/logo.png";
-import "../../sass/components/footer.scss";
+import "../../styles/components/footer.scss";
 import Contact from "../Contact/Contact";
 
 function Footer() {

@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 import Layout from "../layout/Layout";
 import sea_rocks from "./../assets/images/sea_rocks.png";
 
-import "../sass/pages/home.scss";
+import "../styles/pages/home.scss";
 
 const Home: Component = () => {
   return (

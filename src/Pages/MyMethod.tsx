@@ -3,7 +3,7 @@ import Layout from "../layout/Layout";
 
 import sea_rocks from "./../assets/images/sea_rocks.png";
 
-import "../sass/pages/myMethod.scss";
+import "../styles/pages/myMethod.scss";
 
 const MyMethod: Component = () => {
   return (

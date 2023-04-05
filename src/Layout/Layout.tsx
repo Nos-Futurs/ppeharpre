@@ -2,7 +2,7 @@ import type { JSXElement } from "solid-js";
 
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import "../sass/layout/layout.scss";
+import "../styles/layout/layout.scss";
 
 interface LayoutProps {
   children: JSXElement;

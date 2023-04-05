@@ -3,7 +3,7 @@ import Layout from "../layout/Layout";
 
 import cabinet from "./../assets/images/cabinet.png";
 
-import "../sass/pages/myMethod.scss";
+import "../styles/pages/myMethod.scss";
 
 const AboutMyself: Component = () => {
   return (
