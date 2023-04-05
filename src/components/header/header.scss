@@ -9,6 +9,7 @@
   background-color: map-get(colors.$palette, darkblue);
   right: 0;
   top: 0;
+  z-index: 1;
 
   &__logo-container {
     @include i.logo-container();

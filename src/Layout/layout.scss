@@ -1,4 +1,7 @@
+@use "../styles/abstracts/colors" as colors;
+
 .layout{
     justify-content: center;
+    background-color: map-get(colors.$palette, "background2");
     padding: 5%,
 }
