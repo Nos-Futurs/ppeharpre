@@ -77,8 +77,8 @@ const Gestalt: Component = () => {
           </li>{" "}
         </ul>
       </div>
-      <div>
-        <img src={lighthouse} style={{ width: "100%" }} />
+      <div class="image">
+        <img src={lighthouse} class="image__sketch" />
       </div>
     </Layout>
   );

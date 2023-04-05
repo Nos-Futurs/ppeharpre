@@ -1,4 +1,4 @@
-@import "./abstracts/colors";
+@use "./abstracts/colors" as colors;
 
 body {
   margin: 0;
@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: map-get($palette, "background2");
+  background-color: map-get(colors.$palette, "background2");
 }
 
 code {

@@ -1,10 +1,22 @@
-@import "../../styles/abstracts/colors";
+@use "../../styles/abstracts/colors" as colors;
+@use "../../styles/abstracts/image" as i;
 
 .footer {
   height: 200px;
   display: flex;
   padding: 10px 50px 10px 50px;
   align-items: center;
-  background-color: map-get($palette, darkblue);
+  background-color: map-get(colors.$palette, darkblue);
   justify-content: center;
+
+  &__logo-container {
+    @include i.logo-container();
+  }
+  &__logo {
+    @include i.logo();
+  }
+  &__contact-container {
+    width: 70%;
+    margin: 0% 15% 0% 5%;
+  }
 }

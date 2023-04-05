@@ -13,21 +13,8 @@ const Home: Component = () => {
           Praticien en Gestalt Thérapie A Saint Malo
         </div>
       </div>
-      <div
-        style={{
-          "justify-content": "center",
-          display: "flex",
-          "margin-bottom": "100px",
-        }}
-      >
-        <img
-          src={sea_rocks}
-          style={{
-            "width": "80%",
-            border: "2px solid",
-            "border-radius": "10px 125px 20px / 205px 25px",
-          }}
-        />
+      <div class="presentation__sketch-container">
+        <img src={sea_rocks} class="presentation__sketch" />
       </div>
       <div class="citation">
         <div class="citation__text">

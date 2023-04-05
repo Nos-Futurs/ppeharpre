@@ -50,10 +50,10 @@ const AboutMyself: Component = () => {
           </li>
         </ul>
       </div>
-      <div>
-        <img src={cabinet} style={{ width: "100%" }} />
+      <div class="image">
+        <img src={cabinet} class="image__sketch" />
       </div>
-      <div class="title" style={{ "margin-top": "200px" }}>
+      <div class="title">
         parcours professionnel et de formation:{" "}
       </div>
       <div class="paragraphe">
@@ -102,7 +102,7 @@ const AboutMyself: Component = () => {
         des personnes aux revenus modestes.
       </div>
 
-      <div class="title" style={{ "margin-top": "200px" }}>
+      <div class="title">
         Ma déontologique et éthique :
       </div>
       <div class="paragraphe">

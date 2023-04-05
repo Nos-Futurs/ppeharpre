@@ -27,8 +27,8 @@ const MyMethod: Component = () => {
         repose sur le lien entre l’accompagné et le thérapeute et s’ancre dans
         le présent pour questionner l’ensemble du vécu.
       </div>
-      <div>
-        <img src={sea_rocks} style={{ width: "100%" }} />
+      <div class="image">
+        <img src={sea_rocks} class="image__sketch" />
       </div>
       <div class="paragraphe">
         Profondément respectueux des personnes, je m’attache à être à l’écoute,
@@ -49,7 +49,7 @@ const MyMethod: Component = () => {
         moi, j'apporte ma sensibilité et mon humanité sur un chemin parfois
         difficile mais tellement riche de promesses et de mieux être.
       </div>
-      <div class="title" style={{ "margin-top": "200px" }}>
+      <div class="title">
         Pourquoi se faire accompagner ?
       </div>
       <div class="paragraphe">
@@ -93,7 +93,7 @@ const MyMethod: Component = () => {
           <li>apaiser une souffrance . initier un changement</li>
         </ul>
       </div>
-      <div class="title" style={{ "margin-top": "200px" }}>
+      <div class="title">
         Comment cela se déroule un accompagnement ?
       </div>
       <div class="paragraphe">

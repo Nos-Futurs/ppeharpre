@@ -1,20 +1,28 @@
-@import "../../styles/abstracts/colors";
+@use "../../styles/abstracts/colors" as colors;
+@use "../../styles/abstracts/image" as i;
 
 .header {
   width: 100%;
   height: 120px;
   display: flex;
   position: sticky;
-  background-color: map-get($palette, darkblue);;
+  background-color: map-get(colors.$palette, darkblue);
   right: 0;
   top: 0;
-}
 
-.navigation {
-  background-color: transparent;
-  width: 70%;
-  margin: 0% 15% 0% 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  &__logo-container {
+    @include i.logo-container();
+  }
+  &__logo {
+    @include i.logo();
+  }
+
+  &__navigation {
+    background-color: transparent;
+    width: 70%;
+    margin: 0% 15% 0% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

@@ -8,18 +8,10 @@ function Header() {
   const navigate = useNavigate();
   return (
     <div class="header">
-      <div
-        style={{
-          height: "100%",
-          width: "20%",
-          display: "flex",
-          "justify-content": "center",
-          "align-items": "center",
-        }}
-      >
-        <img src={logo} style={{ height: "75%" }} />
+      <div class="header__logo-container">
+        <img src={logo} class="header__logo" />
       </div>
-      <div class="navigation">
+      <div class="header__navigation">
         <MenuButton
           name="Accueil"
           onClick={() => {
