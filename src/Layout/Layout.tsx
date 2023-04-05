@@ -1,7 +1,8 @@
 import type { JSXElement } from "solid-js";
 
-import GlobalFooter from "../components/footer/GlobalFooter";
-import GlobalHeader from "../components/header/GlobalHeader";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
+import "./layout.scss";
 
 interface LayoutProps {
   children: JSXElement;
@@ -9,11 +10,11 @@ interface LayoutProps {
 
 function Layout(props: LayoutProps) {
   return (
-    <div>
-      <GlobalHeader />
-      {props.children}
-      <GlobalFooter />
-    </div>
+    <>
+      <Header />
+        <div class="layout">{props.children}</div>
+      <Footer />
+    </>
   );
 }
 

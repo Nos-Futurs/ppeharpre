@@ -1,13 +1,17 @@
 import { useNavigate } from "@solidjs/router";
-import { colors } from "../../assets/colors";
 import MenuButton from "../buttons/MenuButton";
-import "./Header.css";
+import "./header.scss";
 
-function GlobalHeader() {
+import logo from "../../assets/images/logo.png";
+
+function Header() {
   const navigate = useNavigate();
   return (
-    <div class="header" style={{ "background-color": colors.blue0 }}>
-      <div class="navigation">
+    <div class="header">
+      <div class="header__logo-container">
+        <img src={logo} class="header__logo" />
+      </div>
+      <div class="header__navigation">
         <MenuButton
           name="Accueil"
           onClick={() => {
@@ -21,15 +25,15 @@ function GlobalHeader() {
           }}
         />
         <MenuButton
-          name="Gestalt thérapie"
-          onClick={() => {
-            navigate("/gestalt");
-          }}
-        />
-        <MenuButton
           name="A propos de moi"
           onClick={() => {
             navigate("/about");
+          }}
+        />
+        <MenuButton
+          name="Gestalt thérapie"
+          onClick={() => {
+            navigate("/gestalt");
           }}
         />
         <MenuButton
@@ -43,4 +47,4 @@ function GlobalHeader() {
   );
 }
 
-export default GlobalHeader;
+export default Header;

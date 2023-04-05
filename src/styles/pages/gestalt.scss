@@ -1,0 +1,18 @@
+@use "../abstracts/section-title";
+@use "../abstracts/paragraphe";
+@use "../abstracts/image" as i;
+
+.title {
+  @extend %section-title;
+}
+
+.paragraphe{
+  @extend %paragraphe;
+}
+
+.image {
+  @include i.sketch-container;
+  &__sketch{
+    @include i.sketch
+  }   
+}

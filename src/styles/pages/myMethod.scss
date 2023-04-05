@@ -1,0 +1,11 @@
+@use "../abstracts/section-title";
+@use "../abstracts/paragraphe";
+
+.title {
+  @extend %section-title;
+  margin-top: 200px;
+}
+
+.paragraphe{
+  @extend %paragraphe;
+}

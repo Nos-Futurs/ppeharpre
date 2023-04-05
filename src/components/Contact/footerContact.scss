@@ -1,0 +1,18 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  width: 100%;
+  justify-content: space-around;
+
+  &__person {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

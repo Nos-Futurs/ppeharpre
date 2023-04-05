@@ -1,0 +1,10 @@
+@use "../abstracts/section-title";
+@use "../abstracts/paragraphe";
+
+.title {
+  @extend %section-title;
+}
+
+.paragraphe{
+  @extend %paragraphe;
+}
