@@ -1,6 +1,6 @@
 import { useNavigate } from "@solidjs/router";
-import "../../styles/components/header.scss";
 import MenuButton from "../buttons/MenuButton";
+import "./header.scss";
 
 import logo from "../../assets/images/logo.png";
 

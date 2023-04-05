@@ -1,6 +1,6 @@
 import logo from "../../assets/images/logo.png";
-import "../../styles/components/footer.scss";
 import Contact from "../Contact/Contact";
+import "./footer.scss";
 
 function Footer() {
   return (
