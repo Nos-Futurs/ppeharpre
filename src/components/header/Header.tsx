@@ -33,15 +33,15 @@ function Header() {
           }}
         />
         <MenuButton
-          name="Gestalt thérapie"
-          onClick={() => {
-            navigate("/gestalt");
-          }}
-        />
-        <MenuButton
           name="A propos de moi"
           onClick={() => {
             navigate("/about");
+          }}
+        />
+        <MenuButton
+          name="Gestalt thérapie"
+          onClick={() => {
+            navigate("/gestalt");
           }}
         />
         <MenuButton

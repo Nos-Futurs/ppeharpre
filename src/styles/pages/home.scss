@@ -1,4 +1,4 @@
-@import "../abstracts/paragraphe";
+@use "../abstracts/paragraphe";
 
 .presentation {
   display: flex;
@@ -28,7 +28,7 @@
 }
 
 .paragraphe{
-  @include paragraphe;
+  @extend %paragraphe;
 }
 
 .citation{
