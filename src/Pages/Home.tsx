@@ -9,8 +9,10 @@ const Home: Component = () => {
     <Layout>
       <div class="presentation">
         <div class="presentation__name">Philippe Péharpré</div>
+        <div class="presentation__job">Praticien en Gestalt Thérapie</div>
         <div class="presentation__description">
-          Praticien en Gestalt Thérapie A Saint Malo
+          Accompagnement en mouvement sur le chemin de la vie <br /> A Saint
+          Malo
         </div>
       </div>
       <div class="presentation__sketch-container">
@@ -21,7 +23,7 @@ const Home: Component = () => {
           « La conscience de soi est au cœur du mieux être. »
         </div>
         <div class="citation__author">
-          Bessel Van der Kolk, le corps n'oublie rien
+          Bessel Van der Kolk, <u>Le corps n'oublie rien</u>
         </div>
       </div>
       <div class="paragraphe">
