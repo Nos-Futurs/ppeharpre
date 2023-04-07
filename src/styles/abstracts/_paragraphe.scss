@@ -1,6 +1,9 @@
+@use "./font" as f;
+
 %paragraphe {
   width: 100%;
   text-align: justify;
   font-size: 30px;
   padding: 50px 5px 50px 5px;
+  font-family: f.$font_text;
 }

@@ -13,7 +13,7 @@ L.Marker.prototype.setIcon(L.icon({
 function Map() {
   onMount(() => {
     const map = L.map("map").setView(
-      [48.65218428861113, -1.9917653213299666],
+      [48.65088101076383, -2.007454559115204],
       13
     );
 
@@ -24,7 +24,7 @@ function Map() {
 
     // add a single marker to a layer. note it's in an array
     let markerLayer = L.layerGroup([
-      L.marker([48.65218428861113, -1.9917653213299666])
+      L.marker([48.65088101076383, -2.007454559115204])
         .addTo(map)
         .bindPopup("Cabinet")
         .openPopup(),

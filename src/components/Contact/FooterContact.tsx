@@ -9,9 +9,8 @@ function FooterContact() {
         <div>+33 6 70 80 35 16</div>
       </div>
       <div class="contact__adress">
-        <div>adresse 1</div>
-        <div>adresse 2</div>
-        <div>adresse 3</div>
+        <div>8 Boulevard Villebois Mareuil</div>
+        <div>35 400, Saint Malo</div>
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+@use "../../styles/abstracts/colors" as colors;
+
 .menuButton {
   text-transform: uppercase;
   font-size: 17px;
@@ -5,4 +7,14 @@
   color: white;
   background-color: transparent;
   border: transparent;
+}
+
+.submitButton {
+  background-color: map-get(colors.$palette, darkblue);
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border: transparent;
+  padding: 30px;
+  border-radius: 5px;
 }
