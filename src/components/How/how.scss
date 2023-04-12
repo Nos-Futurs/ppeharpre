@@ -1,0 +1,19 @@
+@use "../../styles/abstracts/section-title";
+@use "../../styles/abstracts/paragraphe";
+@use "../../styles/abstracts/image" as i;
+
+.how {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+
+  &__paragraphe {
+    @extend %paragraphe;
+  }
+
+  &__title {
+    @extend %section-title;
+    margin-top: 0px;
+    margin-bottom: 60px;
+  }
+}

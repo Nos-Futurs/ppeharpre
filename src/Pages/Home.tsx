@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 import Layout from "../layout/Layout";
 import sea_rocks from "./../assets/images/sea_rocks.png";
 
-import CropedImage from "../components/cropImage/cropImage";
+import CropedImage from "../components/CropedImage/CropedImage";
 import "../styles/pages/home.scss";
 
 const Home: Component = () => {
@@ -22,14 +22,6 @@ const Home: Component = () => {
       <div class="presentation__description">
         Accompagnement en mouvement sur le chemin de la vie
       </div>
-      {/* <div class="citation">
-        <div class="citation__text">
-          « La conscience de soi est au cœur du mieux être. »
-        </div>
-        <div class="citation__author">
-          Bessel Van der Kolk, <u>Le corps n'oublie rien</u>
-        </div>
-      </div> */}
       <div class="paragraphe__container">
         <div class="paragraphe">
           <div class="paragraphe__right">
@@ -68,8 +60,8 @@ const Home: Component = () => {
           offsetY={9}
           offsetX={17.5}
           zoom={28}
-          width={1000}
-          height={150}
+          width={"1000px"}
+          height={"150px"}
         />
       </div>
     </Layout>

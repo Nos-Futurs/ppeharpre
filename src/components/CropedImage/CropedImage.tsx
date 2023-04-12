@@ -1,12 +1,12 @@
-import "./cropImage.scss";
+import "./CropedImage.scss";
 
-interface menuCropedImage {
+interface CropedImageProps {
   src: string;
   zoom?: number;
   offsetY?: number;
   offsetX?: number;
-  width?: number;
-  height?: number
+  width?: string;
+  height?: string;
 }
 
 const CropedImage = ({
@@ -14,13 +14,13 @@ const CropedImage = ({
   zoom = 1,
   offsetY = 1,
   offsetX = 1,
-  width = 200, 
-  height = 200
-}: menuCropedImage) => {
+  width = "200px", 
+  height = "200px",
+}: CropedImageProps) => {
   return (
     <div class="sample" style={{
-        width: `${width}px`,
-        height: `${height}px`
+        width,
+        height
     }}>
       <img
         class="sample__img"
