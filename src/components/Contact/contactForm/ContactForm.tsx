@@ -1,8 +1,8 @@
 import emailjs from "@emailjs/browser";
 import { createSignal } from "solid-js";
 import { createStore } from "solid-js/store";
-import SubmitButton from "../buttons/SubmitButton";
-import Input from "../Input/Input";
+import Input from "../../Input/Input";
+import SubmitButton from "../../buttons/SubmitButton";
 import "./contactForm.scss";
 import { emailJSVariables } from "./emailJS.config";
 import { checkEmailValidity } from "./methods/checkEmailValidity";

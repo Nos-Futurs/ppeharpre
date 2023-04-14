@@ -1,11 +1,11 @@
-@use "../../styles/abstracts/section-title";
-@use "../../styles/abstracts/paragraphe";
-@use "../../styles/abstracts/image" as i;
+@use "../../../styles/abstracts/section-title";
+@use "../../../styles/abstracts/paragraphe";
+@use "../../../styles/abstracts/image" as i;
 
 .why {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-bottom: 20%;
+  padding-top: 20%;
 
   &__croped-paragraphe {
     @extend %paragraphe;

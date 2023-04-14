@@ -1,12 +1,12 @@
 import { Component } from "solid-js";
 
-import trek from "../../assets/images/trek.png";
-import CropedImage from "../CropedImage/CropedImage";
+import trek from "../../../assets/images/trek.png";
+import CropedImage from "../../../components/CropedImage/CropedImage";
 import "./why.scss";
 
 const Why: Component = () => {
   return (
-    <div class="why">
+    <div class="why" id="why">
       <div class="why__title">Pourquoi se faire accompagner ?</div>
       <div class="why__paragraphe">
         Une personne qui décide d'être accompagnée s'accorde un temps pour elle

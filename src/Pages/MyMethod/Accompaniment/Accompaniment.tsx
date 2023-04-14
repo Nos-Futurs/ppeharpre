@@ -1,15 +1,15 @@
 import { Component } from "solid-js";
 
-import trek from "../../assets/images/trek.png";
+import trek from "../../../assets/images/trek.png";
 
-import CropedImage from "../CropedImage/CropedImage";
-import "./acompaniment.scss";
+import CropedImage from "../../../components/CropedImage/CropedImage";
+import "./accompaniment.scss";
 
-const Acompaniment: Component = () => {
+const Accompaniment: Component = () => {
   return (
-    <div class="acompaniment">
-      <div class="acompaniment__title">Mon Accompagnement :</div>
-      <div class="acompaniment__croped-paragraphe">
+    <div class="accompaniment" id="accompaniment">
+      <div class="accompaniment__title">Mon Accompagnement</div>
+      <div class="accompaniment__croped-paragraphe">
         J'accompagne des personnes sur leur parcours de vie et je vous soutiens
         dans la recherche de l'impulsion nécessaire à la mise en mouvement.
         J'aime utiliser la métaphore de la marche, elle symbolise bien ce
@@ -25,10 +25,10 @@ const Acompaniment: Component = () => {
         repose sur le lien entre l’accompagné et le thérapeute et s’ancre dans
         le présent pour questionner l’ensemble du vécu.
       </div>
-      <div class="acompaniment__sketch-container">
-        <img src={trek} class="acompaniment__sketch" />
+      <div class="accompaniment__sketch-container">
+        <img src={trek} class="accompaniment__sketch" />
       </div>
-      <div class="acompaniment__paragraphe">
+      <div class="accompaniment__paragraphe">
         Je m’attache à accompagner avec une écoute active et je prends en
         considération le langage des mots, du corps et des émotions. Mon ancrage
         rassure. Il permet à la personne accompagnée une mise en mouvement et un
@@ -38,8 +38,8 @@ const Acompaniment: Component = () => {
         J'accompagne avec une approche non jugeante dans le respect de la
         personne.
       </div>
-      <div class="acompaniment__items">
-        <div class="acompaniment__item1">
+      <div class="accompaniment__items">
+        <div class="accompaniment__item1">
           <CropedImage
             src={trek}
             offsetY={2}
@@ -49,7 +49,7 @@ const Acompaniment: Component = () => {
             height={"130px"}
           />
         </div>
-        <div class="acompaniment__item1">
+        <div class="accompaniment__item1">
           <CropedImage
             src={trek}
             offsetY={2}
@@ -59,7 +59,7 @@ const Acompaniment: Component = () => {
             height={"130px"}
           />
         </div>
-        <div class="acompaniment__item2">
+        <div class="accompaniment__item2">
           <CropedImage
             src={trek}
             offsetY={2}
@@ -70,7 +70,7 @@ const Acompaniment: Component = () => {
           />
         </div>
       </div>
-      <div class="acompaniment__croped-paragraphe">
+      <div class="accompaniment__croped-paragraphe">
         Avoir des difficultés est partagé par de nombreux individus et en même
         temps, ce n'est en aucun cas inéluctable. J'apporte ma sensibilité et
         mon humanité sur un chemin parfois difficile mais tellement riche de
@@ -80,4 +80,4 @@ const Acompaniment: Component = () => {
   );
 };
 
-export default Acompaniment;
+export default Accompaniment;

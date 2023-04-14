@@ -3,7 +3,7 @@
 
 .header {
   width: 100%;
-  height: 120px;
+  height: 150px;
   display: flex;
   position: sticky;
   background-color: map-get(colors.$palette, darkblue);
@@ -21,9 +21,14 @@
   &__navigation {
     background-color: transparent;
     width: 70%;
-    margin: 0% 15% 0% 5%;
+    margin: 45px 15% 0% 5%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+  }
+
+  &__sections {
+    display: flex;
+    flex-direction: column;
   }
 }

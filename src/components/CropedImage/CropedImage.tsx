@@ -7,6 +7,7 @@ interface CropedImageProps {
   offsetX?: number;
   width?: string;
   height?: string;
+  rotate?: number;
 }
 
 const CropedImage = ({
@@ -16,6 +17,7 @@ const CropedImage = ({
   offsetX = 1,
   width = "200px", 
   height = "200px",
+  rotate = 0
 }: CropedImageProps) => {
   return (
     <div class="sample" style={{
@@ -29,6 +31,7 @@ const CropedImage = ({
           top: `${-100 * offsetY}px`,
           left: `${-100 * offsetX}px`,
           width: `${100 * zoom}px`,
+          transform: `rotate(${rotate}deg)`
         }}
       />
     </div>

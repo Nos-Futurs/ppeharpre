@@ -19,6 +19,7 @@
 }
 
 @mixin sketch-container($width: 80%) {
+  width: $width;
   justify-content: center;
   display: flex;
   margin-bottom: 100px;

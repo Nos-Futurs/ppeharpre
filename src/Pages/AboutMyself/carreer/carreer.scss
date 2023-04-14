@@ -1,0 +1,50 @@
+@use "../../../styles/abstracts/section-title";
+@use "../../../styles/abstracts/paragraphe";
+@use "../../../styles/abstracts/image" as i;
+
+.carreer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 15%;
+  row-gap: 100px;
+  column-gap: 10px;
+  margin: 20px;
+
+  &__title {
+    @extend %section-title;
+    grid-column: 1/3;
+  }
+
+  &__paragraphe {
+    @extend %paragraphe;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px 0px 5px;
+  }
+
+  &__image {
+    @include i.sketch-container;
+    margin-bottom: 10px;
+    &__sketch {
+      @include i.sketch($width: 70%);
+    }
+  }
+
+  &__items {
+    grid-template-columns: 50% 50%;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 30%;
+  }
+
+  &__item1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item2 {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/3;
+  }
+}

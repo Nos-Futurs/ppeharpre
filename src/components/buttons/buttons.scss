@@ -3,7 +3,9 @@
 .menuButton {
   text-transform: uppercase;
   font-size: 17px;
+  padding-bottom: 5px;
   font-weight: bold;
+  text-align: left;
   color: white;
   background-color: transparent;
   border: transparent;
@@ -17,4 +19,14 @@
   border: transparent;
   padding: 30px;
   border-radius: 5px;
+}
+
+.dropDownButton {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background-color: transparent;
+  border: transparent;
 }

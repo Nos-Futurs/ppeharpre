@@ -2,17 +2,37 @@
 @use "../abstracts/paragraphe";
 @use "../abstracts/image" as i;
 
-.title {
-  @extend %section-title;
-}
+.gestalt {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  margin-top: 100px;
+  row-gap: 50px;
 
-.paragraphe{
-  @extend %paragraphe;
-}
+  &__title {
+    @extend %section-title;
+    grid-column: 1/4
+  }
 
-.image {
-  @include i.sketch-container;
-  &__sketch{
-    @include i.sketch
-  }   
+  &__paragraphe {
+    @extend %paragraphe;
+    grid-column: 1/4; 
+    
+  }
+  &__cropped-paragraphe {
+    @extend %paragraphe;
+    padding: 10px
+  }
+
+  &__cropped-image {
+    display: flex; 
+    justify-content: center
+  }
+
+
+  &__image {
+    @include i.sketch-container(100%);
+    &__sketch {
+      @include i.sketch(70%);
+    }
+  }
 }

@@ -4,11 +4,13 @@ import { onMount } from "solid-js";
 import "./map.scss";
 
 // otherwise, with webpack, the marker won't find the marker icon in production
-L.Marker.prototype.setIcon(L.icon({
-    iconUrl:markerIcon,
+L.Marker.prototype.setIcon(
+  L.icon({
+    iconUrl: markerIcon,
     iconAnchor: [10, 20],
     popupAnchor: [2, -20],
-}))
+  })
+);
 
 function Map() {
   onMount(() => {
