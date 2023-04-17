@@ -1,4 +1,4 @@
-import type { JSXElement } from "solid-js";
+import { JSXElement } from "solid-js";
 
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
@@ -12,7 +12,7 @@ function Layout(props: LayoutProps) {
   return (
     <>
       <Header />
-        <div class="layout">{props.children}</div>
+      <div class="layout">{props.children}</div>
       <Footer />
     </>
   );

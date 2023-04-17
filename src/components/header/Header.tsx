@@ -2,15 +2,36 @@ import { useNavigate } from "@solidjs/router";
 import MenuButton from "../buttons/MenuButton";
 import "./header.scss";
 
-import { createSignal } from "solid-js";
+import { createEffect, createSignal } from "solid-js";
 import logo from "../../assets/images/logo.png";
 import DropDownButton from "../buttons/DropDownButton";
 
 function Header() {
   const [myMethodPopup, setMyMethodPopup] = createSignal(false);
+  const [headerSize, setHeaderSize] = createSignal(170);
+  const [offsetY, setOffsetY] = createSignal(0);
+
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
+
+  createEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    if (!myMethodPopup()) {
+      if (offsetY() < 300) {
+        setHeaderSize(170 - offsetY() / 3);
+      } else {
+        setHeaderSize(70);
+      }
+    } else {
+      setHeaderSize(170);
+    }
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   const navigate = useNavigate();
   return (
-    <div class="header">
+    <div class="header" style={{ height: `${headerSize()}px` }}>
       <div class="header__logo-container">
         <img src={logo} class="header__logo" />
       </div>
