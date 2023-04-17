@@ -1,4 +1,12 @@
 [build]
-command = 'pnpm build'
-functions = "serverless_functions"
-publish = "build"
+    command = 'pnpm run build'
+    functions = "functions"
+    publish = "dist"
+
+[[redirect]]
+    from = "/api/*"
+    to = "/.netlify/functions/:splat"
+    status = 200
+
+[dev]
+    targetPort = 4173
