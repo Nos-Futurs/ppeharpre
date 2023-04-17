@@ -1,6 +1,6 @@
 import { Route, Router, Routes } from "@solidjs/router";
 import type { Component } from "solid-js";
-import AboutMyself from "./pages/AboutMyself/AboutMyself";
+import AboutMyself from "../src/pages/AboutMyself/AboutMyself";
 import Contact from "./pages/Contact";
 import Gestalt from "./pages/Gestalt";
 import Home from "./pages/Home";
