@@ -6,6 +6,8 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build && cp ./_redirects ./dist/_redirects",
+    "netlify:preview": "netlify deploy",
+    "netlify:prod": "netlify deploy --prod",
     "serve": "vite preview",
     "clean": "rm -rf dist"
   },
