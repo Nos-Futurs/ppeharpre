@@ -1,0 +1,12 @@
+@use "../../styles/abstracts/radius" as r;
+
+.sample {
+  overflow: hidden;
+  position: relative;
+  border: 2px solid;
+  border-radius: r.$radius2;
+
+  &__img {
+    position: absolute;
+  }
+}

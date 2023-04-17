@@ -18,7 +18,8 @@
   border-radius: r.$radius2;
 }
 
-@mixin sketch-container($width: 80%) {
+@mixin sketch-container($width: 100%) {
+  width: $width;
   justify-content: center;
   display: flex;
   margin-bottom: 100px;

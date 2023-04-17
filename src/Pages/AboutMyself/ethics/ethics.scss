@@ -1,0 +1,27 @@
+@use "../../../styles/abstracts/section-title";
+@use "../../../styles/abstracts/paragraphe";
+@use "../../../styles/abstracts/image" as i;
+
+.ethics {
+  display: grid;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  row-gap: 50px;
+
+  &__title {
+    @extend %section-title;
+  }
+
+  &__paragraphe {
+    @extend %paragraphe;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px 0px 5px;
+  }
+
+  &__image {
+    @include i.sketch-container($width: 100%);
+    height: 200px;
+    margin: 20px 0px 0px 0px;
+  }
+}

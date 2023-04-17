@@ -1,62 +1,86 @@
 @use "../abstracts/paragraphe";
 @use "../abstracts/image" as i;
+@use "../abstracts/font" as f;
 
 .presentation {
-  display: flex;
-  justify-content: space-around;
-  height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 3%;
 
   &__name {
-    width: 30%;
     height: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 100px;
-    font-weight: bold;
+    font-size: 70px;
+    font-family: f.$font_title;
+    line-height: 1.4;
+  }
+
+  &__job {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: f.$font_title;
+    font-size: 70px;
   }
 
   &__description {
-    width: 30%;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
-    font-size: 50px;
+    font-family: f.$font_text;
+    font-size: 40px;
   }
 
   &__sketch-container {
-    @include i.sketch-container
+    @include i.sketch-container;
+    margin-bottom: 70px;
   }
 
   &__sketch {
-      @include i.sketch
+    @include i.sketch($width: 80%);
   }
 }
 
-.paragraphe{
-  @extend %paragraphe;
-}
+.paragraphe {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 150px;
 
-.citation{
-  &__text {
-    font-size: 40px;
-    padding: 10px 0px 10px 0px;
-    font-style: italic;
-  }
-  
- 
-    width: 100%;
+  &__container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 84%;
+    margin: 8% 8% 10% 8%;
+  }
+
+  &__sketch-container {
+    @include i.sketch-container();
+    display: flex;
     align-items: center;
-    padding: 80px 0px 50px 0px;
-  
-  &__author{
-    padding: 15px 0px 10px 0px;
+    margin-bottom: 70px;
+  }
+
+  &__right {
+    @extend %paragraphe;
+    grid-column: 1/2;
+    font-size: 40px;
+    padding: 0px;
+    text-align: justify;
+  }
+  &__left {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    @extend %paragraphe;
+    font-size: 40px;
+    padding: 0px;
   }
 }
-

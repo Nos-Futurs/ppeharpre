@@ -1,0 +1,21 @@
+@use "../../styles/abstracts/font" as f;
+
+.input{
+    margin: 5px;
+
+    &__field{
+        background-color: transparent;
+        border-radius: 5px;
+        border: solid 1px;
+        width: 90%;
+        font-size: 15px;
+        padding: 4px;
+        font-family: f.$font_text;
+    }
+    
+
+    &__name{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+}

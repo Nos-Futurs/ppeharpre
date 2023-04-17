@@ -1,10 +1,32 @@
-@use "../abstracts/section-title";
-@use "../abstracts/paragraphe";
+@use "../abstracts/font" as f;
 
-.title {
-  @extend %section-title;
-}
+.contact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 8%;
+  margin-bottom: 30%;
 
-.paragraphe{
-  @extend %paragraphe;
+  &__information {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: f.$font_text;
+    margin: 5%;
+  }
+  &__grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%
+  }
+
+  &__cropped-image {
+    display: flex; 
+    justify-content: center;
+    grid-column: 1/3;
+    height: 400px
+  }
+
 }
