@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "vite",
-    "dev": "vite",
+    "dev": "netlify dev",
     "build": "vite build && cp ./_redirects ./dist/_redirects",
     "netlify:preview": "netlify deploy",
     "netlify:prod": "netlify deploy --prod",
