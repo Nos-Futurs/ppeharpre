@@ -1,10 +1,11 @@
 import { useNavigate } from "@solidjs/router";
-import MenuButton from "../buttons/MenuButton";
 import "./header.scss";
 
 import { createEffect, createSignal } from "solid-js";
 import logo from "../../assets/images/logo.png";
-import DropDownButton from "../buttons/DropDownButton";
+import DropDownLink from "../links/DropDownLink";
+import MenuLink from "../links/MenuLinks";
+
 
 enum pages {
   HOME = "home",
@@ -19,7 +20,7 @@ function Header() {
   const [aboutPopup, setAboutPopup] = createSignal(false);
   const [headerSize, setHeaderSize] = createSignal(150);
   const [offsetY, setOffsetY] = createSignal(0);
-  const [selectedButton, setSelectedButton] = createSignal<pages>(pages.HOME);
+  const [selectedLink, setSelectedLink] = createSignal<pages>(pages.HOME);
 
   const handleScroll = () => {
     setOffsetY(window.pageYOffset);
@@ -46,97 +47,97 @@ function Header() {
         <img src={logo} class="header__logo" />
       </div>
       <div class="header__navigation">
-        <MenuButton
+        <MenuLink
           name="Accueil"
-          selected={selectedButton() == pages.HOME}
+          selected={selectedLink() == pages.HOME}
           onClick={() => {
             navigate("/");
-            setSelectedButton(pages.HOME);
+            setSelectedLink(pages.HOME);
           }}
         />
         <div class="header__sections">
-          <MenuButton
+          <MenuLink
             name="Accompagnement"
-            selected={selectedButton() == pages.MY_METHOD}
+            selected={selectedLink() == pages.MY_METHOD}
             onClick={() => {
               setMyMethodPopup(!myMethodPopup());
             }}
           />
           {myMethodPopup() && (
             <>
-              <DropDownButton
+              <DropDownLink
                 name="Votre accompagnement"
                 onClick={() => {
                   navigate("/method");
-                  setSelectedButton(pages.MY_METHOD);
+                  setSelectedLink(pages.MY_METHOD);
                 }}
               />
-              <DropDownButton
+              <DropDownLink
                 name="Pourquoi se faire accompagner?"
                 onClick={() => {
                   navigate("/method#why");
-                  setSelectedButton(pages.MY_METHOD);
+                  setSelectedLink(pages.MY_METHOD);
                 }}
               />
-              <DropDownButton
+              <DropDownLink
                 name="Le déroulement d'une séance"
                 onClick={() => {
                   navigate("/method#how");
-                  setSelectedButton(pages.MY_METHOD);
+                  setSelectedLink(pages.MY_METHOD);
                 }}
               />
             </>
           )}
         </div>
         <div class="header__sections">
-          <MenuButton
+          <MenuLink
             name="A propos de moi"
-            selected={selectedButton() == pages.ABOUT}
+            selected={selectedLink() == pages.ABOUT}
             onClick={() => {
               setAboutPopup(!aboutPopup());
             }}
           />
           {aboutPopup() && (
             <>
-              <DropDownButton
+              <DropDownLink
                 name="Mes spécificités"
                 onClick={() => {
                   navigate("/about");
-                  setSelectedButton(pages.ABOUT);
+                  setSelectedLink(pages.ABOUT);
                 }}
               />
-              <DropDownButton
+              <DropDownLink
                 name="Mon parcours"
                 onClick={() => {
                   navigate("/about#carreer");
-                  setSelectedButton(pages.ABOUT);
+                  setSelectedLink(pages.ABOUT);
                 }}
               />
-              <DropDownButton
+              <DropDownLink
                 name="Ma déontologie"
                 onClick={() => {
                   navigate("/about#ethics");
-                  setSelectedButton(pages.ABOUT);
+                  setSelectedLink(pages.ABOUT);
                 }}
               />
             </>
           )}
         </div>
-        <MenuButton
+        <MenuLink
           name="Gestalt thérapie"
-          selected={selectedButton() == pages.GESTALT}
+          selected={selectedLink() == pages.GESTALT}
           onClick={() => {
             navigate("/gestalt");
-            setSelectedButton(pages.GESTALT);
+            setSelectedLink(pages.GESTALT);
           }}
         />
-        <MenuButton
+        <MenuLink
           name="Contactez moi"
           border={true}
-          selected={selectedButton() == pages.CONTACT}
+          selected={selectedLink() == pages.CONTACT}
           onClick={() => {
             navigate("/contact");
-            setSelectedButton(pages.CONTACT);
+            setSelectedLink(pages.CONTACT);
           }}
         />
       </div>
