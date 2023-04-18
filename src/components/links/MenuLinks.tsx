@@ -7,6 +7,7 @@ interface menuLinkProps {
     selected?: boolean
 }
 
+// https://github.com/solidjs/solid/discussions/287
 const MenuLink = (props: menuLinkProps) => {  
   return (
         <a

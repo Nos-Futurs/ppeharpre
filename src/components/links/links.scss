@@ -34,3 +34,12 @@
   background-color: transparent;
   border: transparent;
 }
+
+@media (max-width: 1130px) {
+  .menuLink {
+    font-size: 15px;
+  }
+  .menuLinkBordered {
+    font-size: 15px;
+  }
+}
