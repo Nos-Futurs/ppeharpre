@@ -7,7 +7,7 @@ import "./carreer.scss";
 
 const Carreer: Component = () => {
   return (
-    <div class="carreer">
+    <div class="carreer" id="carreer">
       <div class="carreer__title">Parcours professionnel et formation </div>
       <div class="carreer__paragraphe">
         Dans un premier temps, j'ai eu un parcours professionnel en entreprise

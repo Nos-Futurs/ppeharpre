@@ -8,6 +8,7 @@ import DropDownButton from "../buttons/DropDownButton";
 
 function Header() {
   const [myMethodPopup, setMyMethodPopup] = createSignal(false);
+  const [aboutPopup, setAboutPopup] = createSignal(false);
   const [headerSize, setHeaderSize] = createSignal(150);
   const [offsetY, setOffsetY] = createSignal(0);
 
@@ -17,11 +18,11 @@ function Header() {
 
   createEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    if (!myMethodPopup()) {
+    if (!myMethodPopup() && !aboutPopup()) {
       if (offsetY() < 300) {
-        setHeaderSize(150 - offsetY() / 3);
+        setHeaderSize(150 - (offsetY() * 8) / 30);
       } else {
-        setHeaderSize(50);
+        setHeaderSize(70);
       }
     } else {
       setHeaderSize(150);
@@ -52,9 +53,9 @@ function Header() {
           {myMethodPopup() && (
             <>
               <DropDownButton
-                name="Mon accompagnement"
+                name="Votre accompagnement"
                 onClick={() => {
-                  navigate("/method#accompaniment");
+                  navigate("/method");
                 }}
               />
               <DropDownButton
@@ -72,12 +73,36 @@ function Header() {
             </>
           )}
         </div>
-        <MenuButton
-          name="A propos de moi"
-          onClick={() => {
-            navigate("/about");
-          }}
-        />
+        <div class="header__sections">
+          <MenuButton
+            name="A propos de moi"
+            onClick={() => {
+              setAboutPopup(!aboutPopup());
+            }}
+          />
+          {aboutPopup() && (
+            <>
+              <DropDownButton
+                name="Mes spécificités"
+                onClick={() => {
+                  navigate("/about");
+                }}
+              />
+              <DropDownButton
+                name="Mon parcours"
+                onClick={() => {
+                  navigate("/about#carreer");
+                }}
+              />
+              <DropDownButton
+                name="Ma déontologie"
+                onClick={() => {
+                  navigate("/about#ethics");
+                }}
+              />
+            </>
+          )}
+        </div>
         <MenuButton
           name="Gestalt thérapie"
           onClick={() => {
@@ -86,6 +111,7 @@ function Header() {
         />
         <MenuButton
           name="Contactez moi"
+          border={true}
           onClick={() => {
             navigate("/contact");
           }}

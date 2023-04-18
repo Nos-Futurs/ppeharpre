@@ -2,16 +2,17 @@ import "./buttons.scss";
 
 interface menuButtonProps {
     name: string; 
-    onClick: () => void
+    onClick: () => void;
+    border?: boolean
 }
 
-const MenuButton = (props: menuButtonProps) => {  
+const MenuButton = ({onClick, border = false, name}: menuButtonProps) => {  
   return (
         <button
-          class="menuButton"
-          onclick={props.onClick}
+          class={border? "menuButtonBordered" : "menuButton"}
+          onclick={onClick}
         >
-          {props.name}
+          {name}
         </button>
         
   )

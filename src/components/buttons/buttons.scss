@@ -3,12 +3,24 @@
 .menuButton {
   text-transform: uppercase;
   font-size: 17px;
-  padding-bottom: 5px;
+  padding: 5px;
   font-weight: bold;
   text-align: left;
   color: white;
   background-color: transparent;
   border: transparent;
+}
+
+.menuButtonBordered {
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 5px;
 }
 
 .submitButton {

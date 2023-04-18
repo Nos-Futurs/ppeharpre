@@ -5,8 +5,8 @@
 .gestalt {
   display: grid;
   grid-template-columns: 45% 10% 45%;
-  margin-top: 100px;
-  row-gap: 50px;
+  margin-top: 40px;
+  row-gap: 30px;
 
   &__title {
     @extend %section-title;

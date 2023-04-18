@@ -5,7 +5,7 @@ function FooterContact() {
     <div class="contact-info">
       <div class="contact-info__person">
         <div>Philippe Péharpre</div>
-        <div>ph.peharpre@gmail.com</div>
+        <a href="mailto:ph.peharpre@gmail.com" style={{color: "white"}}>ph.peharpre@gmail.com</a>
         <div>+33 6 70 80 35 16</div>
       </div>
       <div class="contact-info__adress">
