@@ -1,11 +1,10 @@
-import emailjs from "@emailjs/browser";
 import { createSignal } from "solid-js";
 import { createStore } from "solid-js/store";
 import Input from "../../Input/Input";
 import SubmitButton from "../../buttons/SubmitButton";
 import "./contactForm.scss";
-import { emailJSVariables } from "./emailJS.config";
 import { checkEmailValidity } from "./methods/checkEmailValidity";
+import { sendEmail } from "./methods/sendEmail";
 
 const ContactForm = () => {
   const [form, setForm] = createStore({
@@ -43,26 +42,17 @@ const ContactForm = () => {
   const handleSubmit = () => {
     if (checkFormValidity()) {
       setValidForm({ valid: true, field: [] });
-      emailjs
-        .send(
-          emailJSVariables.serviceID,
-          emailJSVariables.templateID,
-          form,
-          emailJSVariables.apiKey
-        )
-        .then(
-          (response) => {
-            console.log("SUCCESS!", response.status, response.text);
-            setMessageSent(true);
-          },
-          (err) => {
-            console.log("FAILED...", err);
-            setValidForm({
-              valid: false,
-              field: ["Une erreur est apparue lors de l'envoie du mail."],
-            });
-          }
-        );
+      sendEmail(form)
+        .then(() => {
+          setMessageSent(true);
+        })
+        .catch((err) => {
+          console.log("FAILED...", err);
+          setValidForm({
+            valid: false,
+            field: ["Une erreur est apparue lors de l'envoie du mail."],
+          });
+        });
     }
   };
 
