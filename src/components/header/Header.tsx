@@ -8,7 +8,7 @@ import DropDownButton from "../buttons/DropDownButton";
 
 function Header() {
   const [myMethodPopup, setMyMethodPopup] = createSignal(false);
-  const [headerSize, setHeaderSize] = createSignal(170);
+  const [headerSize, setHeaderSize] = createSignal(150);
   const [offsetY, setOffsetY] = createSignal(0);
 
   const handleScroll = () => {
@@ -19,12 +19,12 @@ function Header() {
     window.addEventListener("scroll", handleScroll);
     if (!myMethodPopup()) {
       if (offsetY() < 300) {
-        setHeaderSize(170 - offsetY() / 3);
+        setHeaderSize(150 - offsetY() / 3);
       } else {
-        setHeaderSize(70);
+        setHeaderSize(50);
       }
     } else {
-      setHeaderSize(170);
+      setHeaderSize(150);
     }
     return () => window.removeEventListener("scroll", handleScroll);
   });
