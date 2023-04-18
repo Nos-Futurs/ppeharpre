@@ -8,7 +8,7 @@ import "./accompaniment.scss";
 const Accompaniment: Component = () => {
   return (
     <div class="accompaniment" id="accompaniment">
-      <div class="accompaniment__title">Mon Accompagnement</div>
+      <div class="accompaniment__title">Votre Accompagnement</div>
       <div class="accompaniment__croped-paragraphe">
         J'accompagne des personnes sur leur parcours de vie et je vous soutiens
         dans la recherche de l'impulsion nécessaire à la mise en mouvement.

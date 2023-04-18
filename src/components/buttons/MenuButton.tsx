@@ -2,14 +2,17 @@ import "./buttons.scss";
 
 interface menuButtonProps {
     name: string; 
-    onClick: () => void
+    onClick: () => void;
+    border?: boolean
+    selected?: boolean
 }
 
 const MenuButton = (props: menuButtonProps) => {  
   return (
         <button
-          class="menuButton"
+          class={props.border? "menuButtonBordered" : "menuButton"}
           onclick={props.onClick}
+          style={{"font-weight": `${props.selected? "800": "500"}`}}
         >
           {props.name}
         </button>

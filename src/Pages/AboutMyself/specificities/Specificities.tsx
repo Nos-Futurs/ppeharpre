@@ -6,7 +6,7 @@ import "./specificities.scss";
 
 const MySpecificities: Component = () => {
   return (
-    <div class="my-specificities">
+    <div class="my-specificities" id="my_specificities">
       <div class="my-specificities__title">Mes spécificités </div>
       <div class="my-specificities__paragraphe">
         Je me mets au service des personnes que j'accompagne avec mes

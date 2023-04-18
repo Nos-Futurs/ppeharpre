@@ -2,11 +2,18 @@
 
 .contact {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(6, 1fr);
   row-gap: 8%;
   margin-bottom: 30%;
 
+  &__face {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+  }
+
   &__information {
+    grid-column: 3/5;
     font-size: 30px;
     display: flex;
     flex-direction: column;
@@ -15,18 +22,19 @@
     font-family: f.$font_text;
     margin: 5%;
   }
-  &__grid{
+  &__grid {
+    grid-row: 2;
+    grid-column: span 3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10%
+    padding: 10%;
   }
 
   &__cropped-image {
-    display: flex; 
+    grid-column: span 6;
+    display: flex;
     justify-content: center;
-    grid-column: 1/3;
-    height: 400px
+    height: 400px;
   }
-
 }
