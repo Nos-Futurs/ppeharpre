@@ -1,22 +1,24 @@
 @use "../../styles/abstracts/colors" as colors;
 
 .menuButton {
+  display: flex;
+  text-align: left;
   text-transform: uppercase;
   font-size: 17px;
   padding: 5px;
   font-weight: bold;
-  text-align: left;
   color: white;
   background-color: transparent;
   border: transparent;
 }
 
 .menuButtonBordered {
+  display: flex;
+  text-align: center;
   text-transform: uppercase;
   font-size: 17px;
   padding: 5px;
   font-weight: bold;
-  text-align: left;
   color: white;
   background-color: transparent;
   border: solid 1px white;

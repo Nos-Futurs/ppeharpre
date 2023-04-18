@@ -1,5 +1,4 @@
 import { Component } from "solid-js";
-import Layout from "../layout/Layout";
 import sea_rocks from "./../assets/images/sea_rocks.png";
 
 import CropedImage from "../components/CropedImage/CropedImage";
@@ -7,7 +6,7 @@ import "../styles/pages/home.scss";
 
 const Home: Component = () => {
   return (
-    <Layout>
+    <>
       <div class="presentation">
         <div class="presentation__name">
           Philippe <br /> Péharpré
@@ -64,7 +63,7 @@ const Home: Component = () => {
           height={"150px"}
         />
       </div>
-    </Layout>
+    </>
   );
 };
 

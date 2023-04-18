@@ -1,3 +1,4 @@
+import { createEffect, createSignal } from "solid-js";
 import "./CropedImage.scss";
 
 interface CropedImageProps {
@@ -8,6 +9,7 @@ interface CropedImageProps {
   width?: string;
   height?: string;
   rotate?: number;
+  willChange?: boolean;
 }
 
 const CropedImage = ({
@@ -15,23 +17,36 @@ const CropedImage = ({
   zoom = 1,
   offsetY = 1,
   offsetX = 1,
-  width = "200px", 
+  width = "200px",
   height = "200px",
-  rotate = 0
+  rotate = 0,
+  willChange = false,
 }: CropedImageProps) => {
+  const [rapportWidth, setRapportWidth] = createSignal(1);
+
+  createEffect(() => {
+    const windowSize = window.innerWidth;
+    const originalSize = 1728;
+    //construct affine function
+    setRapportWidth(1.86 - 0.0006 * windowSize);
+  });
+
   return (
-    <div class="sample" style={{
+    <div
+      class="sample"
+      style={{
         width,
-        height
-    }}>
+        height,
+      }}
+    >
       <img
         class="sample__img"
         src={src}
         style={{
           top: `${-100 * offsetY}px`,
-          left: `${-100 * offsetX}px`,
+          left: `${-100 * offsetX * (willChange ? rapportWidth() : 1)}px`,
           width: `${100 * zoom}px`,
-          transform: `rotate(${rotate}deg)`
+          transform: `rotate(${rotate}deg)`,
         }}
       />
     </div>

@@ -24,6 +24,7 @@ const Ethics: Component = () => {
           zoom={11}
           offsetX={1.6}
           offsetY={2.5}
+          willChange={true}
         />
       </div>
     </div>

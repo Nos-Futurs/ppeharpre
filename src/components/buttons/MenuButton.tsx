@@ -4,15 +4,17 @@ interface menuButtonProps {
     name: string; 
     onClick: () => void;
     border?: boolean
+    selected?: boolean
 }
 
-const MenuButton = ({onClick, border = false, name}: menuButtonProps) => {  
+const MenuButton = (props: menuButtonProps) => {  
   return (
         <button
-          class={border? "menuButtonBordered" : "menuButton"}
-          onclick={onClick}
+          class={props.border? "menuButtonBordered" : "menuButton"}
+          onclick={props.onClick}
+          style={{"font-weight": `${props.selected? "800": "500"}`}}
         >
-          {name}
+          {props.name}
         </button>
         
   )
