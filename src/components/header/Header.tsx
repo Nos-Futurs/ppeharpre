@@ -34,21 +34,13 @@ function Header() {
       <div class="header__logo-container">
         <img src={logo} class="header__logo" />
       </div>
-      {window.innerWidth > 980 ? (
-        <NavigationHeader
-          myMethodPopup={myMethodPopup}
-          setMyMethodPopup={setMyMethodPopup}
-          aboutPopup={aboutPopup}
-          setAboutPopup={setAboutPopup}
-        />
-      ) : (
-        <NavigationBurger
-          myMethodPopup={myMethodPopup}
-          setMyMethodPopup={setMyMethodPopup}
-          aboutPopup={aboutPopup}
-          setAboutPopup={setAboutPopup}
-        />
-      )}
+      <NavigationHeader
+        myMethodPopup={myMethodPopup}
+        setMyMethodPopup={setMyMethodPopup}
+        aboutPopup={aboutPopup}
+        setAboutPopup={setAboutPopup}
+      />
+      <NavigationBurger />
     </div>
   );
 }

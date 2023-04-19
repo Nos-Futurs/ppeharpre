@@ -3,6 +3,7 @@ import "./links.scss";
 interface dropDownLinkProps {
     name: string; 
     onClick: () => void
+    color?: string
 }
 
 const DropDownLink = (props: dropDownLinkProps) => {  
@@ -10,6 +11,7 @@ const DropDownLink = (props: dropDownLinkProps) => {
         <a
           class="dropDownLink"
           onclick={props.onClick}
+          style={{color: `${props.color? props.color: "white"}`}}
         >
           {props.name}
         </a>
