@@ -9,6 +9,7 @@ export const Modal = () => {
   if (!portalDiv) {
     return <></>;
   }
+  
   createEffect(() => {
     if (isModalOpen()) {
       return (
@@ -16,6 +17,8 @@ export const Modal = () => {
           <ModalSideBar />
         </Portal>
       );
-    }
-  });
+    } 
+  })
+
+  
 };

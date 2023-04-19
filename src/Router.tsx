@@ -1,5 +1,6 @@
 import { Route, Router, Routes } from "@solidjs/router";
-import type { Component } from "solid-js";
+import { Component } from "solid-js";
+import { Modal } from "./components/Modal/Modal";
 import { ModalProvider } from "./context/modalContext";
 import Layout from "./layout/Layout";
 import AboutMyself from "./pages/AboutMyself/AboutMyself";
@@ -12,6 +13,7 @@ const AppRouter: Component = () => {
   return (
     <Router>
       <ModalProvider>
+        <Modal />
         <Layout>
           <Routes>
             <Route path="/" component={Home} />
