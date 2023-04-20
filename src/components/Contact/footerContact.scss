@@ -16,3 +16,21 @@
     row-gap: 20px;
   }
 }
+
+@media (max-width: 620px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding: 20px;
+
+    &__person {
+      align-items: center;
+      text-align: center;
+    }
+    &__adress {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

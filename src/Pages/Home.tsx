@@ -53,7 +53,7 @@ const Home: Component = () => {
           </div>
         </div>
       </div>
-      <div class="presentation__sketch-container">
+      <div class="presentation__sketch-croped">
         <CropedImage
           src={sea_rocks}
           offsetY={9}

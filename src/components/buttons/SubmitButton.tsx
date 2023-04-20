@@ -1,11 +1,11 @@
 import "./buttons.scss";
 
-interface menuButtonProps {
+interface SubmitButtonProps {
     name: string; 
     onClick: () => void
 }
 
-const MenuButton = (props: menuButtonProps) => {  
+const SubmitButton = (props: SubmitButtonProps) => {  
   return (
         <button
           class="submitButton"
@@ -17,4 +17,4 @@ const MenuButton = (props: menuButtonProps) => {
   )
 }
 
-export default MenuButton;
+export default SubmitButton;

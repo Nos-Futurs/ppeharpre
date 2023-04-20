@@ -4,7 +4,7 @@
 .footer {
   height: 200px;
   display: flex;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 20px 10px 50px;
   align-items: center;
   background-color: map-get(colors.$palette, darkblue);
   justify-content: center;
@@ -16,7 +16,22 @@
     @include i.logo();
   }
   &__contact-container {
-    width: 70%;
-    margin: 0% 15% 0% 5%;
+    width: 100%;
+    margin: 0% 7% 0% 5%;
   }
 }
+
+
+@media (max-width: 720px) {
+  .footer__logo-container{
+    display: none;
+  }
+}
+
+
+@media (max-width: 620px) {
+  .footer{
+    height: 100%;
+  }
+}
+
