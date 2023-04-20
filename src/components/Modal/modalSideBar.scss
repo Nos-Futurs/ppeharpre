@@ -10,14 +10,27 @@
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
 
+  &__close {
+    padding-left: 40px;
+    padding-top: 40px;
+    grid-row: 1;
+  }
+
+  &__side-popup {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 70%;
+    background-color: map-get(colors.$palette, "background2");
+  }
+
+
   &__side-menu {
     display: flex;
-    padding: 20% 0 40% 0;
+    padding: 0% 0 40% 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
-    background-color: map-get(colors.$palette, "background2");
+    grid-row: 2;
   }
 
   @media (max-width: 400px) {
