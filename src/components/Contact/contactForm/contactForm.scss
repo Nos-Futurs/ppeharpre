@@ -3,15 +3,16 @@
 .form {
   font-family: f.$font_text;
   display: grid;
-  width: 60%;
+  width: 70%;
   grid-template-columns: 45% 45%;
   column-gap: 5%;
   row-gap: 10px;
   grid-template-rows: 8vh 10vh 30vh;
-  margin: 100px 20px 20px 20px;
+  margin: 80px 20px 20px 20px;
 
   &__input {
     width: 100%;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
   }
@@ -63,5 +64,12 @@
     font-size: 20px;
     margin-top: 10px;
     grid-row: 6;
+  }
+}
+
+@media(max-width: 500px){
+  .form {
+    width: 90%;
+    margin: 40px 0px 20px 0px;
   }
 }

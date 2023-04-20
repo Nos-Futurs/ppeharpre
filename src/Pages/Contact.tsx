@@ -11,7 +11,7 @@ import sea_rocks from "./../assets/images/sea_rocks.png";
 const Contact: Component = () => {
   return (
     <div class="contact">
-      <div class="contact__face">
+      <div class="contact__face left">
         <CropedImage
           src={cabinet}
           width={"70%"}
@@ -42,10 +42,10 @@ const Contact: Component = () => {
           willChange={true}
         />
       </div>
-      <div class="contact__grid">
+      <div class="contact__grid-1">
         <Map />
       </div>
-      <div class="contact__grid" style={{ padding: "0%" }}>
+      <div class="contact__grid-2 " style={{ padding: "0%" }}>
         <ContactForm />
       </div>
       <div class="contact__cropped-image">

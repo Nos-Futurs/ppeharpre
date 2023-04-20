@@ -25,3 +25,16 @@
     margin: 20px 0px 0px 0px;
   }
 }
+
+
+
+@media (max-width: 500px) {
+  .ethics {
+    &__title {
+      font-size: 30px;
+    }
+    &__paragraphe {
+      font-size: 25px;
+    }
+  }
+}

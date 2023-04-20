@@ -26,3 +26,14 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .my-specificities {
+    &__title {
+      font-size: 30px;
+    }
+    &__paragraphe {
+      font-size: 25px;
+    }
+  }
+}
