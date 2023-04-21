@@ -56,6 +56,9 @@
     &__information {
       grid-column: 1/4;
     }
+    &__cropped-image {
+     margin-bottom: 10%;
+    }
   }
   .left {
     display: none;

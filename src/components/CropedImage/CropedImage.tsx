@@ -10,6 +10,7 @@ interface CropedImageProps {
   height?: string;
   rotate?: number;
   willChange?: string;
+  maxWidth?: string;
 }
 
 const CropedImage = ({
@@ -21,17 +22,18 @@ const CropedImage = ({
   height = "200px",
   rotate = 0,
   willChange = "none",
+  maxWidth = "100%",
 }: CropedImageProps) => {
   const [rapportWidth, setRapportWidth] = createSignal(1);
 
   createEffect(() => {
     const windowSize = window.innerWidth;
     const originalSize = 1728;
-    if (willChange == "right"){
-      setRapportWidth(1.00006 - 0.00006 * originalSize/windowSize);
-    } else if (willChange == "left"){
+    if (willChange == "right") {
+      setRapportWidth(1.00006 - (0.00006 * originalSize) / windowSize);
+    } else if (willChange == "left") {
       setRapportWidth(1.86 - 0.0006 * windowSize);
-    } 
+    }
   });
 
   return (
@@ -40,6 +42,7 @@ const CropedImage = ({
       style={{
         width,
         height,
+        "max-width": maxWidth,
       }}
     >
       <img

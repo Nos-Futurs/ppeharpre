@@ -17,9 +17,9 @@ const Contact: Component = () => {
           width={"70%"}
           height={"100%"}
           zoom={11}
-          offsetX={1.7}
+          offsetX={2}
           offsetY={1.8}
-          willChange={"left"}
+          willChange={"right"}
         />
       </div>
 
@@ -37,9 +37,9 @@ const Contact: Component = () => {
           width={"70%"}
           height={"100%"}
           zoom={11}
-          offsetX={4.5}
+          offsetX={5.3}
           offsetY={1}
-          willChange={"left"}
+          willChange={"right"}
         />
       </div>
       <div class="contact__grid-1">
@@ -52,6 +52,7 @@ const Contact: Component = () => {
         <CropedImage
           src={lighthouse}
           width={"70%"}
+          maxWidth = {"1106px"}
           height={"100%"}
           zoom={11}
           offsetX={0}
