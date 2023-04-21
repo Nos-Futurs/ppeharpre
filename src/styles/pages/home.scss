@@ -125,5 +125,29 @@
     &__sketch-croped {
       display: none;
     }
+    &__sketch {
+      width: 90%;
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .paragraphe {
+    &__right {
+      font-size: 20px;
+    }
+    &__left {
+      font-size: 20px;
+    }
+  }
+  .presentation {
+    &__name {
+      font-size: 40px;
+    }
+  
+    &__job {
+      font-size: 40px;
+    }
   }
 }
