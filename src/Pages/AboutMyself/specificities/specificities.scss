@@ -27,6 +27,19 @@
   }
 }
 
+
+
+@media (max-width: 1100px) {
+  .my-specificities {
+    &__image {
+      &__sketch {
+        width: 85%
+      }
+    }
+  }
+}
+
+
 @media (max-width: 500px) {
   .my-specificities {
     &__title {

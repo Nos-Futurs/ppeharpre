@@ -65,6 +65,11 @@
       display: flex;
       grid-column: 1;
     }
+    &__image {
+      &__sketch {
+        width: 90%;
+      }
+    }
   }
 }
 
