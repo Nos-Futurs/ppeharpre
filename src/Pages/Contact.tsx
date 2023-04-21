@@ -19,7 +19,7 @@ const Contact: Component = () => {
           zoom={11}
           offsetX={1.7}
           offsetY={1.8}
-          willChange={true}
+          willChange={"left"}
         />
       </div>
 
@@ -39,7 +39,7 @@ const Contact: Component = () => {
           zoom={11}
           offsetX={4.5}
           offsetY={1}
-          willChange={true}
+          willChange={"left"}
         />
       </div>
       <div class="contact__grid-1">

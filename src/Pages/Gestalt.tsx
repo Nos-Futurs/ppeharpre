@@ -70,7 +70,7 @@ const Gestalt: Component = () => {
           offsetX={2.3}
           offsetY={5}
           rotate={90}
-          willChange={true}
+          willChange={"left"}
         />
       </div>
       <div class="gestalt__cropped-image">
@@ -82,7 +82,7 @@ const Gestalt: Component = () => {
           zoom={15}
           offsetX={6}
           offsetY={9.4}
-          willChange={true}
+          willChange={"left"}
         />
       </div>
 

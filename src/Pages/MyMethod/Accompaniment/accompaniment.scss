@@ -65,13 +65,15 @@
 @media (max-width: 1160px) {
   .accompaniment {
     grid-template-columns: 100%;
-    grid-row-gap: 50px;
+    grid-row-gap: 40px;
 
     &__croped-paragraphe {
       grid-column: 1;
+      padding: 0px 30px 0px 30px;
     }
     &__croped-paragraphe-1 {
       grid-row: 4;
+      padding: 0px 30px 0px 30px;
     }
 
     &__sketch-container {
@@ -96,26 +98,39 @@
 
     &__paragraphe {
       grid-column: 1;
-      padding: 0px 40px 0px 40px;
+      padding: 0px 30px 0px 30px;
     }
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 800px) {
   .accompaniment {
+    grid-row-gap: 30px;
+    &__sketch {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .accompaniment {
+    grid-row-gap: 20px;
     &__title {
       font-size: 30px;
     }
 
     &__croped-paragraphe {
-      font-size: 25px;
+      font-size: 20px;
+      padding: 0px 20px 0px 20px;
     }
     &__croped-paragraphe-1 {
-      font-size: 25px;
+      font-size: 20px;
+      padding: 0px 20px 0px 20px;
     }
 
     &__paragraphe {
-      font-size: 25px;
+      font-size: 20px;
+      padding: 0px 20px 0px 20px;
     }
   }
 }
