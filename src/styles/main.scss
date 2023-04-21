@@ -1,5 +1,6 @@
 @use "./abstracts/colors" as colors;
 @import 'modern-normalize/modern-normalize.css';
+@import "./globals/index";
 
 body {
   margin: 0;

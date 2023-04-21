@@ -1,3 +1,5 @@
+@use "./font" as f;
+
 %section-title {
     height: 20%;
     display: flex;
@@ -5,5 +7,6 @@
     align-items: center;
     text-align: center;
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    font-family: f.$font_title;
   }

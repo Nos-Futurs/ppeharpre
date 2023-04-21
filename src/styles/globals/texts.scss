@@ -1,0 +1,35 @@
+@use "../abstracts/paragraphe";
+@use "../abstracts/section-title";
+@use "../abstracts/paragraphe-title";
+
+h1 {
+  @extend %section-title;
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start;
+  padding-bottom: 20px;
+}
+
+h2 {
+  @extend %paragraphe-title;
+}
+
+p {
+  @extend %paragraphe;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 20px;
+  }
+}

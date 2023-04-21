@@ -18,7 +18,7 @@ const Carreer: Component = () => {
         l'EPG. Je suis diplômé gestalt praticien. Je poursuis mon parcours
         d'apprentissage.
       </div>
-      <div class="carreer__items">
+      <div class="carreer__items-1">
         <div class="carreer__item1">
           <CropedImage
             src={trek}
