@@ -29,8 +29,8 @@ const Mention: Component = () => {
       </p>
       <h2>ARTICLE 2 - L'HEBERGEUR</h2>
       <p>
-        L'hébergeur du Site est la société OVH, dont le siège social est situé
-        au 2, Rue Kellermann 59100 Roubaix.
+        L'hébergeur du Site est la société Netlify, dont le siège social est situé
+        au 44 Montgomery Street, Suite 300, San Francisco, California 94104.
       </p>
       <h2>ARTICLE 3 - ACCES AU SITE</h2>
       <p>
