@@ -1,0 +1,8 @@
+@use "./font" as f;
+
+%paragraphe-title {
+  font-size: 40px;
+  margin-top: 40px;
+  font-family: f.$font_title;
+  font-weight: 400;
+}

@@ -9,7 +9,8 @@ interface CropedImageProps {
   width?: string;
   height?: string;
   rotate?: number;
-  willChange?: boolean;
+  willChange?: string;
+  maxWidth?: string;
 }
 
 const CropedImage = ({
@@ -20,15 +21,19 @@ const CropedImage = ({
   width = "200px",
   height = "200px",
   rotate = 0,
-  willChange = false,
+  willChange = "none",
+  maxWidth = "100%",
 }: CropedImageProps) => {
   const [rapportWidth, setRapportWidth] = createSignal(1);
 
   createEffect(() => {
     const windowSize = window.innerWidth;
     const originalSize = 1728;
-    //construct affine function
-    setRapportWidth(1.86 - 0.0006 * windowSize);
+    if (willChange == "right") {
+      setRapportWidth(1.00006 - (0.00006 * originalSize) / windowSize);
+    } else if (willChange == "left") {
+      setRapportWidth(1.86 - 0.0006 * windowSize);
+    }
   });
 
   return (
@@ -37,6 +42,7 @@ const CropedImage = ({
       style={{
         width,
         height,
+        "max-width": maxWidth,
       }}
     >
       <img

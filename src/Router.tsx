@@ -7,6 +7,7 @@ import AboutMyself from "./pages/AboutMyself/AboutMyself";
 import Contact from "./pages/Contact";
 import Gestalt from "./pages/Gestalt";
 import Home from "./pages/Home";
+import Mention from "./pages/Mention";
 import MyMethod from "./pages/MyMethod/MyMethod";
 
 const AppRouter: Component = () => {
@@ -21,6 +22,7 @@ const AppRouter: Component = () => {
             <Route path="/method" component={MyMethod} />
             <Route path="/gestalt" component={Gestalt} />
             <Route path="/contact" component={Contact} />
+            <Route path="/mentions-legales" component={Mention} />
           </Routes>
         </Layout>
       </ModalProvider>

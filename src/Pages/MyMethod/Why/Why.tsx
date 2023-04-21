@@ -43,7 +43,7 @@ const Why: Component = () => {
         </ul>
       </div>
       <div class="why__sketch-container">
-        <CropedImage src={trek} width={"60%"} height={"80%"} zoom={14.7} offsetX={10} offsetY={10}/>
+        <CropedImage src={trek} width={"430px"} height={"80%"} zoom={14.7} offsetX={9.9} offsetY={10.5} willChange={"right"}/>
       </div>
       <div class="why__sketch-container-full">
         <CropedImage src={trek} width={"60%"} height={"50%"} zoom={11} offsetX={0.7} offsetY={12.7}/>

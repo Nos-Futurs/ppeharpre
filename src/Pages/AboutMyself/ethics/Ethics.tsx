@@ -19,12 +19,23 @@ const Ethics: Component = () => {
       <div class="ethics__image">
         <CropedImage
           src={cabinet}
-          width={"60%"}
-          height={"80%"}
+          width={"800px"}
+          height={"160px"}
           zoom={11}
           offsetX={1.6}
           offsetY={2.5}
-          willChange={true}
+          willChange={"left"}
+        />
+      </div>
+      <div class="ethics__image-responsive">
+        <CropedImage
+          src={cabinet}
+          width={"280px"}
+          height={"160px"}
+          zoom={11}
+          offsetX={4.5}
+          offsetY={2.5}
+          willChange={"left"}
         />
       </div>
     </div>

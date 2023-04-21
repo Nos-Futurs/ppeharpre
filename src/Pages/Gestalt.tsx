@@ -60,16 +60,29 @@ const Gestalt: Component = () => {
           </li>{" "}
         </ul>
       </div>
-      <div class="gestalt__cropped-image">
+      <div class="gestalt__reverse-cropped-image">
         {" "}
         <CropedImage
           src={lighthouse}
           width={"70%"}
-          height={"100%"}
+          height={"650px"}
           zoom={15}
-          offsetX={2.3}
+          offsetX={2.4}
           offsetY={5}
           rotate={90}
+          willChange={"right"}
+        />
+      </div>
+      <div class="gestalt__cropped-image">
+        {" "}
+        <CropedImage
+          src={lighthouse}
+          width={"650px"}
+          height={"100px"}
+          zoom={15}
+          offsetX={6}
+          offsetY={9.4}
+          willChange={"left"}
         />
       </div>
 

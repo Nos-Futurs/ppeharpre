@@ -11,15 +11,15 @@ import sea_rocks from "./../assets/images/sea_rocks.png";
 const Contact: Component = () => {
   return (
     <div class="contact">
-      <div class="contact__face">
+      <div class="contact__face left">
         <CropedImage
           src={cabinet}
           width={"70%"}
           height={"100%"}
           zoom={11}
-          offsetX={1.7}
+          offsetX={2}
           offsetY={1.8}
-          willChange={true}
+          willChange={"right"}
         />
       </div>
 
@@ -37,21 +37,22 @@ const Contact: Component = () => {
           width={"70%"}
           height={"100%"}
           zoom={11}
-          offsetX={4.5}
+          offsetX={5.3}
           offsetY={1}
-          willChange={true}
+          willChange={"right"}
         />
       </div>
-      <div class="contact__grid">
+      <div class="contact__grid-1">
         <Map />
       </div>
-      <div class="contact__grid" style={{ padding: "0%" }}>
+      <div class="contact__grid-2 " style={{ padding: "0%" }}>
         <ContactForm />
       </div>
       <div class="contact__cropped-image">
         <CropedImage
           src={lighthouse}
           width={"70%"}
+          maxWidth = {"1106px"}
           height={"100%"}
           zoom={11}
           offsetX={0}

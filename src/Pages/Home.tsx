@@ -18,17 +18,17 @@ const Home: Component = () => {
       <div class="presentation__sketch-container">
         <img src={sea_rocks} class="presentation__sketch" />
       </div>
-      <div class="presentation__description">
+      <h2 class="presentation__description">
         Accompagnement en mouvement sur le chemin de la vie
-      </div>
+      </h2>
       <div class="paragraphe__container">
         <div class="paragraphe">
-          <div class="paragraphe__right">
+          <p class="right-paragraphe">
             Nous traversons tous des moments difficiles, de questionnements, de
             remise en cause et parfois de souffrance. Je crois en la capacité de
             chacun et chacune à être serein.e, heureux.se et à faire des choix
             qui lui correspondent.
-          </div>
+          </p>
           <div class="paragraphe__sketch-container">
             <CropedImage
               src={sea_rocks}
@@ -37,12 +37,12 @@ const Home: Component = () => {
               zoom={16}
             />
           </div>
-          <div class="paragraphe__left">
+          <p class="left-paragraphe">
             Je vous accompagne dans un climat de confiance et de sécurité sur
             votre chemin de vie, dans une mise en mouvement. <br />
             Je suis à votre disposition pour vous rencontrer et vous soutenir
             sur ce chemin.
-          </div>
+          </p>
           <div class="paragraphe__sketch-container">
             <CropedImage
               src={sea_rocks}

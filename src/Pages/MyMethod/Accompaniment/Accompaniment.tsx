@@ -16,7 +16,12 @@ const Accompaniment: Component = () => {
         mouvement rythmé lent, régulier qui nécessite de respirer et de prendre
         soin de son corps tout en étant à l’écoute de l’environnement. <br />
         Je crois fondamentalement en l'humain, en sa capacité de créativité, en
-        son énergie vitale. <br /> <br /> <br />
+        son énergie vitale.{" "}
+      </div>
+      <div class="accompaniment__sketch-container">
+        <img src={trek} class="accompaniment__sketch" />
+      </div>
+      <div class="accompaniment__croped-paragraphe-1">
         Grâce aux gestalt thérapeutes qui m'ont accompagné.es ces dernière
         années, j'ai connu des transformations épanouissantes. Je me suis alors
         engagé à mon tour dans l’accompagnement en suivant la formation très
@@ -24,9 +29,6 @@ const Accompaniment: Component = () => {
         dans sa globalité et dans son environnement sans jugement (lien). Elle
         repose sur le lien entre l’accompagné et le thérapeute et s’ancre dans
         le présent pour questionner l’ensemble du vécu.
-      </div>
-      <div class="accompaniment__sketch-container">
-        <img src={trek} class="accompaniment__sketch" />
       </div>
       <div class="accompaniment__paragraphe">
         Je m’attache à accompagner avec une écoute active et je prends en
@@ -65,7 +67,7 @@ const Accompaniment: Component = () => {
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"450px"}
+            width={"60%"}
             height={"120px"}
           />
         </div>
