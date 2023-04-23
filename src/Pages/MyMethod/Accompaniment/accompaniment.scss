@@ -1,5 +1,4 @@
 @use "../../../styles/abstracts/section-title";
-@use "../../../styles/abstracts/paragraphe";
 @use "../../../styles/abstracts/image" as i;
 
 .accompaniment {
@@ -8,18 +7,19 @@
   grid-row-gap: 50px;
 
   &__croped-paragraphe {
-    @extend %paragraphe;
     padding: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__croped-paragraphe-1 {
-    @extend %paragraphe;
+
     padding: 5px 40px 10px 40px;
     grid-column: 1;
     grid-row: 3;
   }
 
   &__paragraphe {
-    @extend %paragraphe;
     grid-column: 1/3;
   }
 

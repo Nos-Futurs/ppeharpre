@@ -1,6 +1,7 @@
 @use "../abstracts/paragraphe";
 @use "../abstracts/section-title";
 @use "../abstracts/paragraphe-title";
+@use "../abstracts/colors" as colors;
 
 h1 {
   @extend %section-title;
@@ -10,7 +11,7 @@ hgroup {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding-bottom: 20px;
 }
 
@@ -32,4 +33,9 @@ p {
   p {
     font-size: 20px;
   }
+}
+
+b {
+  font-weight: normal;
+  color: map-get(colors.$palette, mediumblue);
 }

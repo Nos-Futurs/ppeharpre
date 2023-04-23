@@ -12,22 +12,25 @@ const Home: Component = () => {
           Philippe <br /> Péharpré
         </div>
         <div class="presentation__job">
-          Praticien <br /> en Gestalt Thérapie
+          Praticien <br /> en Gestalt Thérapie <br /> Saint Malo
         </div>
       </div>
       <div class="presentation__sketch-container">
         <img src={sea_rocks} class="presentation__sketch" />
       </div>
       <h2 class="presentation__description">
-        Accompagnement en mouvement sur le chemin de la vie
+        Accompagnement sur votre chemin de la vie
       </h2>
       <div class="paragraphe__container">
         <div class="paragraphe">
           <p class="right-paragraphe">
-            Nous traversons tous des moments difficiles, de questionnements, de
-            remise en cause et parfois de souffrance. Je crois en la capacité de
-            chacun et chacune à être serein.e, heureux.se et à faire des choix
-            qui lui correspondent.
+            <b>
+              Je crois en la capacité de chacun.e à vivre sereinement, en
+              harmonie et à faire des choix qui lui correspondent. 
+            </b>
+            Nous traversons tous.tes des moments difficiles, de questionnements,
+            de remise en cause voire de souffrance. Etre accompagné.e dans ces
+            moments-là peut être d'une grande aide.
           </p>
           <div class="paragraphe__sketch-container">
             <CropedImage
@@ -38,10 +41,8 @@ const Home: Component = () => {
             />
           </div>
           <p class="left-paragraphe">
-            Je vous accompagne dans un climat de confiance et de sécurité sur
-            votre chemin de vie, dans une mise en mouvement. <br />
-            Je suis à votre disposition pour vous rencontrer et vous soutenir
-            sur ce chemin.
+            Je suis à votre disposition pour vous rencontrer, vous soutenir sur
+            ce chemin et cela dans un climat de pleine confiance.
           </p>
           <div class="paragraphe__sketch-container">
             <CropedImage
