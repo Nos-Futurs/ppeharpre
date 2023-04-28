@@ -1,6 +1,5 @@
-@use "../abstracts/section-title";
-@use "../abstracts/paragraphe";
-@use "../abstracts/image" as i;
+@use "@styles/abstracts/text";
+@use "@styles/abstracts/image" as i;
 
 .gestalt {
   display: grid;
@@ -9,17 +8,17 @@
   row-gap: 30px;
 
   &__title {
-    @extend %section-title;
+    @extend %text-section-title;
     grid-column: 1/4;
     margin-bottom: 20px;
   }
 
   &__paragraphe {
-    @extend %paragraphe;
+    @extend %text-paragraphe;
     grid-column: 1/4;
   }
   &__cropped-paragraphe {
-    @extend %paragraphe;
+    @extend %text-paragraphe;
     padding: 10px;
   }
 

@@ -1,11 +1,11 @@
-@use "../../styles/abstracts/colors" as colors;
+@use "@styles/abstracts/colours";
 @use "../../styles/abstracts/image" as i;
 
 .header {
   width: 100%;
   display: flex;
   position: sticky;
-  background-color: map-get(colors.$palette, darkblue);
+  background-color: colours.$darkblue;
   right: 0;
   top: 0;
   z-index: 1;

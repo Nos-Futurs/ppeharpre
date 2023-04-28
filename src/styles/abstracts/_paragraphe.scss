@@ -1,8 +1,0 @@
-@use "./font" as f;
-
-%paragraphe {
-  width: 100%;
-  font-size: 28px;
-  padding: 10px 5px 50px 5px;
-  font-family: f.$font_text;
-}

@@ -1,5 +1,5 @@
-@use "../../../styles/abstracts/section-title";
-@use "../../../styles/abstracts/image" as i;
+@use "@styles/abstracts/text";
+@use "@styles/abstracts/image" as i;
 
 .accompaniment {
   display: grid;
@@ -7,24 +7,36 @@
   grid-row-gap: 50px;
 
   &__croped-paragraphe {
+<<<<<<< HEAD
+=======
+    @extend %text-paragraphe;
+>>>>>>> 1b3654d (fix: scss structure)
     padding: 0px 40px 0px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   &__croped-paragraphe-1 {
+<<<<<<< HEAD
 
+=======
+    @extend %text-paragraphe;
+>>>>>>> 1b3654d (fix: scss structure)
     padding: 5px 40px 10px 40px;
     grid-column: 1;
     grid-row: 3;
   }
 
   &__paragraphe {
+<<<<<<< HEAD
+=======
+    @extend %text-paragraphe;
+>>>>>>> 1b3654d (fix: scss structure)
     grid-column: 1/3;
   }
 
   &__title {
-    @extend %section-title;
+    @extend %text-section-title;
     grid-column: 1/3;
     margin-top: 40px;
     margin-bottom: 50px;

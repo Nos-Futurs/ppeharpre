@@ -1,6 +1,6 @@
-@use "../abstracts/paragraphe";
-@use "../abstracts/image" as i;
-@use "../abstracts/font" as f;
+@use "@styles/abstracts/text";
+@use "@styles/abstracts/image" as i;
+@use "@styles/abstracts/font" as f;
 
 .presentation {
   display: grid;

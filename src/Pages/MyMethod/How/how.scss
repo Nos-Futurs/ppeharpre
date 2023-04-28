@@ -1,6 +1,5 @@
-@use "../../../styles/abstracts/section-title";
-@use "../../../styles/abstracts/paragraphe";
-@use "../../../styles/abstracts/image" as i;
+@use "@styles/abstracts/text";
+@use "@styles/abstracts/image" as i;
 
 .how {
   display: flex;
@@ -9,11 +8,11 @@
   margin-bottom: 10%;
 
   &__paragraphe {
-    @extend %paragraphe;
+    @extend %text-paragraphe;
   }
 
   &__title {
-    @extend %section-title;
+    @extend %text-section-title;
     margin-top: 0px;
     margin-bottom: 60px;
   }

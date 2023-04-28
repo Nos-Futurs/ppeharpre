@@ -1,26 +1,19 @@
-@use "../abstracts/paragraphe";
-@use "../abstracts/section-title";
-@use "../abstracts/paragraphe-title";
-@use "../abstracts/colors" as colors;
+@use "@styles/abstracts/text";
 
 h1 {
-  @extend %section-title;
+  @extend %text-section-title;
 }
 
 hgroup {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: flex-start;
-  padding-bottom: 20px;
+  @extend %text-title-group;
 }
 
 h2 {
-  @extend %paragraphe-title;
+  @extend %text-title;
 }
 
 p {
-  @extend %paragraphe;
+  @extend %text-paragraphe;
 }
 
 @media (max-width: 500px) {

@@ -1,6 +1,5 @@
-@use "../../../styles/abstracts/section-title";
-@use "../../../styles/abstracts/paragraphe";
-@use "../../../styles/abstracts/image" as i;
+@use "@styles/abstracts/text";
+@use "@styles/abstracts/image" as i;
 
 .my-specificities {
   display: grid;
@@ -8,11 +7,11 @@
   row-gap: 50px;
 
   &__title {
-    @extend %section-title;
+    @extend %text-section-title;
   }
 
   &__paragraphe {
-    @extend %paragraphe;
+    @extend %text-paragraphe;
     display: flex;
     flex-direction: column;
     padding: 0px 5px 0px 5px;

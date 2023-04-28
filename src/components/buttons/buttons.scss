@@ -1,7 +1,7 @@
-@use "../../styles/abstracts/colors" as colors;
+@use "@styles/abstracts/colours";
 
 .submitButton {
-  background-color: map-get(colors.$palette, darkblue);
+  background-color: colours.$darkblue;
   font-size: 17px;
   font-weight: bold;
   color: white;
