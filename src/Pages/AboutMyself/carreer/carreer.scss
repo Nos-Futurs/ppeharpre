@@ -16,7 +16,6 @@
   }
 
   &__paragraphe {
-    @extend %paragraphe;
     display: flex;
     flex-direction: column;
     padding: 0px 5px 0px 5px;

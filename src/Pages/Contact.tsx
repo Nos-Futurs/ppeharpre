@@ -24,12 +24,12 @@ const Contact: Component = () => {
       </div>
 
       <div class="contact__information">
-        <div>Philippe Péharpre</div>
-        <a href="mailto:ph.peharpre@gmail.com">ph.peharpre@gmail.com</a>
-        <div>+33 6 70 80 35 16 </div>
+        <div>Philippe Péharpré</div>
+        <a href="mailto:ph.peharpre@gmail.com">contact.peharpre@gmail.com</a>
+        <div>06 07 79 62 12 </div>
         <br />
-        <div>8 Boulevard Villebois Mareuil</div>
-        <div>35 400, Saint Malo</div>
+        <div>8 Bld Villebois Mareuil</div>
+        <div>35 400 Saint Malo</div>
       </div>
       <div class="contact__face">
         <CropedImage

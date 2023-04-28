@@ -6,15 +6,15 @@ function FooterContact() {
   return (
     <div class="contact-info">
       <div class="contact-info__person">
-        <div>Philippe Péharpre</div>
+        <div>Philippe Péharpré</div>
         <a href="mailto:ph.peharpre@gmail.com" style={{ color: "white" }}>
-          ph.peharpre@gmail.com
+          contact.peharpre@gmail.com
         </a>
-        <div>+33 6 70 80 35 16</div>
+        <div>06 07 79 62 12</div>
       </div>
       <div class="contact-info__adress">
-        <div>8 Boulevard Villebois Mareuil</div>
-        <div>35 400, Saint Malo</div>
+        <div>8 Bld Villebois Mareuil</div>
+        <div>35 400 Saint Malo</div>
         <a onclick={() => navigate("/mentions-legales")}>Mentions légales</a>
       </div>
     </div>

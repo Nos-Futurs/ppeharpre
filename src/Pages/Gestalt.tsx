@@ -8,55 +8,41 @@ import "../styles/pages/gestalt.scss";
 const Gestalt: Component = () => {
   return (
     <div class="gestalt">
-      <div class="gestalt__title">La Gestalt Thérapie</div>
+      <div class="gestalt__title">LA GESTALT THERAPIE</div>
       <div class="gestalt__paragraphe">
         La gestalt est une branche de la psychologie qui est parfois qualifiée
-        de thérapie du contact. <br />
-        <br />
-        La gestalt permet
-        <ul>
-          <li>
-            de prendre conscience de ses émotions, de les accueillir et de les
-            vivre en lien avec les autres
-          </li>
-          <li>
-            de vivre plus en harmonie avec soi et avec les autres, en étant
-            conscient de sa façon d'être en contact.
-          </li>
-        </ul>
+        de thérapie du contact. Conceptualisée dans les années 50 à plusieurs
+        mains sous la houlette de Fritz et Laura Perls, elle est toujours en
+        évolution ; c'est{" "}
+        <b>
+          une des psychothérapies humanistes existentielles les plus
+          représentées.
+        </b>
       </div>
       <div class="gestalt__image" style={{ "grid-column": "1/4" }}>
         <img src={lighthouse} class="gestalt__image__sketch" />
       </div>
       <div class="gestalt__cropped-paragraphe ">
-        Conceptualisée dans les années 50 à plusieurs mains sous la houlette de
-        Fritz et Laura Perls et toujours en mouvement, la gestalt est une des
-        psychothérapies humanistes existentielles la plus étendue.
+        Son apport pour votre accompagnement est de :
         <ul>
           <li>
-            elle s'intéresse à la relation, au vécu, au lien, à comment la
-            personne accompagnée interagit avec les autres.
+            utiliser comme éléments de travail ce qui se passe dans{" "}
+            <b>votre quotidien,</b>
           </li>
           <li>
-            le travail se fait dans l'ici et maintenant, avec de
-            l'expérimentation.
+            vous aider à être plus <b>à l'écoute de vos émotions</b>, à les
+            accueillir et à les vivre,
           </li>
           <li>
-            la gestalt favorise le dialogue constant entre émotions et
-            sensations corporelles.
+            privilégier le mieux vivre avec vous même et les autres dans le
+            moment présent,
           </li>
           <li>
-            adans les relations que la personne accompagnée vit à l'extérieur ou
-            au sein du cabinet, des formes répétitives ou figées peuvent se
-            rejouer et leur identification permet de les mettre en mouvement.
+            favoriser l'<b>expérimentation</b> de situations concrètes,
           </li>{" "}
           <li>
-            c'est une approche humaniste qui croie en l'humain et dans sa
-            capacité à être en lien avec lui et avec les autres.
-          </li>{" "}
-          <li>
-            l'idée est de développer la prise de conscience, l'autonomie, la
-            responsabilité et la créativité.
+            développer votre <b>prise de conscience</b> de ce qui se joue et
+            votre <b>liberté de choix</b>.
           </li>{" "}
         </ul>
       </div>
@@ -87,25 +73,20 @@ const Gestalt: Component = () => {
       </div>
 
       <div class="gestalt__cropped-paragraphe ">
-        La puissance de l'approche gestaltiste est de :
-        <ul>
-          <li>
-            utiliser ce qui se passe ici et maintenant, dans le cadre sécurisé
-            du cabinet,,
-          </li>
-          <li>
-            prendre le.a client.e comme iel est, sans le.a catégoriser mais en
-            l'accompagnant dans le respect de sa personne
-          </li>
-          <li>
-            chercher le mieux vivre avec soi et les autres dans le moment
-            présent
-          </li>
-          <li>
-            appréhender le.a client.e dans sa globalité avec ses pensées, ses
-            sensations et ses émotions.
-          </li>{" "}
-        </ul>
+        <p>
+          « La Gestalt soutient tout particulièrement{" "}
+          <b>l’autonomie, la responsabilité et la créativité.</b> Elle met
+          l’accent sur la conscience du processus en cours, dans l’ici et
+          maintenant de chaque situation, et réhabilite le sensoriel et
+          l’émotionnel, trop souvent censurés par notre culture.... Elle
+          favorise un contact authentique avec les autres, un «ajustement
+          créateur» à l’environnement.{" "}
+          <b>
+            Plutôt que d’expliquer les origines de nos difficultés, la Gestalt
+            propose d’expérimenter des pistes de solution. »
+          </b>{" "}
+          (Définition de l'EPG)
+        </p>
       </div>
     </div>
   );
