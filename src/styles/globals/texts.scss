@@ -1,4 +1,5 @@
 @use "@styles/abstracts/text";
+@use "@styles/abstracts/colours";
 
 h1 {
   @extend %text-section-title;
@@ -30,5 +31,5 @@ p {
 
 b {
   font-weight: normal;
-  color: map-get(colors.$palette, mediumblue);
+  color: colours.$mediumblue;
 }
