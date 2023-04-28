@@ -6,7 +6,7 @@ import "./why.scss";
 
 const Why: Component = () => {
   return (
-    <div class="why" id="why">
+    <section class="why" id="why">
       <h1 class="why__title">Pourquoi se faire accompagner ?</h1>
       <p class="why__paragraphe">
         Faire cette démarche, c'est vous
@@ -57,13 +57,13 @@ const Why: Component = () => {
         <CropedImage
           src={trek}
           width={"60%"}
-          height={"50%"}
+          height={"70%"}
           zoom={11}
           offsetX={0.7}
           offsetY={12.7}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -2,15 +2,14 @@ import { Component } from "solid-js";
 
 import trek from "../../../assets/images/trek.png";
 
-import CropedImage from "../../../components/CropedImage/CropedImage";
 import "./accompaniment.scss";
 
 const Accompaniment: Component = () => {
   return (
-    <div class="accompaniment" id="accompaniment">
+    <section class="accompaniment" id="accompaniment">
       <h1 class="accompaniment__title">Votre accompagnement</h1>
-      <div class="accompaniment__croped-paragraphe">
-        <p>
+      <p class="paragraphe__first">
+        <span>
           Je vous accompagne sur votre parcours de vie et{" "}
           <b>
             je vous soutiens dans la recherche de l'impulsion nécessaire à la
@@ -22,12 +21,13 @@ const Accompaniment: Component = () => {
           <br />
           Je crois fondamentalement en l'humain, en sa capacité de créativité,
           en son énergie vitale.{" "}
-        </p>
-      </div>
+        </span>
+      </p>
       <div class="accompaniment__sketch-container">
         <img src={trek} class="accompaniment__sketch" />
       </div>
-      <p class="accompaniment__croped-paragraphe-1">
+      <p class="paragraphe__second">
+        {" "}
         Ainsi{" "}
         <b>
           au regard de vos expériences au quotidien, vous pourrez questionner
@@ -35,7 +35,7 @@ const Accompaniment: Component = () => {
           d'agir ou d'appréhender les situations.
         </b>
       </p>
-      <p class="accompaniment__paragraphe">
+      <p class="paragraphe__third">
         Je m'attache à vous accompagner avec une écoute active et{" "}
         <b>
           je prends en considération le langage des mots, du corps et des
@@ -45,45 +45,13 @@ const Accompaniment: Component = () => {
         explorer vos questionnements, vos incertitudes et d'ouvrir le champ des
         possibles. Mon approche est empreinte de non jugement et de respect.
       </p>
-      <div class="accompaniment__items">
-        <div class="accompaniment__item1">
-          <CropedImage
-            src={trek}
-            offsetY={2}
-            offsetX={2}
-            zoom={8}
-            width={"150px"}
-            height={"130px"}
-          />
-        </div>
-        <div class="accompaniment__item1">
-          <CropedImage
-            src={trek}
-            offsetY={2}
-            offsetX={2}
-            zoom={8}
-            width={"150px"}
-            height={"130px"}
-          />
-        </div>
-        <div class="accompaniment__item2">
-          <CropedImage
-            src={trek}
-            offsetY={2}
-            offsetX={2}
-            zoom={8}
-            width={"60%"}
-            height={"120px"}
-          />
-        </div>
-      </div>
-      <p class="accompaniment__croped-paragraphe">
+      <p class="paragraphe__fourth">
         Chacun peut traverser, à certains moments de sa vie, des difficultés, et
         ce n'est en aucun cas inéluctable. J'apporte ma sensibilité et mon
         humanité sur ce chemin parfois difficile mais tellement riche de
         possibles.
       </p>
-    </div>
+    </section>
   );
 };
 
