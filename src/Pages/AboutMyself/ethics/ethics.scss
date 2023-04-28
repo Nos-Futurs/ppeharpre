@@ -1,43 +1,34 @@
 @use "@styles/abstracts/text";
+@use "@styles/abstracts/spacings";
 @use "@styles/abstracts/image" as i;
 
 .ethics {
   display: grid;
-  margin-top: 15%;
-  margin-bottom: 5%;
-  row-gap: 50px;
 
   &__paragraphe {
-    @extend %text-paragraphe;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 5px 0px 5px;
+    line-height: 1.8;
   }
 
   &__image {
     @include i.sketch-container($width: 100%);
     height: 200px;
-    margin: 20px 0px 0px 0px;
+    margin-top: spacings.$m;
   }
-  &__image-responsive {
+  &__image-responsive-medium {
     @include i.sketch-container($width: 100%);
     display: none;
-    height: 200px;
-    margin: 20px 0px 0px 0px;
+    margin-top: spacings.$m;
   }
-}
-
-@media (max-width: 1000px) {
-  .ethics {
-    &__title {
-      margin-top: 20%;
-    }
+  &__image-responsive-small {
+    @include i.sketch-container($width: 100%);
+    display: none;
+    margin-top: spacings.$m;
   }
 }
 
 @media (max-width: 900px) {
   .ethics {
-    &__image-responsive {
+    &__image-responsive-medium {
       display: flex;
     }
     &__image {
@@ -46,13 +37,13 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .ethics {
-    &__title {
-      font-size: 30px;
+    &__image-responsive-medium {
+      display: none;
     }
-    &__paragraphe {
-      font-size: 25px;
+    &__image-responsive-small {
+      display: flex;
     }
   }
 }

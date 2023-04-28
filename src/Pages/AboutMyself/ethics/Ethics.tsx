@@ -6,18 +6,16 @@ import "./ethics.scss";
 
 const Ethics: Component = () => {
   return (
-    <div class="ethics" id="ethics">
+    <section class="ethics" id="ethics">
       <h1>Ma déontologie et éthique</h1>
-      <div class="ethics__paragraphe">
-        <p>
-          <b>La confidentialité et le non jugement </b>font partie de ma façon
-          d'être et de mon accompagnement. <br /> <br />{" "}
-          <b>Je suis supervisé en groupe et individuellement.</b> Je me forme de
-          façon continue afin d'enrichir mon approche. <br /> <br /> Mes séances
-          ne sont pas remboursées par la sécurité sociale.
-          <br /> <br /> Je suis signataire du code de déontologie de la FF2P.
-        </p>
-      </div>
+      <p class="ethics__paragraphe">
+        <b>La confidentialité et le non jugement </b>font partie de ma façon
+        d'être et de mon accompagnement. <br /> {" "}
+        <b>Je suis supervisé en groupe et individuellement.</b> Je me forme de
+        façon continue afin d'enrichir mon approche. <br /> Mes séances
+        ne sont pas remboursées par la sécurité sociale.
+        <br />Je suis signataire du code de déontologie de la FF2P.
+      </p>
       <div class="ethics__image">
         <CropedImage
           src={cabinet}
@@ -29,7 +27,18 @@ const Ethics: Component = () => {
           willChange={"left"}
         />
       </div>
-      <div class="ethics__image-responsive">
+      <div class="ethics__image-responsive-medium">
+        <CropedImage
+          src={cabinet}
+          width={"490px"}
+          height={"140px"}
+          zoom={8}
+          offsetX={1}
+          offsetY={1.8}
+          willChange={"left"}
+        />
+      </div>
+      <div class="ethics__image-responsive-small">
         <CropedImage
           src={cabinet}
           width={"290px"}
@@ -40,7 +49,7 @@ const Ethics: Component = () => {
           willChange={"left"}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

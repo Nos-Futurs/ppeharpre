@@ -23,7 +23,7 @@
 
 %text-paragraphe {
   font-size: font-size.$l;
-  padding: 10px 5px 50px 5px;
+  padding: spacings.$m;
   font-family: font.$font_text;
 }
 
@@ -35,7 +35,6 @@
   line-height: 1.4;
   font-weight: 400;
 }
-
 
 @media (max-width: 1150px) {
   %text-section-title {

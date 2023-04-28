@@ -16,12 +16,15 @@ const MySpecificities: Component = () => {
             Les randonnées itinérantes et les baignades en eaux froides
             m'offrent <b>un ancrage proche de la nature.</b>
           </li>
-          <li>Je pratique quotidiennement <b>la méditation.</b></li>
           <li>
-          Je suis <b>sensible aux enjeux de discrimination, de classe et de genre.</b>
+            Je pratique quotidiennement <b>la méditation.</b>
           </li>
           <li>
-          J'ai une « <b>écoute attentionnée</b> ».
+            Je suis{" "}
+            <b>sensible aux enjeux de discrimination, de classe et de genre.</b>
+          </li>
+          <li>
+            J'ai une « <b>écoute attentionnée</b> ».
           </li>
         </ul>
       </div>
