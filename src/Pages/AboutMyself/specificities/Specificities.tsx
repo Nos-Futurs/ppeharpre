@@ -6,7 +6,7 @@ import "./specificities.scss";
 
 const MySpecificities: Component = () => {
   return (
-    <div class="my-specificities" id="my_specificities">
+    <section class="my-specificities" id="my_specificities">
       <h1>Mes spécificités </h1>
       <div class="my-specificities__paragraphe">
         Je me mets à votre service avec mes spécificités et surtout en
@@ -28,7 +28,7 @@ const MySpecificities: Component = () => {
       <div class="my-specificities__image">
         <img src={cabinet} class="my-specificities__image__sketch" />
       </div>
-    </div>
+    </section>
   );
 };
 

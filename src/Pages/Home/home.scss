@@ -7,27 +7,6 @@
   grid-template-columns: 50% 50%;
   margin-bottom: 3%;
 
-  &__name {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 55px;
-    font-family: f.$font_title;
-    line-height: 1.4;
-  }
-
-  &__job {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: f.$font_title;
-    font-size: 55px;
-  }
-
   &__sketch-container {
     @include i.sketch-container;
     margin-bottom: 70px;
@@ -44,14 +23,12 @@
 }
 .right-paragraphe {
   grid-column: 1/2;
-  font-size: 30px;
   padding: 0px;
 }
 
 .left-paragraphe {
   grid-column: 2/3;
   grid-row: 2;
-  font-size: 30px;
   padding: 0px;
 }
 
@@ -79,13 +56,6 @@
   .presentation {
     grid-template-columns: 100%;
     margin-top: 20px;
-    row-gap: 10%;
-    &__name {
-      font-size: 40px;
-    }
-    &__job {
-      font-size: 40px;
-    }
     &__sketch-container {
       @include i.sketch-container;
       margin: 70px 0px;
@@ -114,25 +84,6 @@
     }
     &__sketch {
       width: 90%;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .right-paragraphe {
-    font-size: 20px;
-  }
-  .left-paragraphe {
-    font-size: 20px;
-  }
-
-  .presentation {
-    &__name {
-      font-size: 40px;
-    }
-
-    &__job {
-      font-size: 40px;
     }
   }
 }

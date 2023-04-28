@@ -7,7 +7,7 @@ import "./carreer.scss";
 
 const Carreer: Component = () => {
   return (
-    <div class="carreer" id="carreer">
+    <section class="carreer" id="carreer">
       <h1 class="carreer__title">Parcours professionnel et formation</h1>
       <div class="carreer__paragraphe">
         <p>
@@ -129,7 +129,7 @@ const Carreer: Component = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

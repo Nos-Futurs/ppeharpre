@@ -3,8 +3,7 @@
 
 .my-specificities {
   display: grid;
-  margin-top: 40px;
-  row-gap: 50px;
+  margin-top: 0;
 
   &__paragraphe {
     @extend %text-paragraphe;

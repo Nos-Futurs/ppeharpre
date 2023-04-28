@@ -1,0 +1,6 @@
+@use "@styles/abstracts/spacings";
+
+section {
+  margin-top: spacings.$xl;
+  margin-bottom: spacings.$m;
+}

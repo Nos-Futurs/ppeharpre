@@ -1,30 +1,28 @@
 @use "@styles/abstracts/text";
-@use "@styles/abstracts/image" as i;
+@use "@styles/abstracts/image";
+@use "@styles/abstracts/spacings";
 
 .carreer {
   display: grid;
   grid-template-columns: 47.5% 47.5%;
-  padding-top: 10%;
-  row-gap: 100px;
+  row-gap: spacings.$xl;
   column-gap: 5%;
-  margin: 20px;
 
   &__title {
     grid-column: 1/3;
   }
 
   &__paragraphe {
-    @extend %text-paragraphe;
     display: flex;
     flex-direction: column;
     padding: 0px 5px 0px 5px;
   }
 
   &__image {
-    @include i.sketch-container;
+    @include image.sketch-container;
     margin-bottom: 10px;
     &__sketch {
-      @include i.sketch($width: 70%);
+      @include image.sketch($width: 70%);
     }
   }
 

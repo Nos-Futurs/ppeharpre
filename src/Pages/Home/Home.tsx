@@ -8,25 +8,23 @@ const Home: Component = () => {
   return (
     <section>
       <div class="presentation">
-        <div class="presentation__name">
+        <h2>
           Philippe <br /> Péharpré
-        </div>
-        <div class="presentation__job">
+        </h2>
+        <h2>
           Praticien <br /> en Gestalt Thérapie <br /> Saint Malo
-        </div>
+        </h2>
       </div>
       <div class="presentation__sketch-container">
         <img src={sea_rocks} class="presentation__sketch" />
       </div>
-      <h1>
-        Accompagnement sur votre chemin de vie
-      </h1>
+      <h1>Accompagnement sur votre chemin de vie</h1>
       <div class="paragraphe__container">
         <div class="paragraphe">
           <p class="right-paragraphe">
             <b>
               Je crois en la capacité de chacun.e à vivre sereinement, en
-              harmonie et à faire des choix qui lui correspondent. 
+              harmonie et à faire des choix qui lui correspondent.
             </b>
             Nous traversons tous.tes des moments difficiles, de questionnements,
             de remise en cause voire de souffrance. Etre accompagné.e dans ces

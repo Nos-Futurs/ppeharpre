@@ -1,27 +1,59 @@
 @use "@styles/abstracts/font";
+@use "@styles/abstracts/font-size";
+@use "@styles/abstracts/spacings";
+@use "@styles/abstracts/layouts";
 
 %text-section-title {
-  font-size: 40px;
-  margin-top: 40px;
+  @include layouts.flex(row, center, center);
+  font-size: font-size.$xxl;
+  margin: spacings.$xl 0;
   font-family: font.$font_title;
   font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   text-align: center;
 }
 
 %text-title-group {
-  display: flex;
-  flex-direction: column;
+  @include layouts.flex(column, center, center);
   text-align: center;
-  justify-content: flex-start;
   padding-bottom: 20px;
+  h1 {
+    margin: 0;
+  }
 }
 
 %text-paragraphe {
-  width: 100%;
-  font-size: 28px;
+  font-size: font-size.$l;
   padding: 10px 5px 50px 5px;
   font-family: font.$font_text;
+}
+
+%text-presentation {
+  @include layouts.flex(row, center, center);
+  text-align: center;
+  font-size: font-size.$xxxl;
+  font-family: font.$font_title;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+
+@media (max-width: 1150px) {
+  %text-section-title {
+    font-size: font-size.$xl;
+  }
+  %text-presentation {
+    font-size: font-size.$xxl;
+  }
+}
+
+@media (max-width: 500px) {
+  %text-section-title {
+    font-size: font-size.$l;
+  }
+  %text-presentation {
+    font-size: font-size.$xl;
+  }
+  %text-paragraphe {
+    font-size: font-size.$m;
+  }
 }
