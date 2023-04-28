@@ -1,10 +1,10 @@
 @use "@styles/abstracts/text";
-@use "@styles/abstracts/image" as i;
+@use "@styles/abstracts/layouts";
+@use "@styles/abstracts/image";
 
 .gestalt {
-  display: grid;
-  grid-template-columns: 45% 10% 45%;
-  margin-top: 40px;
+  @include layouts.grid(45% 10% 45%, repeat(4, auto));
+  margin-top: 0;
   row-gap: 30px;
 
   &__title {
@@ -12,12 +12,12 @@
   }
 
   &__paragraphe {
-    @extend %text-paragraphe;
     grid-column: 1/4;
   }
+
   &__cropped-paragraphe {
     @extend %text-paragraphe;
-    padding: 10px;
+    @include layouts.flex(column, $align-axis: center);
   }
 
   &__cropped-image {
@@ -31,9 +31,10 @@
   }
 
   &__image {
-    @include i.sketch-container(100%);
+    grid-column: 1/4;
+    @include image.sketch-container(100%);
     &__sketch {
-      @include i.sketch(70%);
+      @include image.sketch(70%);
     }
   }
 }
@@ -66,22 +67,6 @@
       &__sketch {
         width: 90%;
       }
-    }
-  }
-}
-
-@media (max-width: 1150px) {
-  .gestalt {
-    &__title {
-      font-size: 30px;
-    }
-
-    &__paragraphe {
-      font-size: 25px;
-    }
-
-    &__cropped-paragraphe {
-      font-size: 25px;
     }
   }
 }

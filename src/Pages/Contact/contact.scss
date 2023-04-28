@@ -1,4 +1,5 @@
 @use "@styles/abstracts/font";
+@use "@styles/abstracts/spacings";
 
 .contact {
   display: grid;
@@ -22,6 +23,7 @@
     justify-content: center;
     font-family: font.$font_text;
     margin: 5%;
+    padding-bottom: spacings.$m;
   }
   &__grid-1 {
     grid-row: 2;
@@ -57,7 +59,7 @@
       grid-column: 1/4;
     }
     &__cropped-image {
-     margin-bottom: 10%;
+      margin-bottom: 10%;
     }
   }
   .left {
@@ -94,6 +96,14 @@
       width: 100%;
       height: 500px;
       grid-column: 1;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .contact {
+    &__information {
+      font-size: 20px;
     }
   }
 }

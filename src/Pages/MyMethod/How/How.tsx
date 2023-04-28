@@ -1,7 +1,5 @@
 import { Component } from "solid-js";
 
-import "./how.scss";
-
 const How: Component = () => {
   return (
     <section id="how">

@@ -45,7 +45,7 @@ const Contact: Component = () => {
       <div class="contact__grid-1">
         <Map />
       </div>
-      <div class="contact__grid-2 " style={{ padding: "0%" }}>
+      <div class="contact__grid-2 ">
         <ContactForm />
       </div>
       <div class="contact__cropped-image">
