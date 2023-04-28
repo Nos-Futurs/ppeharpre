@@ -50,6 +50,7 @@ function NavigationHeader(props: NavigationHeaderProps) {
               onClick={() => {
                 navigate("/method");
                 setSelectedLink(pages.MY_METHOD);
+                props.setMyMethodPopup(false)
               }}
             />
             <DropDownLink
@@ -57,6 +58,7 @@ function NavigationHeader(props: NavigationHeaderProps) {
               onClick={() => {
                 navigate("/method#why");
                 setSelectedLink(pages.MY_METHOD);
+                props.setMyMethodPopup(false)
               }}
             />
             <DropDownLink
@@ -64,6 +66,7 @@ function NavigationHeader(props: NavigationHeaderProps) {
               onClick={() => {
                 navigate("/method#how");
                 setSelectedLink(pages.MY_METHOD);
+                props.setMyMethodPopup(false)
               }}
             />
           </>
@@ -84,6 +87,7 @@ function NavigationHeader(props: NavigationHeaderProps) {
               onClick={() => {
                 navigate("/about");
                 setSelectedLink(pages.ABOUT);
+                props.setAboutPopup(false)
               }}
             />
             <DropDownLink
@@ -91,6 +95,7 @@ function NavigationHeader(props: NavigationHeaderProps) {
               onClick={() => {
                 navigate("/about#carreer");
                 setSelectedLink(pages.ABOUT);
+                props.setAboutPopup(false)
               }}
             />
             <DropDownLink
@@ -98,6 +103,7 @@ function NavigationHeader(props: NavigationHeaderProps) {
               onClick={() => {
                 navigate("/about#ethics");
                 setSelectedLink(pages.ABOUT);
+                props.setAboutPopup(false)
               }}
             />
           </>

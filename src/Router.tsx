@@ -4,10 +4,10 @@ import { Modal } from "./components/Modal/Modal";
 import { ModalProvider } from "./context/modalContext";
 import Layout from "./layout/Layout";
 import AboutMyself from "./pages/AboutMyself/AboutMyself";
-import Contact from "./pages/Contact";
-import Gestalt from "./pages/Gestalt";
-import Home from "./pages/Home";
-import Mention from "./pages/Mention";
+import Contact from "./pages/Contact/Contact";
+import Gestalt from "./pages/Gestalt/Gestalt";
+import Home from "./pages/Home/Home";
+import Mention from "./pages/Mention/Mention";
 import MyMethod from "./pages/MyMethod/MyMethod";
 
 const AppRouter: Component = () => {

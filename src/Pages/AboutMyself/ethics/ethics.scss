@@ -7,10 +7,6 @@
   margin-bottom: 5%;
   row-gap: 50px;
 
-  &__title {
-    @extend %text-section-title;
-  }
-
   &__paragraphe {
     @extend %text-paragraphe;
     display: flex;

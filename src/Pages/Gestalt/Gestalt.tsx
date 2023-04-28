@@ -1,14 +1,14 @@
 import { Component } from "solid-js";
 
-import lighthouse from "./../assets/images/lighthouse.png";
+import lighthouse from "@assets/images/lighthouse.png";
 
-import CropedImage from "../components/CropedImage/CropedImage";
-import "../styles/pages/gestalt.scss";
+import CropedImage from "../../components/CropedImage/CropedImage";
+import "./gestalt.scss";
 
 const Gestalt: Component = () => {
   return (
     <div class="gestalt">
-      <div class="gestalt__title">LA GESTALT THERAPIE</div>
+      <h1 class="gestalt__title">La gestalt thérapie</h1>
       <div class="gestalt__paragraphe">
         La gestalt est une branche de la psychologie qui est parfois qualifiée
         de thérapie du contact. Conceptualisée dans les années 50 à plusieurs

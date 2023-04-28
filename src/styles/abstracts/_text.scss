@@ -1,14 +1,14 @@
 @use "@styles/abstracts/font";
 
 %text-section-title {
-  height: 20%;
+  font-size: 40px;
+  margin-top: 40px;
+  font-family: font.$font_title;
+  font-weight: 400;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   text-align: center;
-  font-size: 50px;
-  margin-bottom: 20px;
-  font-family: font.$font_title;
 }
 
 %text-title-group {
@@ -19,16 +19,9 @@
   padding-bottom: 20px;
 }
 
-%text-title {
-  font-size: 40px;
-  margin-top: 40px;
-  font-family: font.$font_title;
-  font-weight: 400;
-}
-
 %text-paragraphe {
-    width: 100%;
-    font-size: 28px;
-    padding: 10px 5px 50px 5px;
-    font-family: font.$font_text;
+  width: 100%;
+  font-size: 28px;
+  padding: 10px 5px 50px 5px;
+  font-family: font.$font_text;
 }

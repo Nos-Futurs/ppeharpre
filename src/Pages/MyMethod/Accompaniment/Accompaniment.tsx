@@ -8,7 +8,7 @@ import "./accompaniment.scss";
 const Accompaniment: Component = () => {
   return (
     <div class="accompaniment" id="accompaniment">
-      <div class="accompaniment__title">VOTRE ACCOMPAGNEMENT</div>
+      <h1 class="accompaniment__title">Votre accompagnement</h1>
       <div class="accompaniment__croped-paragraphe">
         <p>
           Je vous accompagne sur votre parcours de vie et{" "}

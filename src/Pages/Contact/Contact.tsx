@@ -1,12 +1,12 @@
 import { Component } from "solid-js";
-import ContactForm from "../components/Contact/contactForm/ContactForm";
-import Map from "../components/map/map";
+import ContactForm from "../../components/Contact/contactForm/ContactForm";
+import Map from "../../components/map/map";
 
-import CropedImage from "../components/CropedImage/CropedImage";
-import "../styles/pages/contact.scss";
-import cabinet from "./../assets/images/cabinet.png";
-import lighthouse from "./../assets/images/lighthouse.png";
-import sea_rocks from "./../assets/images/sea_rocks.png";
+import cabinet from "@assets/images/cabinet.png";
+import lighthouse from "@assets/images/lighthouse.png";
+import sea_rocks from "@assets/images/sea_rocks.png";
+import CropedImage from "../../components/CropedImage/CropedImage";
+import "./contact.scss";
 
 const Contact: Component = () => {
   return (
@@ -52,7 +52,7 @@ const Contact: Component = () => {
         <CropedImage
           src={lighthouse}
           width={"70%"}
-          maxWidth = {"1106px"}
+          maxWidth={"1106px"}
           height={"100%"}
           zoom={11}
           offsetX={0}

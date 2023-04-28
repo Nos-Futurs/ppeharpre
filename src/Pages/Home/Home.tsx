@@ -1,12 +1,12 @@
+import sea_rocks from "@assets/images/sea_rocks.png";
 import { Component } from "solid-js";
-import sea_rocks from "./../assets/images/sea_rocks.png";
 
-import CropedImage from "../components/CropedImage/CropedImage";
-import "../styles/pages/home.scss";
+import CropedImage from "../../components/CropedImage/CropedImage";
+import "./home.scss";
 
 const Home: Component = () => {
   return (
-    <>
+    <section>
       <div class="presentation">
         <div class="presentation__name">
           Philippe <br /> Péharpré
@@ -18,9 +18,9 @@ const Home: Component = () => {
       <div class="presentation__sketch-container">
         <img src={sea_rocks} class="presentation__sketch" />
       </div>
-      <h2 class="presentation__description">
+      <h1>
         Accompagnement sur votre chemin de vie
-      </h2>
+      </h1>
       <div class="paragraphe__container">
         <div class="paragraphe">
           <p class="right-paragraphe">
@@ -64,7 +64,7 @@ const Home: Component = () => {
           height={"150px"}
         />
       </div>
-    </>
+    </section>
   );
 };
 

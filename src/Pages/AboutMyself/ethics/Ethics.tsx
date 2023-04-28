@@ -7,7 +7,7 @@ import "./ethics.scss";
 const Ethics: Component = () => {
   return (
     <div class="ethics" id="ethics">
-      <div class="ethics__title">MA DEONTOLOGIE ET ETHIQUE</div>
+      <h1>Ma déontologie et éthique</h1>
       <div class="ethics__paragraphe">
         <p>
           <b>La confidentialité et le non jugement </b>font partie de ma façon

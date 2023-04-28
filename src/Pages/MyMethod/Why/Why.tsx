@@ -7,7 +7,7 @@ import "./why.scss";
 const Why: Component = () => {
   return (
     <div class="why" id="why">
-      <div class="why__title">Pourquoi se faire accompagner ?</div>
+      <h1 class="why__title">Pourquoi se faire accompagner ?</h1>
       <p class="why__paragraphe">
         Faire cette démarche, c'est vous
         <b> accorder un temps afin d'être écouté.e et soutenu.e.</b>

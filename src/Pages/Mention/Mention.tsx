@@ -1,10 +1,8 @@
 import { Component } from "solid-js";
 
-import "../styles/pages/home.scss";
-
 const Mention: Component = () => {
   return (
-    <div>
+    <section>
       <hgroup>
         <h1>Mentions légales</h1>
         <p>En vigueur au 21/04/2023</p>
@@ -55,7 +53,7 @@ const Mention: Component = () => {
         actions et poursuites judiciaires telles que notamment prévues par le
         Code de la propriété intellectuelle et le Code civil.
       </p>
-    </div>
+    </section>
   );
 };
 

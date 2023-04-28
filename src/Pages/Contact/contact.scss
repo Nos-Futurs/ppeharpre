@@ -1,4 +1,4 @@
-@use "../abstracts/font" as f;
+@use "@styles/abstracts/font";
 
 .contact {
   display: grid;
@@ -20,7 +20,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-family: f.$font_text;
+    font-family: font.$font_text;
     margin: 5%;
   }
   &__grid-1 {
