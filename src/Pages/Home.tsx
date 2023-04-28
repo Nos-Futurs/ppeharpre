@@ -19,7 +19,7 @@ const Home: Component = () => {
         <img src={sea_rocks} class="presentation__sketch" />
       </div>
       <h2 class="presentation__description">
-        Accompagnement sur votre chemin de la vie
+        Accompagnement sur votre chemin de vie
       </h2>
       <div class="paragraphe__container">
         <div class="paragraphe">
