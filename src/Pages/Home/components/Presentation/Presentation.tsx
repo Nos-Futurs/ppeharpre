@@ -12,9 +12,9 @@ const Presentation: Component = () => {
       <h2>
         Praticien <br /> en Gestalt Thérapie <br /> Saint Malo
       </h2>
-      <div class="presentation__sketch-container">
-        <img src={sea_rocks} class="presentation__sketch" />
-      </div>
+      <figure class="presentation__sketch-container">
+        <img src={sea_rocks} alt="sea-rocks" class="presentation__sketch" />
+      </figure>
     </section>
   );
 };

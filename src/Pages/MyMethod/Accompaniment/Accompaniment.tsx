@@ -23,9 +23,9 @@ const Accompaniment: Component = () => {
           en son énergie vitale.{" "}
         </span>
       </p>
-      <div class="accompaniment__sketch-container">
-        <img src={trek} class="accompaniment__sketch" />
-      </div>
+      <figure class="accompaniment__sketch-container">
+        <img src={trek} alt="treking-in-the-mountains" class="accompaniment__sketch" />
+      </figure>
       <p class="paragraphe__second">
         {" "}
         Ainsi{" "}

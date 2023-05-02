@@ -50,6 +50,7 @@ const Gestalt: Component = () => {
         {" "}
         <CropedImage
           src={lighthouse}
+          alt={"lighthouse-sand-reverse"}
           width={"70%"}
           height={"650px"}
           zoom={15}
@@ -63,6 +64,7 @@ const Gestalt: Component = () => {
         {" "}
         <CropedImage
           src={lighthouse}
+          alt={"lighthouse-sand-reverse"}
           width={"650px"}
           height={"100px"}
           zoom={15}

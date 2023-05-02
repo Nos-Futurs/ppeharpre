@@ -18,17 +18,30 @@ const Description: Component = () => {
         accompagné.e dans ces moments-là peut être d'une grande aide.
       </p>
       <div class="shoes-sketch">
-        <CropedImage src={sea_rocks} offsetY={6.5} offsetX={3.5} zoom={16} />
+        <CropedImage
+          alt={"right-show"}
+          src={sea_rocks}
+          offsetY={6.5}
+          offsetX={3.5}
+          zoom={16}
+        />
       </div>
       <p class="paragraphe__right">
         Je suis à votre disposition pour vous rencontrer, vous soutenir sur ce
         chemin et cela dans un climat de pleine confiance.
       </p>
       <div class="shoes-sketch">
-        <CropedImage src={sea_rocks} offsetY={6.5} offsetX={1.6} zoom={16} />
+        <CropedImage
+          alt={"left-show"}
+          src={sea_rocks}
+          offsetY={6.5}
+          offsetX={1.6}
+          zoom={16}
+        />
       </div>
       <div class="sketch-croped">
         <CropedImage
+          alt={"blank"}
           src={sea_rocks}
           offsetY={9}
           offsetX={17.5}

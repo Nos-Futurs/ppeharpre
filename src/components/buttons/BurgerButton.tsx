@@ -7,8 +7,8 @@ interface BurgerButtonProps {
 
 const BurgerButton = (props: BurgerButtonProps) => {
   return (
-    <button class="burger" onclick={props.onClick}>
-      <img src={burger} style={{ width: "40px" }} />
+    <button name="menu-button" class="burger" onclick={props.onClick}>
+      <img src={burger} alt={"burger-button"} class="burger__button" />
     </button>
   );
 };

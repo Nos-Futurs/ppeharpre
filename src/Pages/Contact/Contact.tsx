@@ -13,6 +13,7 @@ const Contact: Component = () => {
     <div class="contact">
       <div class="contact__face left">
         <CropedImage
+          alt={"philippe_face_left"}
           src={cabinet}
           width={"70%"}
           height={"100%"}
@@ -33,6 +34,7 @@ const Contact: Component = () => {
       </div>
       <div class="contact__face">
         <CropedImage
+          alt={"philippe_face_right"}
           src={sea_rocks}
           width={"70%"}
           height={"100%"}
@@ -50,6 +52,7 @@ const Contact: Component = () => {
       </div>
       <div class="contact__cropped-image">
         <CropedImage
+          alt={"philippe_face"}
           src={lighthouse}
           width={"70%"}
           maxWidth={"1106px"}

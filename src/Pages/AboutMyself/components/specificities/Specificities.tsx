@@ -28,9 +28,13 @@ const MySpecificities: Component = () => {
           </li>
         </ul>
       </div>
-      <div class="my-specificities__image">
-        <img src={cabinet} class="my-specificities__image__sketch" />
-      </div>
+      <figure class="my-specificities__image">
+        <img
+          src={cabinet}
+          alt="cabinet"
+          class="my-specificities__image__sketch"
+        />
+      </figure>
     </section>
   );
 };

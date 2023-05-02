@@ -44,6 +44,7 @@ const Why: Component = () => {
       </div>
       <div class="why__sketch-container">
         <CropedImage
+          alt={"mountains"}
           src={trek}
           width={"430px"}
           height={"80%"}
@@ -55,6 +56,7 @@ const Why: Component = () => {
       </div>
       <div class="why__sketch-container-full">
         <CropedImage
+          alt={"grass"}
           src={trek}
           width={"60%"}
           height={"70%"}

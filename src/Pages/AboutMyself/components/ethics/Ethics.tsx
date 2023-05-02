@@ -19,6 +19,7 @@ const Ethics: Component = () => {
       <div class="ethics__image">
         <CropedImage
           src={cabinet}
+          alt={"face_cabinet"}
           width={"800px"}
           height={"160px"}
           zoom={11}
@@ -30,6 +31,7 @@ const Ethics: Component = () => {
       <div class="ethics__image-responsive-medium">
         <CropedImage
           src={cabinet}
+          alt={"face_cabinet"}
           width={"490px"}
           height={"140px"}
           zoom={8}
@@ -41,6 +43,7 @@ const Ethics: Component = () => {
       <div class="ethics__image-responsive-small">
         <CropedImage
           src={cabinet}
+          alt={"face_cabinet"}
           width={"290px"}
           height={"100px"}
           zoom={6}
