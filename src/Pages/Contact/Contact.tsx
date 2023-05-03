@@ -1,18 +1,20 @@
 import { Component } from "solid-js";
-import ContactForm from "../components/Contact/contactForm/ContactForm";
-import Map from "../components/map/map";
+import ContactForm from "../../components/Contact/contactForm/ContactForm";
+import Map from "../../components/map/map";
 
-import CropedImage from "../components/CropedImage/CropedImage";
-import "../styles/pages/contact.scss";
-import cabinet from "./../assets/images/cabinet.png";
-import lighthouse from "./../assets/images/lighthouse.png";
-import sea_rocks from "./../assets/images/sea_rocks.png";
+import cabinet from "@assets/images/cabinet.png";
+import lighthouse from "@assets/images/lighthouse.png";
+import sea_rocks from "@assets/images/sea_rocks.png";
+import { A } from "@solidjs/router";
+import CropedImage from "../../components/CropedImage/CropedImage";
+import "./contact.scss";
 
 const Contact: Component = () => {
   return (
     <div class="contact">
       <div class="contact__face left">
         <CropedImage
+          alt={"philippe_face_left"}
           src={cabinet}
           width={"70%"}
           height={"100%"}
@@ -25,7 +27,7 @@ const Contact: Component = () => {
 
       <div class="contact__information">
         <div>Philippe Péharpré</div>
-        <a href="mailto:ph.peharpre@gmail.com">contact.peharpre@gmail.com</a>
+        <A href="mailto:ph.peharpre@gmail.com">contact.peharpre@gmail.com</A>
         <div>06 07 79 62 12 </div>
         <br />
         <div>8 Bld Villebois Mareuil</div>
@@ -33,6 +35,7 @@ const Contact: Component = () => {
       </div>
       <div class="contact__face">
         <CropedImage
+          alt={"philippe_face_right"}
           src={sea_rocks}
           width={"70%"}
           height={"100%"}
@@ -45,14 +48,15 @@ const Contact: Component = () => {
       <div class="contact__grid-1">
         <Map />
       </div>
-      <div class="contact__grid-2 " style={{ padding: "0%" }}>
+      <div class="contact__grid-2 ">
         <ContactForm />
       </div>
       <div class="contact__cropped-image">
         <CropedImage
+          alt={"philippe_face"}
           src={lighthouse}
           width={"70%"}
-          maxWidth = {"1106px"}
+          maxWidth={"1106px"}
           height={"100%"}
           zoom={11}
           offsetX={0}

@@ -7,8 +7,8 @@ interface BurgerButtonProps {
 
 const CloseButton = (props: BurgerButtonProps) => {
   return (
-    <button class="cross" onclick={props.onClick}>
-      <img src={cross} style={{ width: "35px" }} />
+    <button name="close-button" class="cross" onclick={props.onClick}>
+      <img src={cross} alt={"close"} style={{ width: "35px" }} />
     </button>
   );
 };

@@ -1,4 +1,4 @@
-@use "./radius" as r;
+@use "@styles/abstracts/radii";
 
 @mixin logo-container($width: 20%) {
   height: 100%;
@@ -15,7 +15,7 @@
 @mixin sketch($width: 80%) {
   width: $width;
   border: 2px solid;
-  border-radius: r.$radius2;
+  border-radius: radii.$radius2;
 }
 
 @mixin sketch-container($width: 100%) {

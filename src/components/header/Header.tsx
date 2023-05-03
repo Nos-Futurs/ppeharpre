@@ -31,9 +31,9 @@ function Header() {
 
   return (
     <div class="header" style={{ height: `${headerSize()}px` }}>
-      <div class="header__logo-container">
-        <img src={logo} class="header__logo" />
-      </div>
+      <figure class="header__logo-container">
+        <img src={logo} alt="logo" class="header__logo" />
+      </figure>
       <NavigationHeader
         myMethodPopup={myMethodPopup}
         setMyMethodPopup={setMyMethodPopup}

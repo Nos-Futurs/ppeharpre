@@ -1,10 +1,8 @@
 import { Component } from "solid-js";
 
-import "../styles/pages/home.scss";
-
 const Mention: Component = () => {
   return (
-    <div>
+    <section>
       <hgroup>
         <h1>Mentions légales</h1>
         <p>En vigueur au 21/04/2023</p>
@@ -19,7 +17,7 @@ const Mention: Component = () => {
         réserve des présentes mentions légales. Ces dernières sont accessibles
         sur le Site à la rubrique « Mentions légales ».
       </p>
-      <h2>ARTICLE 1 - L'EDITEUR</h2>
+      <h3>ARTICLE 1 - L'EDITEUR</h3>
       <p>
         L'édition du Site est assurée par Nos-Futurs SAS au capital de 500
         euros, immatriculée au Registre du Commerce et des Sociétés de Paris
@@ -27,19 +25,19 @@ const Mention: Component = () => {
         Bel-Air, 75012 Paris, <br />Adresse e-mail : nos-futurs@proton.me.<br />ci-après
         l'"Editeur".
       </p>
-      <h2>ARTICLE 2 - L'HEBERGEUR</h2>
+      <h3>ARTICLE 2 - L'HEBERGEUR</h3>
       <p>
         L'hébergeur du Site est la société Netlify, dont le siège social est situé
         au 44 Montgomery Street, Suite 300, San Francisco, California 94104.
       </p>
-      <h2>ARTICLE 3 - ACCES AU SITE</h2>
+      <h3>ARTICLE 3 - ACCES AU SITE</h3>
       <p>
         Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force
         majeure, interruption programmée ou non et pouvant découlant d’une
         nécessité de maintenance. <br />En cas de modification, interruption ou
         suspension du Site, l'Editeur ne saurait être tenu responsable.
       </p>
-      <h2> ARTICLE 4 - COLLECTE DES DONNEES</h2>
+      <h3> ARTICLE 4 - COLLECTE DES DONNEES</h3>
       <p>
         {" "}
         Le Site assure à l’Utilisateur une collecte et un traitement
@@ -55,7 +53,7 @@ const Mention: Component = () => {
         actions et poursuites judiciaires telles que notamment prévues par le
         Code de la propriété intellectuelle et le Code civil.
       </p>
-    </div>
+    </section>
   );
 };
 

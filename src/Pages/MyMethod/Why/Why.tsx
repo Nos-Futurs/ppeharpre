@@ -6,8 +6,8 @@ import "./why.scss";
 
 const Why: Component = () => {
   return (
-    <div class="why" id="why">
-      <div class="why__title">Pourquoi se faire accompagner ?</div>
+    <section class="why" id="why">
+      <h1 class="why__title">Pourquoi se faire accompagner ?</h1>
       <p class="why__paragraphe">
         Faire cette démarche, c'est vous
         <b> accorder un temps afin d'être écouté.e et soutenu.e.</b>
@@ -44,6 +44,7 @@ const Why: Component = () => {
       </div>
       <div class="why__sketch-container">
         <CropedImage
+          alt={"mountains"}
           src={trek}
           width={"430px"}
           height={"80%"}
@@ -55,15 +56,16 @@ const Why: Component = () => {
       </div>
       <div class="why__sketch-container-full">
         <CropedImage
+          alt={"grass"}
           src={trek}
           width={"60%"}
-          height={"50%"}
+          height={"70%"}
           zoom={11}
           offsetX={0.7}
           offsetY={12.7}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

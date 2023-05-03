@@ -1,4 +1,4 @@
-@use "../../styles/abstracts/colors" as colors;
+@use "@styles/abstracts/colours";
 
 .modal {
   z-index: 99;
@@ -20,7 +20,7 @@
     display: grid;
     grid-template-columns: 100%;
     width: 70%;
-    background-color: map-get(colors.$palette, "background2");
+    background-color: colours.$background2;
   }
 
 

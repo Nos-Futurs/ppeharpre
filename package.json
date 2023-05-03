@@ -6,7 +6,7 @@
     "start": "vite",
     "dev": "vite",
     "netlify:dev": "netlify dev",
-    "build": "vite build && cp ./_redirects ./dist/_redirects",
+    "build": "vite build && cp ./_redirects ./dist/_redirects && cp ./robots.txt ./dist/robots.txt",
     "netlify:preview": "pnpm build && netlify deploy",
     "netlify:prod": "pnpm build && netlify deploy --prod",
     "serve": "vite preview",

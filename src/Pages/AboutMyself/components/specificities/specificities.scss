@@ -1,0 +1,33 @@
+@use "@styles/abstracts/text";
+@use "@styles/abstracts/spacings";
+@use "@styles/abstracts/image" as i;
+
+.my-specificities {
+  display: grid;
+  margin-top: 0;
+
+  &__paragraphe {
+    @extend %text-paragraphe;
+    display: flex;
+    flex-direction: column;
+    padding: spacings.$s;
+  }
+
+  &__image {
+    @include i.sketch-container(100%);
+    margin-bottom: 10px;
+    &__sketch {
+      @include i.sketch($width: 60%);
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .my-specificities {
+    &__image {
+      &__sketch {
+        width: 85%
+      }
+    }
+  }
+}

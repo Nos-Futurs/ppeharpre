@@ -26,94 +26,92 @@ function ModalSideBar() {
         <div class="modal__side-menu">
           <SideLinks
             name="Accueil"
+            href="/"
             onClick={() => {
-              navigate("/");
               setIsModalOpen(false);
             }}
           />
           <div class="modal__section">
-            <SideLinks
+            <DropDownLink
+              isModal={true}
               name="Accompagnement"
-              onClick={() => {
-                setMyMethodPopup(!myMethodPopup());
-              }}
+              selected={false}
+              popup={myMethodPopup}
+              setPopup={setMyMethodPopup}
+              sections={[
+                {
+                  name: "Votre accompagnement",
+                  color: "black",
+                  path: "/method",
+                  onClick: () => {
+                    setIsModalOpen(false);
+                  },
+                },
+                {
+                  name: "Pourquoi se faire accompagner?",
+                  path: "/method#why",
+                  color: "black",
+                  onClick: () => {
+                    setIsModalOpen(false);
+                  },
+                },
+                {
+                  name: "Le déroulement d'une séance",
+                  path: "/method#how",
+                  color: "black",
+                  onClick: () => {
+                    setIsModalOpen(false);
+                  },
+                },
+              ]}
             />
-            {myMethodPopup() && (
-              <>
-                <DropDownLink
-                  name="Votre accompagnement"
-                  color="black"
-                  onClick={() => {
-                    navigate("/method");
-                    setIsModalOpen(false);
-                  }}
-                />
-                <DropDownLink
-                  name="Pourquoi se faire accompagner?"
-                  color="black"
-                  onClick={() => {
-                    navigate("/method#why");
-                    setIsModalOpen(false);
-                  }}
-                />
-                <DropDownLink
-                  name="Le déroulement d'une séance"
-                  color="black"
-                  onClick={() => {
-                    navigate("/method#how");
-                    setIsModalOpen(false);
-                  }}
-                />
-              </>
-            )}
           </div>
           <div class="modal__section">
-            <SideLinks
-              name="A propos de moi"
-              onClick={() => {
-                setAboutPopup(!aboutPopup());
-              }}
+            <DropDownLink
+              isModal={true}
+              name="Accompagnement"
+              selected={false}
+              popup={aboutPopup}
+              setPopup={setAboutPopup}
+              sections={[
+                {
+                  name: "Mes spécificités",
+                  path: "/about",
+                  color: "black",
+                  onClick: () => {
+                    setIsModalOpen(false);
+                  },
+                },
+                {
+                  name:"Mon parcours",
+                  path:"/about#carreer",
+                  color: "black",
+                  onClick: () => {
+                    setIsModalOpen(false);
+                  },
+                },
+                {
+                  name: "Ma déontologie",
+                  path: "/about#ethics",
+                  color: "black",
+                  onClick: () => {
+                    setIsModalOpen(false);
+                  },
+                },
+              ]}
             />
-            {aboutPopup() && (
-              <>
-                <DropDownLink
-                  name="Mes spécificités"
-                  color="black"
-                  onClick={() => {
-                    navigate("/about");
-                    setIsModalOpen(false);
-                  }}
-                />
-                <DropDownLink
-                  name="Mon parcours"
-                  color="black"
-                  onClick={() => {
-                    navigate("/about#carreer");
-                    setIsModalOpen(false);
-                  }}
-                />
-                <DropDownLink
-                  name="Ma déontologie"
-                  color="black"
-                  onClick={() => {
-                    navigate("/about#ethics");
-                    setIsModalOpen(false);
-                  }}
-                />
-              </>
-            )}
           </div>
           <SideLinks
             name="Gestalt thérapie"
+            href="/gestalt"
             onClick={() => {
-              navigate("/gestalt");
               setIsModalOpen(false);
             }}
           />
           <SideLinks
             name="Contactez moi"
+            href="/contact"
             onClick={() => {
-              navigate("/contact");
               setIsModalOpen(false);
             }}
           />

@@ -1,15 +1,14 @@
+import lighthouse from "@assets/images/lighthouse.png";
 import { Component } from "solid-js";
 
-import lighthouse from "./../assets/images/lighthouse.png";
-
-import CropedImage from "../components/CropedImage/CropedImage";
-import "../styles/pages/gestalt.scss";
+import CropedImage from "../../components/CropedImage/CropedImage";
+import "./gestalt.scss";
 
 const Gestalt: Component = () => {
   return (
-    <div class="gestalt">
-      <div class="gestalt__title">LA GESTALT THERAPIE</div>
-      <div class="gestalt__paragraphe">
+    <section class="gestalt" id="gestalt">
+      <h1 class="gestalt__title">La gestalt thérapie</h1>
+      <p class="gestalt__paragraphe">
         La gestalt est une branche de la psychologie qui est parfois qualifiée
         de thérapie du contact. Conceptualisée dans les années 50 à plusieurs
         mains sous la houlette de Fritz et Laura Perls, elle est toujours en
@@ -18,11 +17,12 @@ const Gestalt: Component = () => {
           une des psychothérapies humanistes existentielles les plus
           représentées.
         </b>
-      </div>
-      <div class="gestalt__image" style={{ "grid-column": "1/4" }}>
+      </p>
+      <div class="gestalt__image">
         <img src={lighthouse} class="gestalt__image__sketch" />
       </div>
-      <div class="gestalt__cropped-paragraphe ">
+      <div class="gestalt__cropped-paragraphe">
+        {" "}
         Son apport pour votre accompagnement est de :
         <ul>
           <li>
@@ -50,6 +50,7 @@ const Gestalt: Component = () => {
         {" "}
         <CropedImage
           src={lighthouse}
+          alt={"lighthouse-sand-reverse"}
           width={"70%"}
           height={"650px"}
           zoom={15}
@@ -63,6 +64,7 @@ const Gestalt: Component = () => {
         {" "}
         <CropedImage
           src={lighthouse}
+          alt={"lighthouse-sand-reverse"}
           width={"650px"}
           height={"100px"}
           zoom={15}
@@ -72,23 +74,21 @@ const Gestalt: Component = () => {
         />
       </div>
 
-      <div class="gestalt__cropped-paragraphe ">
-        <p>
-          « La Gestalt soutient tout particulièrement{" "}
-          <b>l’autonomie, la responsabilité et la créativité.</b> Elle met
-          l’accent sur la conscience du processus en cours, dans l’ici et
-          maintenant de chaque situation, et réhabilite le sensoriel et
-          l’émotionnel, trop souvent censurés par notre culture.... Elle
-          favorise un contact authentique avec les autres, un «ajustement
-          créateur» à l’environnement.{" "}
-          <b>
-            Plutôt que d’expliquer les origines de nos difficultés, la Gestalt
-            propose d’expérimenter des pistes de solution. »
-          </b>{" "}
-          (Définition de l'EPG)
-        </p>
-      </div>
-    </div>
+      <p class="gestalt__cropped-paragraphe ">
+        « La Gestalt soutient tout particulièrement{" "}
+        <b>l’autonomie, la responsabilité et la créativité.</b> Elle met
+        l’accent sur la conscience du processus en cours, dans l’ici et
+        maintenant de chaque situation, et réhabilite le sensoriel et
+        l’émotionnel, trop souvent censurés par notre culture.... Elle favorise
+        un contact authentique avec les autres, un «ajustement créateur» à
+        l’environnement.{" "}
+        <b>
+          Plutôt que d’expliquer les origines de nos difficultés, la Gestalt
+          propose d’expérimenter des pistes de solution. »
+        </b>{" "}
+        (Définition de l'EPG)
+      </p>
+    </section>
   );
 };
 

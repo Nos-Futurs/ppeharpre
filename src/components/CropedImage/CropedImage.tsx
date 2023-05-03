@@ -3,6 +3,7 @@ import "./CropedImage.scss";
 
 interface CropedImageProps {
   src: string;
+  alt: string;
   zoom?: number;
   offsetY?: number;
   offsetX?: number;
@@ -15,6 +16,7 @@ interface CropedImageProps {
 
 const CropedImage = ({
   src,
+  alt,
   zoom = 1,
   offsetY = 1,
   offsetX = 1,
@@ -37,7 +39,7 @@ const CropedImage = ({
   });
 
   return (
-    <div
+    <figure
       class="sample"
       style={{
         width,
@@ -48,6 +50,7 @@ const CropedImage = ({
       <img
         class="sample__img"
         src={src}
+        alt={alt}
         style={{
           top: `${-100 * offsetY}px`,
           left: `${-100 * offsetX * (willChange ? rapportWidth() : 1)}px`,
@@ -55,7 +58,7 @@ const CropedImage = ({
           transform: `rotate(${rotate}deg)`,
         }}
       />
-    </div>
+    </figure>
   );
 };
 

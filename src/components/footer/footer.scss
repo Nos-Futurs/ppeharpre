@@ -1,4 +1,4 @@
-@use "../../styles/abstracts/colors" as colors;
+@use "@styles/abstracts/colours";
 @use "../../styles/abstracts/image" as i;
 
 .footer {
@@ -6,7 +6,7 @@
   display: flex;
   padding: 10px 20px 10px 50px;
   align-items: center;
-  background-color: map-get(colors.$palette, darkblue);
+  background-color: colours.$darkblue;
   justify-content: center;
 
   &__logo-container {

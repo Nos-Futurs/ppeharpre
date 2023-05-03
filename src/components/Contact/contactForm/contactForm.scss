@@ -4,10 +4,11 @@
   font-family: f.$font_text;
   display: grid;
   width: 70%;
+  min-height: 800px;
   grid-template-columns: 45% 45%;
   column-gap: 5%;
   row-gap: 10px;
-  grid-template-rows: 8vh 10vh 30vh;
+  grid-template-rows: repeat(4, auto);
   margin: 80px 20px 20px 20px;
 
   &__input {

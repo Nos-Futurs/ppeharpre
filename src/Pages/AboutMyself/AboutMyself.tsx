@@ -1,7 +1,7 @@
 import { Component } from "solid-js";
-import Carreer from "./carreer/Carreer";
-import Ethics from "./ethics/Ethics";
-import MySpecificities from "./specificities/Specificities";
+import Carreer from "./components/carreer/Carreer";
+import Ethics from "./components/ethics/Ethics";
+import MySpecificities from "./components/specificities/Specificities";
 
 const AboutMyself: Component = () => {
   return (

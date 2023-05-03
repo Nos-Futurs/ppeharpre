@@ -1,0 +1,76 @@
+@use "@styles/abstracts/text";
+@use "@styles/abstracts/image";
+@use "@styles/abstracts/spacings";
+@use "@styles/abstracts/layouts";
+
+.carreer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: spacings.$xxl;
+  column-gap: spacings.$m;
+
+  &__title {
+    grid-column: 1/3;
+  }
+  &__paragraphe {
+    margin: 0;
+    padding: 0 spacings.$m;
+  }
+
+  &__image {
+    @include image.sketch-container;
+    margin-bottom: 10px;
+    &__sketch {
+      @include image.sketch($width: 70%);
+    }
+  }
+
+  &__items {
+    @include layouts.grid(repeat(2, 1fr), repeat(2, 1fr));
+  }
+
+  &__items-1 {
+    @include layouts.grid(repeat(2, 1fr), 1fr);
+  }
+
+  &__item1 {
+    @include layouts.flex(row, center, center);
+  }
+
+  &__item2 {
+    @include layouts.flex(row, center, center);
+    grid-column: 1/3;
+  }
+}
+
+@media (max-width: 1100px) {
+  .carreer {
+    grid-template-columns: 100%;
+    row-gap: spacings.$m;
+
+    &__title {
+      grid-column: 1;
+    }
+
+    &__paragraphe {
+      grid-column: 1;
+    }
+
+    &__items-1 {
+      display: none;
+    }
+    &__items {
+      @include layouts.grid(repeat(2, 1fr), 1fr);
+      margin: spacings.$l 0;
+    }
+    &__item1 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .carreer {
+    row-gap: spacings.$s;
+  }
+}
