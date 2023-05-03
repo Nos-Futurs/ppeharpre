@@ -5,6 +5,7 @@ import Map from "../../components/map/map";
 import cabinet from "@assets/images/cabinet.png";
 import lighthouse from "@assets/images/lighthouse.png";
 import sea_rocks from "@assets/images/sea_rocks.png";
+import { A } from "@solidjs/router";
 import CropedImage from "../../components/CropedImage/CropedImage";
 import "./contact.scss";
 
@@ -26,7 +27,7 @@ const Contact: Component = () => {
 
       <div class="contact__information">
         <div>Philippe Péharpré</div>
-        <a href="mailto:ph.peharpre@gmail.com">contact.peharpre@gmail.com</a>
+        <A href="mailto:ph.peharpre@gmail.com">contact.peharpre@gmail.com</A>
         <div>06 07 79 62 12 </div>
         <br />
         <div>8 Bld Villebois Mareuil</div>

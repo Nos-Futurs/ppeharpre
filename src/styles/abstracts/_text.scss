@@ -21,6 +21,12 @@
   }
 }
 
+%text-paragraphe-title{
+  padding-top: spacings.$l;
+  font-size: font-size.$l;
+  font-family: font.$font_title;
+}
+
 %text-paragraphe {
   font-size: font-size.$l;
   padding: spacings.$m;

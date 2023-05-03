@@ -9,6 +9,10 @@ h2 {
   @extend %text-presentation;
 }
 
+h3 {
+  @extend %text-paragraphe-title;
+}
+
 hgroup {
   @extend %text-title-group;
 }

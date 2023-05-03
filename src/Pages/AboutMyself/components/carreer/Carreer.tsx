@@ -20,6 +20,7 @@ const Carreer: Component = () => {
         <div class="carreer__item1">
           <CropedImage
             src={trek}
+            alt={"blank"}
             offsetY={2}
             offsetX={2}
             zoom={8}
@@ -29,6 +30,7 @@ const Carreer: Component = () => {
         </div>
         <div class="carreer__item1">
           <CropedImage
+            alt={"blank"}
             src={trek}
             offsetY={2}
             offsetX={2}
@@ -41,6 +43,7 @@ const Carreer: Component = () => {
       <div class="carreer__items">
         <div class="carreer__item1">
           <CropedImage
+            alt={"blank"}
             src={trek}
             offsetY={2}
             offsetX={2}
@@ -51,6 +54,7 @@ const Carreer: Component = () => {
         </div>
         <div class="carreer__item1">
           <CropedImage
+            alt={"blank"}
             src={trek}
             offsetY={2}
             offsetX={2}
@@ -61,6 +65,7 @@ const Carreer: Component = () => {
         </div>
         <div class="carreer__item2">
           <CropedImage
+            alt={"blank"}
             src={trek}
             offsetY={2}
             offsetX={2}
@@ -93,6 +98,7 @@ const Carreer: Component = () => {
       <div class="carreer__items">
         <div class="carreer__item1">
           <CropedImage
+            alt={"blank"}
             src={trek}
             offsetY={2}
             offsetX={2}
@@ -103,6 +109,7 @@ const Carreer: Component = () => {
         </div>
         <div class="carreer__item1">
           <CropedImage
+            alt={"blank"}
             src={trek}
             offsetY={2}
             offsetX={2}
@@ -113,6 +120,7 @@ const Carreer: Component = () => {
         </div>
         <div class="carreer__item2">
           <CropedImage
+            alt={"blank"}
             src={trek}
             offsetY={2}
             offsetX={2}
