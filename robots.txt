@@ -1,0 +1,7 @@
+user-agents: *
+
+Disallow: /?blackhole
+Allow: /
+Disallow: /contact*
+Disallow: /gestalt*
+Disallow: /method*
