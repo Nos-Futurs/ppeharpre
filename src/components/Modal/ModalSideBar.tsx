@@ -69,7 +69,7 @@ function ModalSideBar() {
           <div class="modal__section">
             <DropDownLink
               isModal={true}
-              name="Accompagnement"
+              name="A propos de moi"
               selected={false}
               popup={aboutPopup}
               setPopup={setAboutPopup}

@@ -7,6 +7,10 @@
   row-gap: 8%;
   margin-bottom: 30%;
 
+  &__email {
+    color: black;
+  }
+
   &__face {
     grid-column: span 2;
     display: flex;

@@ -1,5 +1,4 @@
-user-agents: *
-
+user-agent: *
 Disallow: /?blackhole
 Allow: /
 Disallow: /contact*

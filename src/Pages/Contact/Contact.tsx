@@ -27,7 +27,7 @@ const Contact: Component = () => {
 
       <div class="contact__information">
         <div>Philippe Péharpré</div>
-        <A href="mailto:ph.peharpre@gmail.com">contact.peharpre@gmail.com</A>
+        <A class="contact__email" href="mailto:ph.peharpre@gmail.com">contact.peharpre@gmail.com</A>
         <div>06 07 79 62 12 </div>
         <br />
         <div>8 Bld Villebois Mareuil</div>
