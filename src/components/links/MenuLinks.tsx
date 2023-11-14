@@ -4,7 +4,6 @@ import "./links.scss";
 interface menuLinkProps {
   name: string;
   href: string;
-  onClick: () => void;
   border?: boolean;
   selected?: boolean;
 }
@@ -15,7 +14,6 @@ const MenuLink = (props: menuLinkProps) => {
     <a
       class={props.border ? "menuLinkBordered" : "menuLink"}
       href={props.href}
-      onclick={props.onClick}
       style={{ "font-weight": `${props.selected ? "800" : "500"}` }}
     >
       {props.name}

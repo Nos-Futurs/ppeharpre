@@ -1,7 +1,7 @@
 import { Component } from "solid-js";
 
-import cabinet from "../../../../assets/images/cabinet.png";
-import CropedImage from "../../../../components/CropedImage/CropedImage";
+import cabinet from "../../assets/images/cabinet.png";
+import CropedImage from "../CropedImage/CropedImage";
 import "./ethics.scss";
 
 const Ethics: Component = () => {

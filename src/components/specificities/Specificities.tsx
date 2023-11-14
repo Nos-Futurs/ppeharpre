@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
 
-import cabinet from "../../../../assets/images/cabinet.png";
+import cabinet from "../../assets/images/cabinet.png";
 
 import "./specificities.scss";
 

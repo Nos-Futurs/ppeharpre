@@ -3,10 +3,12 @@ import './layout.scss';
 import '../styles/main.scss'
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer.astro';
+import { pages } from '../components/header/NavigationHeader';
 
 interface Props {
   id: string;
   path: string;
+  page: pages;
   pageTitle: string;
   description: string;
   noindex?: boolean;
@@ -14,7 +16,7 @@ interface Props {
   mainPage?: boolean;
 }
 
-const { id, path, pageTitle, description, noindex, ecoBadge, mainPage } =
+const { id, path, pageTitle, description, noindex, ecoBadge, mainPage, page } =
   Astro.props;
 ---
 
@@ -32,7 +34,7 @@ const { id, path, pageTitle, description, noindex, ecoBadge, mainPage } =
   </head>
   <body>
     <main id={`page-${id}`} class="page">
-      <Header client:only="solid-js" />
+      <Header page={page} client:load />
       <div id={id} class="layout"><slot /></div>
       <Footer />
     </main>

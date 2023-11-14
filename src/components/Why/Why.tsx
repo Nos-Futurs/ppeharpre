@@ -1,7 +1,7 @@
 import { Component } from "solid-js";
 
-import trek from "../../../assets/images/trek.png";
-import CropedImage from "../../../components/CropedImage/CropedImage";
+import trek from "../../assets/images/trek.png";
+import CropedImage from "../CropedImage/CropedImage";
 import "./why.scss";
 
 const Why: Component = () => {
@@ -45,7 +45,7 @@ const Why: Component = () => {
       <div class="why__sketch-container">
         <CropedImage
           alt={"mountains"}
-          src={trek}
+          src={trek.src}
           width={"430px"}
           height={"80%"}
           zoom={14.7}
@@ -57,7 +57,7 @@ const Why: Component = () => {
       <div class="why__sketch-container-full">
         <CropedImage
           alt={"grass"}
-          src={trek}
+          src={trek.src}
           width={"60%"}
           height={"70%"}
           zoom={11}

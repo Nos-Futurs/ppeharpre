@@ -1,11 +1,16 @@
-import "./header.scss";
+import './header.scss';
 
-import { createEffect, createSignal } from "solid-js";
-import logo from "../../assets/images/logo.png";
-import NavigationBurger from "./NavigationBurger";
-import NavigationHeader from "./NavigationHeader";
+import { Component, createEffect, createSignal } from 'solid-js';
+import logo from '../../assets/images/logo.png';
+import NavigationBurger from './NavigationBurger';
+import NavigationHeader, { pages } from './NavigationHeader';
 
-function Header() {
+interface HeaderProps {
+  page: pages
+}
+const Header: Component<HeaderProps> = (
+  props: HeaderProps,
+) => {
   const [myMethodPopup, setMyMethodPopup] = createSignal(false);
   const [aboutPopup, setAboutPopup] = createSignal(false);
   const [headerSize, setHeaderSize] = createSignal(150);
@@ -16,7 +21,7 @@ function Header() {
   };
 
   createEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     if (!myMethodPopup() && !aboutPopup()) {
       if (offsetY() < 300) {
         setHeaderSize(150 - (offsetY() * 8) / 30);
@@ -26,7 +31,7 @@ function Header() {
     } else {
       setHeaderSize(150);
     }
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   });
 
   return (
@@ -35,6 +40,7 @@ function Header() {
         <img src={logo.src} alt="logo" class="header__logo" />
       </figure>
       <NavigationHeader
+        page={props.page}
         myMethodPopup={myMethodPopup}
         setMyMethodPopup={setMyMethodPopup}
         aboutPopup={aboutPopup}
@@ -43,6 +49,6 @@ function Header() {
       {/* <NavigationBurger /> */}
     </div>
   );
-}
+};
 
 export default Header;

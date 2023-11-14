@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
 
-import trek from "../../../assets/images/trek.png";
+import trek from "../../assets/images/trek.png";
 
 import "./accompaniment.scss";
 
@@ -24,7 +24,7 @@ const Accompaniment: Component = () => {
         </span>
       </p>
       <figure class="accompaniment__sketch-container">
-        <img src={trek} alt="treking-in-the-mountains" class="accompaniment__sketch" />
+        <img src={trek.src} alt="treking-in-the-mountains" class="accompaniment__sketch" />
       </figure>
       <p class="paragraphe__second">
         {" "}

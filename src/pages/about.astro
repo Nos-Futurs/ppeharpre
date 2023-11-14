@@ -1,11 +1,14 @@
 ---
 // Import your root App component
-import Presentation from '../components/Presentation/Presentation';
 import Layout from '../Layout/Layout.astro';
-import Description from '../components/Description/Description';
+import MySpecificities from '../components/specificities/Specificities';
+import Carreer from '../components/carreer/Carreer';
+import Ethics from '../components/ethics/Ethics';
+import { pages } from '../components/header/NavigationHeader';
 ---
 
-<Layout pageTitle="test" description="test" id="test" path="/">
-  <Presentation client:only="solid-js" />
-  <Description client:only="solid-js" />
+<Layout pageTitle="test" description="test" id="test" path="/" page={pages}>
+  <MySpecificities client:load/>
+  <Carreer client:load/>
+  <Ethics client:load/>
 </Layout>

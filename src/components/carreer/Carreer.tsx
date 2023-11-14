@@ -1,7 +1,7 @@
 import { Component } from "solid-js";
 
-import trek from "../../../../assets/images/trek.png";
-import CropedImage from "../../../../components/CropedImage/CropedImage";
+import trek from "../../assets/images/trek.png";
+import CropedImage from "../CropedImage/CropedImage";
 
 import "./carreer.scss";
 

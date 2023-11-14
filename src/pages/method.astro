@@ -1,11 +1,14 @@
 ---
 // Import your root App component
-import Presentation from '../components/Presentation/Presentation';
+import { pages } from 'components/header/NavigationHeader';
 import Layout from '../Layout/Layout.astro';
-import Description from '../components/Description/Description';
+import Accompaniment from '../components/Accompaniment/Accompaniment';
+import How from '../components/How/How';
+import Why from '../components/Why/Why';
 ---
 
-<Layout pageTitle="test" description="test" id="test" path="/">
-  <Presentation client:only="solid-js" />
-  <Description client:only="solid-js" />
+<Layout pageTitle="test" description="test" id="test" path="/" page={pages.HOME}>
+  <Accompaniment />
+  <Why />
+  <How />
 </Layout>
