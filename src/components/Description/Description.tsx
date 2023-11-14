@@ -1,8 +1,8 @@
-import sea_rocks from "../../../../assets/images/sea_rocks.png";
-import { Component } from "solid-js";
+import sea_rocks from '../../../../assets/images/sea_rocks.png';
+import { Component } from 'solid-js';
 
-import CropedImage from "../../../../components/CropedImage/CropedImage";
-import "./description.scss";
+import CropedImage from '../CropedImage/CropedImage';
+import './description.scss';
 
 const Description: Component = () => {
   return (
@@ -19,7 +19,7 @@ const Description: Component = () => {
       </p>
       <div class="shoes-sketch">
         <CropedImage
-          alt={"right-show"}
+          alt={'right-show'}
           src={sea_rocks.src}
           offsetY={6.5}
           offsetX={3.5}
@@ -32,7 +32,7 @@ const Description: Component = () => {
       </p>
       <div class="shoes-sketch">
         <CropedImage
-          alt={"left-show"}
+          alt={'left-show'}
           src={sea_rocks.src}
           offsetY={6.5}
           offsetX={1.6}
@@ -41,13 +41,13 @@ const Description: Component = () => {
       </div>
       <div class="sketch-croped">
         <CropedImage
-          alt={"blank"}
+          alt={'blank'}
           src={sea_rocks.src}
           offsetY={9}
           offsetX={17.5}
           zoom={28}
-          width={"1000px"}
-          height={"150px"}
+          width={'1000px'}
+          height={'150px'}
         />
       </div>
     </section>

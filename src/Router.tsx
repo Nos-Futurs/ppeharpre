@@ -5,7 +5,6 @@ import { ModalProvider } from "./context/modalContext";
 import AboutMyself from "./pagesComponents/AboutMyself/AboutMyself";
 import Contact from "./pagesComponents/Contact/Contact";
 import Gestalt from "./pagesComponents/Gestalt/Gestalt";
-import Home from "./pagesComponents/Home/Home";
 import Mention from "./pagesComponents/Mention/Mention";
 import MyMethod from "./pagesComponents/MyMethod/MyMethod";
 
@@ -15,7 +14,6 @@ const AppRouter: Component = () => {
       <ModalProvider>
         <Modal />
           <Routes>
-            <Route path="/" component={Home} />
             <Route path="/about" component={AboutMyself} />
             <Route path="/method" component={MyMethod} />
             <Route path="/gestalt" component={Gestalt} />
