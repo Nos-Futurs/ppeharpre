@@ -1,18 +1,18 @@
 import L from "leaflet";
-import markerIcon from "leaflet/dist/images/marker-icon.png";
-import { onMount } from "solid-js";
+import markerIcon from "../../assets/images/marker-icon.png";
+import { Component, onMount } from "solid-js";
 import "./map.scss";
 
 // otherwise, with webpack, the marker won't find the marker icon in production
 L.Marker.prototype.setIcon(
   L.icon({
-    iconUrl: markerIcon,
+    iconUrl: markerIcon.src,
     iconAnchor: [10, 20],
     popupAnchor: [2, -20],
   })
 );
 
-function Map() {
+const Map: Component = () => {
   onMount(() => {
     const map = L.map("map").setView(
       [48.65088101076383, -2.007454559115204],
@@ -25,7 +25,7 @@ function Map() {
     }).addTo(map);
 
     // add a single marker to a layer. note it's in an array
-    let markerLayer = L.layerGroup([
+    L.layerGroup([
       L.marker([48.65088101076383, -2.007454559115204])
         .addTo(map)
         .bindPopup("Cabinet")

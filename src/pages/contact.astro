@@ -12,7 +12,7 @@ import './contact.scss';
 import { pages } from '../components/header/NavigationHeader';
 ---
 
-<Layout pageTitle="test" description="test" id="test" path="/" page={pages}>
+<Layout pageTitle="test" description="test" id="test" path="/" page={pages.CONTACT}>
   <div class="contact">
     <div class="contact__face left">
       <CropedImage
@@ -50,7 +50,7 @@ import { pages } from '../components/header/NavigationHeader';
       />
     </div>
     <div class="contact__grid-1">
-      <Map />
+      <Map client:only="solid-js"/>
     </div>
     <div class="contact__grid-2">
       <ContactForm />
