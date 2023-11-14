@@ -2,9 +2,9 @@ import { Component } from "solid-js";
 import ContactForm from "../../components/Contact/contactForm/ContactForm";
 import Map from "../../components/map/map";
 
-import cabinet from "@assets/images/cabinet.png";
-import lighthouse from "@assets/images/lighthouse.png";
-import sea_rocks from "@assets/images/sea_rocks.png";
+import cabinet from "../../assets/images/cabinet.png";
+import lighthouse from "../../assets/images/lighthouse.png";
+import sea_rocks from "../../assets/images/sea_rocks.png";
 import { A } from "@solidjs/router";
 import CropedImage from "../../components/CropedImage/CropedImage";
 import "./contact.scss";
@@ -15,7 +15,7 @@ const Contact: Component = () => {
       <div class="contact__face left">
         <CropedImage
           alt={"philippe_face_left"}
-          src={cabinet}
+          src={cabinet.src}
           width={"70%"}
           height={"100%"}
           zoom={11}
@@ -36,7 +36,7 @@ const Contact: Component = () => {
       <div class="contact__face">
         <CropedImage
           alt={"philippe_face_right"}
-          src={sea_rocks}
+          src={sea_rocks.src}
           width={"70%"}
           height={"100%"}
           zoom={11}
@@ -54,7 +54,7 @@ const Contact: Component = () => {
       <div class="contact__cropped-image">
         <CropedImage
           alt={"philippe_face"}
-          src={lighthouse}
+          src={lighthouse.src}
           width={"70%"}
           maxWidth={"1106px"}
           height={"100%"}

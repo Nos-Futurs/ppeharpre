@@ -1,4 +1,4 @@
-import sea_rocks from "@assets/images/sea_rocks.png";
+import sea_rocks from "../../../../assets/images/sea_rocks.png";
 import { Component } from "solid-js";
 
 import "./presentation.scss";
@@ -13,7 +13,7 @@ const Presentation: Component = () => {
         Praticien <br /> en Gestalt Thérapie <br /> Saint Malo
       </h2>
       <figure class="presentation__sketch-container">
-        <img src={sea_rocks} alt="sea-rocks" class="presentation__sketch" />
+        <img src={sea_rocks.src} alt="sea-rocks" class="presentation__sketch" />
       </figure>
     </section>
   );

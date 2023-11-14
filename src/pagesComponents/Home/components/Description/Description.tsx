@@ -1,4 +1,4 @@
-import sea_rocks from "@assets/images/sea_rocks.png";
+import sea_rocks from "../../../../assets/images/sea_rocks.png";
 import { Component } from "solid-js";
 
 import CropedImage from "../../../../components/CropedImage/CropedImage";
@@ -20,7 +20,7 @@ const Description: Component = () => {
       <div class="shoes-sketch">
         <CropedImage
           alt={"right-show"}
-          src={sea_rocks}
+          src={sea_rocks.src}
           offsetY={6.5}
           offsetX={3.5}
           zoom={16}
@@ -33,7 +33,7 @@ const Description: Component = () => {
       <div class="shoes-sketch">
         <CropedImage
           alt={"left-show"}
-          src={sea_rocks}
+          src={sea_rocks.src}
           offsetY={6.5}
           offsetX={1.6}
           zoom={16}
@@ -42,7 +42,7 @@ const Description: Component = () => {
       <div class="sketch-croped">
         <CropedImage
           alt={"blank"}
-          src={sea_rocks}
+          src={sea_rocks.src}
           offsetY={9}
           offsetX={17.5}
           zoom={28}

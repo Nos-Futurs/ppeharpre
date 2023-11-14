@@ -1,4 +1,4 @@
-import lighthouse from "@assets/images/lighthouse.png";
+import lighthouse from "../../assets/images/lighthouse.png";
 import { Component } from "solid-js";
 
 import CropedImage from "../../components/CropedImage/CropedImage";
@@ -19,7 +19,7 @@ const Gestalt: Component = () => {
         </b>
       </p>
       <div class="gestalt__image">
-        <img src={lighthouse} class="gestalt__image__sketch" />
+        <img src={lighthouse.src} class="gestalt__image__sketch" />
       </div>
       <div class="gestalt__cropped-paragraphe">
         {" "}
@@ -49,7 +49,7 @@ const Gestalt: Component = () => {
       <div class="gestalt__reverse-cropped-image">
         {" "}
         <CropedImage
-          src={lighthouse}
+          src={lighthouse.src}
           alt={"lighthouse-sand-reverse"}
           width={"70%"}
           height={"650px"}
@@ -63,7 +63,7 @@ const Gestalt: Component = () => {
       <div class="gestalt__cropped-image">
         {" "}
         <CropedImage
-          src={lighthouse}
+          src={lighthouse.src}
           alt={"lighthouse-sand-reverse"}
           width={"650px"}
           height={"100px"}

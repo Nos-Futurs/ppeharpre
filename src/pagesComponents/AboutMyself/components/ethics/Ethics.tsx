@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
 
-import cabinet from "@assets/images/cabinet.png";
+import cabinet from "../../../../assets/images/cabinet.png";
 import CropedImage from "../../../../components/CropedImage/CropedImage";
 import "./ethics.scss";
 
@@ -18,7 +18,7 @@ const Ethics: Component = () => {
       </p>
       <div class="ethics__image">
         <CropedImage
-          src={cabinet}
+          src={cabinet.src}
           alt={"face_cabinet"}
           width={"800px"}
           height={"160px"}
@@ -30,7 +30,7 @@ const Ethics: Component = () => {
       </div>
       <div class="ethics__image-responsive-medium">
         <CropedImage
-          src={cabinet}
+          src={cabinet.src}
           alt={"face_cabinet"}
           width={"490px"}
           height={"140px"}
@@ -42,7 +42,7 @@ const Ethics: Component = () => {
       </div>
       <div class="ethics__image-responsive-small">
         <CropedImage
-          src={cabinet}
+          src={cabinet.src}
           alt={"face_cabinet"}
           width={"290px"}
           height={"100px"}

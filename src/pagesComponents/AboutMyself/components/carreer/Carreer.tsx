@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
 
-import trek from "@assets/images/trek.png";
+import trek from "../../../../assets/images/trek.png";
 import CropedImage from "../../../../components/CropedImage/CropedImage";
 
 import "./carreer.scss";
@@ -19,7 +19,7 @@ const Carreer: Component = () => {
       <div class="carreer__items-1">
         <div class="carreer__item1">
           <CropedImage
-            src={trek}
+            src={trek.src}
             alt={"blank"}
             offsetY={2}
             offsetX={2}
@@ -31,7 +31,7 @@ const Carreer: Component = () => {
         <div class="carreer__item1">
           <CropedImage
             alt={"blank"}
-            src={trek}
+            src={trek.src}
             offsetY={2}
             offsetX={2}
             zoom={8}
@@ -44,7 +44,7 @@ const Carreer: Component = () => {
         <div class="carreer__item1">
           <CropedImage
             alt={"blank"}
-            src={trek}
+            src={trek.src}
             offsetY={2}
             offsetX={2}
             zoom={8}
@@ -55,7 +55,7 @@ const Carreer: Component = () => {
         <div class="carreer__item1">
           <CropedImage
             alt={"blank"}
-            src={trek}
+            src={trek.src}
             offsetY={2}
             offsetX={2}
             zoom={8}
@@ -66,7 +66,7 @@ const Carreer: Component = () => {
         <div class="carreer__item2">
           <CropedImage
             alt={"blank"}
-            src={trek}
+            src={trek.src}
             offsetY={2}
             offsetX={2}
             zoom={8}
@@ -99,7 +99,7 @@ const Carreer: Component = () => {
         <div class="carreer__item1">
           <CropedImage
             alt={"blank"}
-            src={trek}
+            src={trek.src}
             offsetY={2}
             offsetX={2}
             zoom={8}
@@ -110,7 +110,7 @@ const Carreer: Component = () => {
         <div class="carreer__item1">
           <CropedImage
             alt={"blank"}
-            src={trek}
+            src={trek.src}
             offsetY={2}
             offsetX={2}
             zoom={8}
@@ -121,7 +121,7 @@ const Carreer: Component = () => {
         <div class="carreer__item2">
           <CropedImage
             alt={"blank"}
-            src={trek}
+            src={trek.src}
             offsetY={2}
             offsetX={2}
             zoom={8}

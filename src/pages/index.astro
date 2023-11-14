@@ -1,6 +1,9 @@
 ---
 // Import your root App component
-import App from '../App'
+import App from "../App";
+import Layout from "../astroLayout/Layout.astro";
 ---
 
-<App client:load />
+<Layout pageTitle="test" description="test" id="test" path="/">
+  <App client:only="solid-js"/>
+</Layout>

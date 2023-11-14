@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
 
-import cabinet from "@assets/images/cabinet.png";
+import cabinet from "../../../../assets/images/cabinet.png";
 
 import "./specificities.scss";
 
@@ -30,7 +30,7 @@ const MySpecificities: Component = () => {
       </div>
       <figure class="my-specificities__image">
         <img
-          src={cabinet}
+          src={cabinet.src}
           alt="cabinet"
           class="my-specificities__image__sketch"
         />

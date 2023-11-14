@@ -1,0 +1,48 @@
+---
+
+interface Props {
+  id: string;
+  path: string;
+  pageTitle: string;
+  description: string;
+  noindex?: boolean;
+  ecoBadge?: boolean;
+  mainPage?: boolean;
+}
+
+const { id, path, pageTitle, description, noindex, ecoBadge, mainPage } =
+  Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{pageTitle}</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <div id={id}><slot /></div>
+  </body>
+</html>
+<style is:global>
+  body {
+    margin: 0;
+    background-color: black;
+    font-family: "futura", "larken", sans-serif, "handsomeregular";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+ 
