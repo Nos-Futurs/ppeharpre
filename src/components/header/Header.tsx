@@ -2,21 +2,19 @@ import './header.scss';
 
 import { Component, createEffect, createSignal } from 'solid-js';
 import logo from '../../assets/images/logo.png';
-import NavigationBurger from './NavigationBurger';
 import NavigationHeader, { pages } from './NavigationHeader';
+import NavigationBurger from './NavigationBurger';
 
 interface HeaderProps {
-  page: pages
+  page: pages;
 }
-const Header: Component<HeaderProps> = (
-  props: HeaderProps,
-) => {
+const Header: Component<HeaderProps> = (props: HeaderProps) => {
   const [myMethodPopup, setMyMethodPopup] = createSignal(false);
   const [aboutPopup, setAboutPopup] = createSignal(false);
   const [headerSize, setHeaderSize] = createSignal(150);
   const [offsetY, setOffsetY] = createSignal(0);
 
-  const handleScroll = () => {
+  const handleScroll = (): void => {
     setOffsetY(window.scrollY);
   };
 
@@ -46,7 +44,7 @@ const Header: Component<HeaderProps> = (
         aboutPopup={aboutPopup}
         setAboutPopup={setAboutPopup}
       />
-      {/* <NavigationBurger /> */}
+      <NavigationBurger />
     </div>
   );
 };

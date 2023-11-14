@@ -1,24 +1,22 @@
-import { useNavigate } from "@solidjs/router";
-import "./modalSideBar.scss";
+import './modalSideBar.scss';
 
-import { createSignal } from "solid-js";
-import { useModalContext } from "../../context/modalContext";
-import CloseButton from "../buttons/CloseButton";
-import DropDownLink from "../links/DropDownLink";
-import SideLinks from "../links/SideLinks";
+import { Component, createEffect, createSignal } from 'solid-js';
+import { useModalContext } from '../../context/modalContext';
+import CloseButton from '../buttons/CloseButton';
+import DropDownLink from '../links/DropDownLink';
+import SideLinks from '../links/SideLinks';
 
-function ModalSideBar() {
+const ModalSideBar: Component = () => {
   const [myMethodPopup, setMyMethodPopup] = createSignal(false);
   const [isModalOpen, setIsModalOpen] = useModalContext();
   const [aboutPopup, setAboutPopup] = createSignal(false);
-  const navigate = useNavigate();
 
   return (
     <div class="modal">
       <div class="modal__side-popup">
         <div class="modal__close">
           <CloseButton
-            onClick={() => {
+            onClick={(): void => {
               setIsModalOpen(false);
             }}
           />
@@ -27,7 +25,7 @@ function ModalSideBar() {
           <SideLinks
             name="Accueil"
             href="/"
-            onClick={() => {
+            onClick={(): void => {
               setIsModalOpen(false);
             }}
           />
@@ -40,26 +38,26 @@ function ModalSideBar() {
               setPopup={setMyMethodPopup}
               sections={[
                 {
-                  name: "Votre accompagnement",
-                  color: "black",
-                  path: "/method",
-                  onClick: () => {
+                  name: 'Votre accompagnement',
+                  color: 'black',
+                  path: '/method',
+                  onClick: (): void => {
                     setIsModalOpen(false);
                   },
                 },
                 {
-                  name: "Pourquoi se faire accompagner?",
-                  path: "/method#why",
-                  color: "black",
-                  onClick: () => {
+                  name: 'Pourquoi se faire accompagner?',
+                  path: '/method#why',
+                  color: 'black',
+                  onClick: (): void => {
                     setIsModalOpen(false);
                   },
                 },
                 {
                   name: "Le déroulement d'une séance",
-                  path: "/method#how",
-                  color: "black",
-                  onClick: () => {
+                  path: '/method#how',
+                  color: 'black',
+                  onClick: (): void => {
                     setIsModalOpen(false);
                   },
                 },
@@ -75,26 +73,26 @@ function ModalSideBar() {
               setPopup={setAboutPopup}
               sections={[
                 {
-                  name: "Mes spécificités",
-                  path: "/about",
-                  color: "black",
-                  onClick: () => {
+                  name: 'Mes spécificités',
+                  path: '/about',
+                  color: 'black',
+                  onClick: (): void => {
                     setIsModalOpen(false);
                   },
                 },
                 {
-                  name:"Mon parcours",
-                  path:"/about#carreer",
-                  color: "black",
-                  onClick: () => {
+                  name: 'Mon parcours',
+                  path: '/about#carreer',
+                  color: 'black',
+                  onClick: (): void => {
                     setIsModalOpen(false);
                   },
                 },
                 {
-                  name: "Ma déontologie",
-                  path: "/about#ethics",
-                  color: "black",
-                  onClick: () => {
+                  name: 'Ma déontologie',
+                  path: '/about#ethics',
+                  color: 'black',
+                  onClick: (): void => {
                     setIsModalOpen(false);
                   },
                 },
@@ -104,14 +102,14 @@ function ModalSideBar() {
           <SideLinks
             name="Gestalt thérapie"
             href="/gestalt"
-            onClick={() => {
+            onClick={(): void => {
               setIsModalOpen(false);
             }}
           />
           <SideLinks
             name="Contactez moi"
             href="/contact"
-            onClick={() => {
+            onClick={(): void => {
               setIsModalOpen(false);
             }}
           />
@@ -119,6 +117,6 @@ function ModalSideBar() {
       </div>
     </div>
   );
-}
+};
 
 export default ModalSideBar;

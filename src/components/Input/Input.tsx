@@ -1,4 +1,5 @@
-import "./input.scss";
+import { Component } from 'solid-js';
+import './input.scss';
 
 interface InputProps {
   displayName?: string;
@@ -7,16 +8,23 @@ interface InputProps {
   onInput: (value: string) => void;
 }
 
-const Input = ({ onInput, displayName, name, type }: InputProps) => {
+const Input: Component<InputProps> = (props: InputProps) => {
   return (
     <div class="input">
-      <div class="input__name">{displayName ? displayName : name}</div>
+      <div class="input__name">
+        {props.displayName ? props.displayName : props.name}
+      </div>
       <input
-        type={type}
-        name={name}
-        id={name}
-        onInput={(event) => {
-          onInput(event.currentTarget.value);
+        type={props.type}
+        name={props.name}
+        id={props.name}
+        onInput={(
+          event: InputEvent & {
+            currentTarget: HTMLInputElement;
+            target: HTMLInputElement;
+          },
+        ): void => {
+          props.onInput(event.currentTarget.value);
         }}
         class="input__field"
       />

@@ -1,9 +1,10 @@
 ---
 import './layout.scss';
-import '../styles/main.scss'
+import '../styles/main.scss';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer.astro';
 import { pages } from '../components/header/NavigationHeader';
+import { Modal } from 'components/Modal/Modal';
 
 interface Props {
   id: string;
@@ -16,8 +17,7 @@ interface Props {
   mainPage?: boolean;
 }
 
-const { id, path, pageTitle, description, noindex, ecoBadge, mainPage, page } =
-  Astro.props;
+const { id, path, pageTitle, description, noindex, page } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -38,6 +38,7 @@ const { id, path, pageTitle, description, noindex, ecoBadge, mainPage, page } =
       <div id={id} class="layout"><slot /></div>
       <Footer />
     </main>
+    <Modal client:load/>
   </body>
 </html>
 <style is:global>
@@ -56,3 +57,4 @@ const { id, path, pageTitle, description, noindex, ecoBadge, mainPage, page } =
     scroll-behavior: smooth;
   }
 </style>
+../components/Header/Header../components/Header/NavigationHeader

@@ -1,3 +1,4 @@
+import { Component } from "solid-js";
 import burger from "../../assets/images/burger.svg";
 import "./buttons.scss";
 
@@ -5,10 +6,10 @@ interface BurgerButtonProps {
   onClick: () => void;
 }
 
-const BurgerButton = (props: BurgerButtonProps) => {
+const BurgerButton: Component<BurgerButtonProps> = (props: BurgerButtonProps) => {
   return (
-    <button name="menu-button" class="burger" onclick={props.onClick}>
-      <img src={burger} alt={"burger-button"} class="burger__button" />
+    <button name="menu-button" class="burger" onClick={():void => {props.onClick()}}>
+      <img src={burger.src} alt={"burger-button"} class="burger__button" />
     </button>
   );
 };
