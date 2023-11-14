@@ -1,8 +1,8 @@
-@use "@styles/abstracts/text";
-@use "@styles/abstracts/layouts";
-@use "@styles/abstracts/spacings";
-@use "@styles/abstracts/image" as i;
-@use "@styles/abstracts/font" as f;
+@use "src/styles/abstracts/text";
+@use "src/styles/abstracts/layouts";
+@use "src/styles/abstracts/spacings";
+@use "src/styles/abstracts/image" as i;
+@use "src/styles/abstracts/font" as f;
 
 #presentation {
   display: grid;

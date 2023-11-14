@@ -12,7 +12,7 @@ function Header() {
   const [offsetY, setOffsetY] = createSignal(0);
 
   const handleScroll = () => {
-    setOffsetY(window.pageYOffset);
+    setOffsetY(window.scrollY);
   };
 
   createEffect(() => {
@@ -32,7 +32,7 @@ function Header() {
   return (
     <div class="header" style={{ height: `${headerSize()}px` }}>
       <figure class="header__logo-container">
-        <img src={logo} alt="logo" class="header__logo" />
+        <img src={logo.src} alt="logo" class="header__logo" />
       </figure>
       <NavigationHeader
         myMethodPopup={myMethodPopup}
@@ -40,7 +40,7 @@ function Header() {
         aboutPopup={aboutPopup}
         setAboutPopup={setAboutPopup}
       />
-      <NavigationBurger />
+      {/* <NavigationBurger /> */}
     </div>
   );
 }

@@ -1,16 +1,16 @@
-import { useNavigate } from "@solidjs/router";
-import "./header.scss";
+import { useNavigate } from '@solidjs/router';
+import './header.scss';
 
-import { Accessor, Setter, createSignal } from "solid-js";
-import DropDownLink from "../links/DropDownLink";
-import MenuLink from "../links/MenuLinks";
+import { Accessor, Component, Setter, createSignal } from 'solid-js';
+import DropDownLink from '../links/DropDownLink';
+import MenuLink from '../links/MenuLinks';
 
 enum pages {
-  HOME = "home",
-  ABOUT = "about",
-  MY_METHOD = "myMethod",
-  GESTALT = "gestalt",
-  CONTACT = "contact",
+  HOME = 'home',
+  ABOUT = 'about',
+  MY_METHOD = 'myMethod',
+  GESTALT = 'gestalt',
+  CONTACT = 'contact',
 }
 
 interface NavigationHeaderProps {
@@ -20,17 +20,17 @@ interface NavigationHeaderProps {
   setAboutPopup: Setter<boolean>;
 }
 
-function NavigationHeader(props: NavigationHeaderProps) {
+const NavigationHeader: Component<NavigationHeaderProps> = (
+  props: NavigationHeaderProps,
+) => {
   const [selectedLink, setSelectedLink] = createSignal<pages>(pages.HOME);
-  const navigate = useNavigate();
-
   return (
     <div class="header__navigation">
       <MenuLink
         name="Accueil"
         selected={selectedLink() == pages.HOME}
         href="/"
-        onClick={() => {
+        onClick={(): void => {
           setSelectedLink(pages.HOME);
         }}
       />
@@ -43,25 +43,25 @@ function NavigationHeader(props: NavigationHeaderProps) {
           setPopup={props.setMyMethodPopup}
           sections={[
             {
-              name: "Votre accompagnement",
-              path: "/method",
-              onClick: () => {
+              name: 'Votre accompagnement',
+              path: '/method',
+              onClick: (): void => {
                 setSelectedLink(pages.MY_METHOD);
                 props.setMyMethodPopup(false);
               },
             },
             {
-              name: "Pourquoi se faire accompagner?",
-              path: "/method#why",
-              onClick: () => {
+              name: 'Pourquoi se faire accompagner?',
+              path: '/method#why',
+              onClick: (): void => {
                 setSelectedLink(pages.MY_METHOD);
                 props.setMyMethodPopup(false);
               },
             },
             {
               name: "Le déroulement d'une séance",
-              path: "/method#how",
-              onClick: () => {
+              path: '/method#how',
+              onClick: (): void => {
                 setSelectedLink(pages.MY_METHOD);
                 props.setMyMethodPopup(false);
               },
@@ -78,25 +78,25 @@ function NavigationHeader(props: NavigationHeaderProps) {
           setPopup={props.setAboutPopup}
           sections={[
             {
-              name: "Mes spécificités",
-              path: "/about",
-              onClick: () => {
+              name: 'Mes spécificités',
+              path: '/about',
+              onClick: (): void => {
                 setSelectedLink(pages.ABOUT);
                 props.setAboutPopup(false);
               },
             },
             {
-              name: "Mon parcours",
-              path: "/about#carreer",
-              onClick: () => {
+              name: 'Mon parcours',
+              path: '/about#carreer',
+              onClick: (): void => {
                 setSelectedLink(pages.ABOUT);
                 props.setAboutPopup(false);
               },
             },
             {
-              name: "Ma déontologie",
-              path: "/about#ethics",
-              onClick: () => {
+              name: 'Ma déontologie',
+              path: '/about#ethics',
+              onClick: (): void => {
                 setSelectedLink(pages.ABOUT);
                 props.setAboutPopup(false);
               },
@@ -108,7 +108,7 @@ function NavigationHeader(props: NavigationHeaderProps) {
         name="Gestalt thérapie"
         selected={selectedLink() == pages.GESTALT}
         href="/gestalt"
-        onClick={() => {
+        onClick={(): void => {
           setSelectedLink(pages.GESTALT);
         }}
       />
@@ -117,12 +117,12 @@ function NavigationHeader(props: NavigationHeaderProps) {
         border={true}
         selected={selectedLink() == pages.CONTACT}
         href="/contact"
-        onClick={() => {
+        onClick={(): void => {
           setSelectedLink(pages.CONTACT);
         }}
       />
     </div>
   );
-}
+};
 
 export default NavigationHeader;

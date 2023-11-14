@@ -1,6 +1,6 @@
-@use "@styles/abstracts/text";
-@use "@styles/abstracts/layouts";
-@use "@styles/abstracts/image";
+@use "src/styles/abstracts/text";
+@use "src/styles/abstracts/layouts";
+@use "src/styles/abstracts/image";
 
 .gestalt {
   @include layouts.grid(45% 10% 45%, repeat(4, auto));

@@ -1,7 +1,7 @@
-@use "@styles/abstracts/font";
-@use "@styles/abstracts/font-size";
-@use "@styles/abstracts/spacings";
-@use "@styles/abstracts/layouts";
+@use "src/styles/abstracts/font";
+@use "src/styles/abstracts/font-size";
+@use "src/styles/abstracts/spacings";
+@use "src/styles/abstracts/layouts";
 
 %text-section-title {
   @include layouts.flex(row, center, center);

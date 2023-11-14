@@ -1,4 +1,8 @@
 ---
+import './layout.scss';
+import '../styles/main.scss'
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
 
 interface Props {
   id: string;
@@ -14,7 +18,7 @@ const { id, path, pageTitle, description, noindex, ecoBadge, mainPage } =
   Astro.props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>{pageTitle}</title>
@@ -23,17 +27,22 @@ const { id, path, pageTitle, description, noindex, ecoBadge, mainPage } =
     {noindex && <meta name="robots" content="noindex" />}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={`https://nosfuturs.dev${path}`} />
     <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
-    <div id={id}><slot /></div>
+    <main id={`page-${id}`} class="page">
+      <Header client:only="solid-js" />
+      <div id={id} class="layout"><slot /></div>
+      <Footer client:only="solid-js" />
+    </main>
   </body>
 </html>
 <style is:global>
   body {
     margin: 0;
     background-color: black;
-    font-family: "futura", "larken", sans-serif, "handsomeregular";
+    font-family: 'futura', 'larken', sans-serif, 'handsomeregular';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -45,4 +54,3 @@ const { id, path, pageTitle, description, noindex, ecoBadge, mainPage } =
     scroll-behavior: smooth;
   }
 </style>
- 

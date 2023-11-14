@@ -2,7 +2,6 @@ import { Route, Router, Routes } from "@solidjs/router";
 import { Component } from "solid-js";
 import { Modal } from "./components/Modal/Modal";
 import { ModalProvider } from "./context/modalContext";
-import Layout from "./layout/Layout";
 import AboutMyself from "./pagesComponents/AboutMyself/AboutMyself";
 import Contact from "./pagesComponents/Contact/Contact";
 import Gestalt from "./pagesComponents/Gestalt/Gestalt";
@@ -15,7 +14,6 @@ const AppRouter: Component = () => {
     <Router>
       <ModalProvider>
         <Modal />
-        <Layout>
           <Routes>
             <Route path="/" component={Home} />
             <Route path="/about" component={AboutMyself} />
@@ -24,7 +22,6 @@ const AppRouter: Component = () => {
             <Route path="/contact" component={Contact} />
             <Route path="/mentions-legales" component={Mention} />
           </Routes>
-        </Layout>
       </ModalProvider>
     </Router>
   );

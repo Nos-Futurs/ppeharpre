@@ -11,8 +11,5 @@
     "moduleResolution": "node",
     "types": ["astro/client"],
     "noEmit": true,
-    "paths": {
-      "@*": ["./*"]
-    }
   }
 }

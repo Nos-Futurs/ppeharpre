@@ -12,14 +12,14 @@ interface menuLinkProps {
 // https://github.com/solidjs/solid/discussions/287
 const MenuLink = (props: menuLinkProps) => {
   return (
-    <A
+    <a
       class={props.border ? "menuLinkBordered" : "menuLink"}
       href={props.href}
       onclick={props.onClick}
       style={{ "font-weight": `${props.selected ? "800" : "500"}` }}
     >
       {props.name}
-    </A>
+    </a>
   );
 };
 

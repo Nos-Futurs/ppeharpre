@@ -1,7 +1,7 @@
-@use "@styles/abstracts/text";
-@use "@styles/abstracts/layouts";
-@use "@styles/abstracts/spacings";
-@use "@styles/abstracts/image";
+@use "src/styles/abstracts/text";
+@use "src/styles/abstracts/layouts";
+@use "src/styles/abstracts/spacings";
+@use "src/styles/abstracts/image";
 
 .why {
   @include layouts.grid(repeat(2, 1fr), repeat(5, auto));

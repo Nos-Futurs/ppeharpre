@@ -1,7 +1,7 @@
-@use "@styles/abstracts/text";
-@use "@styles/abstracts/image";
-@use "@styles/abstracts/spacings";
-@use "@styles/abstracts/layouts";
+@use "src/styles/abstracts/text";
+@use "src/styles/abstracts/image";
+@use "src/styles/abstracts/spacings";
+@use "src/styles/abstracts/layouts";
 
 .carreer {
   display: grid;
