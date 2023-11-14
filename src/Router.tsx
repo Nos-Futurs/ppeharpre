@@ -3,12 +3,12 @@ import { Component } from "solid-js";
 import { Modal } from "./components/Modal/Modal";
 import { ModalProvider } from "./context/modalContext";
 import Layout from "./layout/Layout";
-import AboutMyself from "./pages/AboutMyself/AboutMyself";
-import Contact from "./pages/Contact/Contact";
-import Gestalt from "./pages/Gestalt/Gestalt";
-import Home from "./pages/Home/Home";
-import Mention from "./pages/Mention/Mention";
-import MyMethod from "./pages/MyMethod/MyMethod";
+import AboutMyself from "./pagesComponents/AboutMyself/AboutMyself";
+import Contact from "./pagesComponents/Contact/Contact";
+import Gestalt from "./pagesComponents/Gestalt/Gestalt";
+import Home from "./pagesComponents/Home/Home";
+import Mention from "./pagesComponents/Mention/Mention";
+import MyMethod from "./pagesComponents/MyMethod/MyMethod";
 
 const AppRouter: Component = () => {
   return (
