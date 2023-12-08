@@ -3,11 +3,10 @@
 import Presentation from '../components/Presentation/Presentation.astro';
 import Layout from '../Layout/Layout.astro';
 import Description from '../components/Description/Description.astro';
-import { pages } from '../components/header/NavigationHeader';
+import { pages } from '../components/Header/NavigationHeader';
 ---
 
 <Layout pageTitle="test" description="test" id="test" path="/" page={pages.HOME}>
   <Presentation />
   <Description />
 </Layout>
-../components/Header/NavigationHeader

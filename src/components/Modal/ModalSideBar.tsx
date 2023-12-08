@@ -1,6 +1,6 @@
 import './modalSideBar.scss';
 
-import { Component, createEffect, createSignal } from 'solid-js';
+import { Component, createSignal } from 'solid-js';
 import { useModalContext } from '../../context/modalContext';
 import CloseButton from '../buttons/CloseButton';
 import DropDownLink from '../links/DropDownLink';

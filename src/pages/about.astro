@@ -3,13 +3,18 @@
 import Layout from '../Layout/Layout.astro';
 import MySpecificities from '../components/specificities/Specificities';
 import Carreer from '../components/carreer/Carreer';
-import Ethics from '../components/ethics/Ethics';
-import { pages } from '../components/header/NavigationHeader';
+import Ethics from '../components/ethics/Ethics.astro';
+import { pages } from '../components/Header/NavigationHeader';
 ---
 
-<Layout pageTitle="test" description="test" id="test" path="/" page={pages.ABOUT}>
-  <MySpecificities client:load/>
-  <Carreer client:load/>
-  <Ethics client:load/>
+<Layout
+  pageTitle="test"
+  description="test"
+  id="test"
+  path="/"
+  page={pages.ABOUT}
+>
+  <MySpecificities client:load />
+  <Carreer client:load />
+  <Ethics />
 </Layout>
-../components/Header/NavigationHeader

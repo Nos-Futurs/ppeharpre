@@ -1,10 +1,11 @@
 ---
 import './layout.scss';
 import '../styles/main.scss';
-import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer.astro';
-import { pages } from '../components/header/NavigationHeader';
-import { Modal } from 'components/Modal/Modal';
+import { Modal } from '../components/Modal/Modal';
+import { ViewTransitions } from 'astro:transitions';
+import Header from '../components/Header/Header.jsx';
+import { pages } from '../components/Header/NavigationHeader';
 
 interface Props {
   id: string;
@@ -31,6 +32,7 @@ const { id, path, pageTitle, description, noindex, page } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={`https://nosfuturs.dev${path}`} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <ViewTransitions />
   </head>
   <body>
     <main id={`page-${id}`} class="page">
@@ -38,23 +40,21 @@ const { id, path, pageTitle, description, noindex, page } = Astro.props;
       <div id={id} class="layout"><slot /></div>
       <Footer />
     </main>
-    <Modal client:load/>
-  </body>
-</html>
-<style is:global>
-  body {
-    margin: 0;
-    background-color: black;
-    font-family: 'futura', 'larken', sans-serif, 'handsomeregular';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  * {
-    box-sizing: border-box;
-  }
+    <Modal client:load />
+  </body><style is:global>
+    body {
+      margin: 0;
+      background-color: black;
+      font-family: 'futura', 'larken', sans-serif, 'handsomeregular';
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    * {
+      box-sizing: border-box;
+    }
 
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
-../components/Header/Header../components/Header/NavigationHeader
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</html>

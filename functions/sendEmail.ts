@@ -20,7 +20,7 @@ exports.handler = async function (event: any) {
     <p>Nom : ${form.name} <br/></p>
     <p>Message : ${form.message}<br/></p>
     `;
-    let mailDetails = {
+    const mailDetails = {
       from: "contact.peharpre@gmail.com",
       to: "contact.peharpre@gmail.com",
       subject: "Demande de contact",
@@ -51,7 +51,7 @@ const sendWarningEmail = async (
   const html = `<h1>Bonjour,</h1><br/>
     <p>${error}</p>
     `;
-  let mailDetails = {
+  const mailDetails = {
     from: "contact.peharpre@gmail.com",
     to: "peharprepaul@gmail.com",
     subject: "Problème de contact, site gestalt",
