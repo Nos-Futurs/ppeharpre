@@ -1,0 +1,13 @@
+@use "src/styles/abstracts/layouts";
+@use "src/styles/abstracts/colours";
+@use "src/styles/abstracts/spacings";
+@use "src/styles/abstracts/font-size";
+
+#external-link {
+  @include layouts.flex(column, center, center);
+  #developper {
+    padding-bottom: spacings.$s;
+    text-align: center;
+  }
+
+}

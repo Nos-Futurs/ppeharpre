@@ -1,18 +1,21 @@
 ---
 import './footerContact.scss';
+import EcoBadge from "components/EcoBadge/EcoBadge";
+const { href } = Astro.url;
 ---
 
 <div class="contact-info">
   <div class="contact-info__person">
-    <div>Philippe Péharpré</div>
+    <p>Philippe Péharpré</p>
     <a href="mailto:ph.peharpre@gmail.com" style={{ color: 'white' }}>
       contact.peharpre@gmail.com
     </a>
-    <div>06 07 79 62 12</div>
+    <p>06 07 79 62 12</p>
   </div>
   <div class="contact-info__adress">
-    <div>8 Bld Villebois Mareuil</div>
-    <div>35 400 Saint Malo</div>
+    <p>8 Bld Villebois Mareuil</p>
+    <p>35 400 Saint Malo</p>
     <a href="/mentions-legales">Mentions légales</a>
   </div>
+  <EcoBadge href={href} client:only="solid-js"/>
 </div>
