@@ -8,11 +8,14 @@ import cabinet_800 from '../assets/images/cabinet/cabinet-800.png';
 import cabinet_600 from '../assets/images/cabinet/cabinet-600.png';
 import cabinet_400 from '../assets/images/cabinet/cabinet-400.png';
 import cabinet_250 from '../assets/images/cabinet/cabinet-250.png';
+import sea_rocks_800 from '../assets/images/sea_rocks/sea_rocks-800.png';
+import sea_rocks_600 from '../assets/images/sea_rocks/sea_rocks-600.png';
+import sea_rocks_400 from '../assets/images/sea_rocks/sea_rocks-400.png';
+import sea_rocks_250 from '../assets/images/sea_rocks/sea_rocks-250.png';
 import lighthouse_800 from '../assets/images/lighthouse/lighthouse-800.png';
 import lighthouse_600 from '../assets/images/lighthouse/lighthouse-600.png';
 import lighthouse_400 from '../assets/images/lighthouse/lighthouse-400.png';
 import lighthouse_250 from '../assets/images/lighthouse/lighthouse-250.png';
-import sea_rocks from '../assets/images/sea_rocks.png';
 import CropedImage from '../components/CropedImage/CropedImage';
 import './contact.scss';
 import { pages } from '../components/Header/NavigationHeader';
@@ -48,7 +51,9 @@ import { pages } from '../components/Header/NavigationHeader';
     <div class="contact__face">
       <CropedImage
         alt={'philippe_face_right'}
-        src={sea_rocks.src}
+        src={sea_rocks_800.src}
+        srcSet={`${sea_rocks_250.src} 250w, ${sea_rocks_400.src} 400w, ${sea_rocks_600.src} 600w, ${sea_rocks_800.src} 800w`}
+        sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
         width={'70%'}
         height={'100%'}
         zoom={11}

@@ -46,7 +46,7 @@ const Why: Component = () => {
         <CropedImage
           alt={"mountains"}
           src={trek.src}
-          width={"430px"}
+          width={"min(430px, 100%)"}
           height={"80%"}
           zoom={14.7}
           offsetX={9.9}

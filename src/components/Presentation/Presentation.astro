@@ -1,5 +1,8 @@
 ---
-import sea_rocks from '../../assets/images/sea_rocks.png';
+import sea_rocks_800 from '../../assets/images/sea_rocks/sea_rocks-800.png';
+import sea_rocks_600 from '../../assets/images/sea_rocks/sea_rocks-600.png';
+import sea_rocks_400 from '../../assets/images/sea_rocks/sea_rocks-400.png';
+import sea_rocks_250 from '../../assets/images/sea_rocks/sea_rocks-250.png';
 import './presentation.scss';
 ---
 
@@ -11,6 +14,12 @@ import './presentation.scss';
     Praticien <br /> en Gestalt Thérapie <br /> Saint Malo
   </h2>
   <figure class="presentation__sketch-container">
-    <img src={sea_rocks.src} alt="sea-rocks" class="presentation__sketch" />
+    <img
+      src={sea_rocks_800.src}
+      alt="sea-rocks"
+      srcset={`${sea_rocks_250.src} 250w, ${sea_rocks_400.src} 400w, ${sea_rocks_600.src} 600w, ${sea_rocks_800.src} 800w`}
+      sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
+      class="presentation__sketch"
+    />
   </figure>
 </section>
