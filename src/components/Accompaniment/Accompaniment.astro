@@ -1,5 +1,7 @@
 ---
-import trek from '../../assets/images/trek.png';
+import trek_560 from '../../assets/images/trek/trek-560.png';
+import trek_400 from '../../assets/images/trek/trek-400.png';
+import trek_250 from '../../assets/images/trek/trek-250.png';
 
 import './accompaniment.scss';
 ---
@@ -23,7 +25,9 @@ import './accompaniment.scss';
   </p>
   <figure class="accompaniment__sketch-container">
     <img
-      src={trek.src}
+      src={trek_560.src}
+      srcset={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+      sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
       alt="treking-in-the-mountains"
       class="accompaniment__sketch"
     />

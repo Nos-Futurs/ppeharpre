@@ -1,9 +1,11 @@
-import { Component } from "solid-js";
+import { Component } from 'solid-js';
 
-import trek from "../../assets/images/trek.png";
-import CropedImage from "../CropedImage/CropedImage";
+import trek_560 from '../../assets/images/trek/trek-560.png';
+import trek_400 from '../../assets/images/trek/trek-400.png';
+import trek_250 from '../../assets/images/trek/trek-250.png';
+import CropedImage from '../CropedImage/CropedImage';
 
-import "./carreer.scss";
+import './carreer.scss';
 
 const Carreer: Component = () => {
   return (
@@ -19,59 +21,69 @@ const Carreer: Component = () => {
       <div class="carreer__items-1">
         <div class="carreer__item1">
           <CropedImage
-            src={trek.src}
-            alt={"blank"}
+            src={trek_560.src}
+            srcSet={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+            sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
+            alt={'blank'}
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"150px"}
-            height={"130px"}
+            width={'150px'}
+            height={'130px'}
           />
         </div>
         <div class="carreer__item1">
           <CropedImage
-            alt={"blank"}
-            src={trek.src}
+            alt={'blank'}
+            src={trek_560.src}
+            srcSet={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+            sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"150px"}
-            height={"130px"}
+            width={'150px'}
+            height={'130px'}
           />
         </div>
       </div>
       <div class="carreer__items">
         <div class="carreer__item1">
           <CropedImage
-            alt={"blank"}
-            src={trek.src}
+            alt={'blank'}
+            src={trek_560.src}
+            srcSet={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+            sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"150px"}
-            height={"130px"}
+            width={'150px'}
+            height={'130px'}
           />
         </div>
         <div class="carreer__item1">
           <CropedImage
-            alt={"blank"}
-            src={trek.src}
+            alt={'blank'}
+            src={trek_560.src}
+            srcSet={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+            sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"150px"}
-            height={"130px"}
+            width={'150px'}
+            height={'130px'}
           />
         </div>
         <div class="carreer__item2">
           <CropedImage
-            alt={"blank"}
-            src={trek.src}
+            alt={'blank'}
+            src={trek_560.src}
+            srcSet={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+            sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"450px"}
-            height={"120px"}
+            width={'450px'}
+            height={'120px'}
           />
         </div>
       </div>
@@ -98,35 +110,41 @@ const Carreer: Component = () => {
       <div class="carreer__items">
         <div class="carreer__item1">
           <CropedImage
-            alt={"blank"}
-            src={trek.src}
+            alt={'blank'}
+            src={trek_560.src}
+            srcSet={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+            sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"150px"}
-            height={"130px"}
+            width={'150px'}
+            height={'130px'}
           />
         </div>
         <div class="carreer__item1">
           <CropedImage
-            alt={"blank"}
-            src={trek.src}
+            alt={'blank'}
+            src={trek_560.src}
+            srcSet={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+            sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"150px"}
-            height={"130px"}
+            width={'150px'}
+            height={'130px'}
           />
         </div>
         <div class="carreer__item2">
           <CropedImage
-            alt={"blank"}
-            src={trek.src}
+            alt={'blank'}
+            src={trek_560.src}
+            srcSet={`${trek_250.src} 250w, ${trek_400.src} 400w, ${trek_560.src} 560w`}
+            sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, 80vw"
             offsetY={2}
             offsetX={2}
             zoom={8}
-            width={"450px"}
-            height={"120px"}
+            width={'450px'}
+            height={'120px'}
           />
         </div>
       </div>
