@@ -3,6 +3,8 @@ import './CropedImage.scss';
 
 interface CropedImageProps {
   src: string;
+  srcSet?: string;
+  sizes?: string;
   alt: string;
   zoom?: number;
   offsetY?: number;
@@ -17,6 +19,8 @@ interface CropedImageProps {
 // eslint-disable-next-line solid/no-destructure
 const CropedImage = ({
   src,
+  srcSet = '',
+  sizes = '',
   alt,
   zoom = 1,
   offsetY = 1,
@@ -52,6 +56,8 @@ const CropedImage = ({
         class="sample__img"
         src={src}
         alt={alt}
+        srcSet={srcSet}
+        sizes={sizes}
         style={{
           top: `${-100 * offsetY}px`,
           left: `${-100 * offsetX * (willChange ? rapportWidth() : 1)}px`,
