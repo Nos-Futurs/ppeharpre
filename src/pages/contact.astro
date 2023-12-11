@@ -4,11 +4,14 @@ import Layout from '../Layout/Layout.astro';
 import ContactForm from '../components/Contact/contactForm/ContactForm';
 import Map from '../components/map/map';
 
-import cabinet_800 from '../../assets/images/cabinet/cabinet-800.png';
-import cabinet_600 from '../../assets/images/cabinet/cabinet-600.png';
-import cabinet_400 from '../../assets/images/cabinet/cabinet-400.png';
-import cabinet_250 from '../../assets/images/cabinet/cabinet-250.png';
-import lighthouse from '../assets/images/lighthouse/lighthouse.png';
+import cabinet_800 from '../assets/images/cabinet/cabinet-800.png';
+import cabinet_600 from '../assets/images/cabinet/cabinet-600.png';
+import cabinet_400 from '../assets/images/cabinet/cabinet-400.png';
+import cabinet_250 from '../assets/images/cabinet/cabinet-250.png';
+import lighthouse_800 from '../assets/images/lighthouse/lighthouse-800.png';
+import lighthouse_600 from '../assets/images/lighthouse/lighthouse-600.png';
+import lighthouse_400 from '../assets/images/lighthouse/lighthouse-400.png';
+import lighthouse_250 from '../assets/images/lighthouse/lighthouse-250.png';
 import sea_rocks from '../assets/images/sea_rocks.png';
 import CropedImage from '../components/CropedImage/CropedImage';
 import './contact.scss';
@@ -63,7 +66,9 @@ import { pages } from '../components/Header/NavigationHeader';
     <div class="contact__cropped-image">
       <CropedImage
         alt={'philippe_face'}
-        src={lighthouse.src}
+        src={lighthouse_800.src}
+        srcSet={`${lighthouse_250.src} 250w, ${lighthouse_400.src} 400w, ${lighthouse_600.src} 600w, ${lighthouse_800.src} 800w`}
+        sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
         width={'70%'}
         maxWidth={'1106px'}
         height={'100%'}

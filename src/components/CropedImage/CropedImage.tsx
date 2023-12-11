@@ -1,4 +1,4 @@
-import { Component, JSX, createEffect, createSignal } from 'solid-js';
+import { createEffect, createSignal } from 'solid-js';
 import './CropedImage.scss';
 
 interface CropedImageProps {

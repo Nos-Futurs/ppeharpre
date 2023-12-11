@@ -41,7 +41,7 @@
 
 @media (max-width: 1150px) {
   .gestalt {
-    grid-template-columns: 100%;
+   grid-template-columns: 100%;
 
     &__title {
       grid-column: 1;
@@ -60,7 +60,7 @@
     }
 
     &__cropped-image {
-      display: flex;
+      @include layouts.flex(column, center, center);
       grid-column: 1;
     }
     &__image {
