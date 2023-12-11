@@ -1,5 +1,5 @@
-import { createEffect, createSignal } from "solid-js";
-import "./CropedImage.scss";
+import { Component, JSX, createEffect, createSignal } from 'solid-js';
+import './CropedImage.scss';
 
 interface CropedImageProps {
   src: string;
@@ -14,26 +14,27 @@ interface CropedImageProps {
   maxWidth?: string;
 }
 
+// eslint-disable-next-line solid/no-destructure
 const CropedImage = ({
   src,
   alt,
   zoom = 1,
   offsetY = 1,
   offsetX = 1,
-  width = "200px",
-  height = "200px",
+  width = '200px',
+  height = '200px',
   rotate = 0,
-  willChange = "none",
-  maxWidth = "100%",
+  willChange = 'none',
+  maxWidth = '100%',
 }: CropedImageProps) => {
   const [rapportWidth, setRapportWidth] = createSignal(1);
 
   createEffect(() => {
     const windowSize = window.innerWidth;
     const originalSize = 1728;
-    if (willChange == "right") {
+    if (willChange == 'right') {
       setRapportWidth(1.00006 - (0.00006 * originalSize) / windowSize);
-    } else if (willChange == "left") {
+    } else if (willChange == 'left') {
       setRapportWidth(1.86 - 0.0006 * windowSize);
     }
   });
@@ -44,7 +45,7 @@ const CropedImage = ({
       style={{
         width,
         height,
-        "max-width": maxWidth,
+        'max-width': maxWidth,
       }}
     >
       <img

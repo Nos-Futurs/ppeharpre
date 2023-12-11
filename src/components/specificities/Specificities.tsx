@@ -1,10 +1,16 @@
-import { Component } from "solid-js";
+import { Component, createEffect } from 'solid-js';
 
-import cabinet from "../../assets/images/cabinet.png";
+import cabinet_800 from '../../assets/images/cabinet/cabinet-800.png';
+import cabinet_600 from '../../assets/images/cabinet/cabinet-600.png';
+import cabinet_400 from '../../assets/images/cabinet/cabinet-400.png';
+import cabinet_250 from '../../assets/images/cabinet/cabinet-250.png';
 
-import "./specificities.scss";
+import './specificities.scss';
 
 const MySpecificities: Component = () => {
+  createEffect(() => {
+    console.log(window.innerWidth * window.devicePixelRatio);
+  });
   return (
     <section class="my-specificities" id="my_specificities">
       <h1>Mes spécificités </h1>
@@ -20,7 +26,7 @@ const MySpecificities: Component = () => {
             Je pratique quotidiennement <b>la méditation.</b>
           </li>
           <li>
-            Je suis{" "}
+            Je suis{' '}
             <b>sensible aux enjeux de discrimination, de classe et de genre.</b>
           </li>
           <li>
@@ -30,9 +36,12 @@ const MySpecificities: Component = () => {
       </div>
       <figure class="my-specificities__image">
         <img
-          src={cabinet.src}
+          src={cabinet_600.src}
           alt="cabinet"
           class="my-specificities__image__sketch"
+          loading="lazy"
+          srcset={`${cabinet_250.src} 250w, ${cabinet_400.src} 400w, ${cabinet_600.src} 600w, ${cabinet_800.src} 800w`}
+          sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
         />
       </figure>
     </section>

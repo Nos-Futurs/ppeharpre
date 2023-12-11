@@ -24,8 +24,17 @@
   }
 }
 
+
+@media (max-width: 1000px) {
+  .contact-info {
+    @include layouts.grid(repeat(2, 1fr), repeat(2, auto));
+    row-gap: 40px;
+  }
+}
+
 @media (max-width: 620px) {
   .contact-info {
+    display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 40px;

@@ -1,7 +1,7 @@
-@use "src/styles/abstracts/layouts";
-@use "src/styles/abstracts/colours";
-@use "src/styles/abstracts/spacings";
-@use "src/styles/abstracts/font-size";
+@use 'src/styles/abstracts/layouts';
+@use 'src/styles/abstracts/colours';
+@use 'src/styles/abstracts/spacings';
+@use 'src/styles/abstracts/font-size';
 
 #external-link {
   @include layouts.flex(column, center, center);
@@ -9,5 +9,11 @@
     padding-bottom: spacings.$s;
     text-align: center;
   }
+}
 
+@media (max-width: 1000px) {
+  #external-link {
+    grid-row: 2;
+    grid-column: span 2;
+  }
 }

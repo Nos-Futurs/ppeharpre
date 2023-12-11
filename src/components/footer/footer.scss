@@ -1,10 +1,11 @@
-@use "src/styles/abstracts/colours";
-@use "../../styles/abstracts/image" as i;
+@use 'src/styles/abstracts/colours';
+@use 'src/styles/abstracts/layouts';
+@use '../../styles/abstracts/image' as i;
 
 .footer {
-  height: 200px;
+  min-height: 200px;
   display: flex;
-  padding: 10px 20px 10px 50px;
+  padding: 20px;
   align-items: center;
   background-color: colours.$darkblue;
   justify-content: center;
@@ -21,17 +22,11 @@
   }
 }
 
-
 @media (max-width: 720px) {
-  .footer__logo-container{
+  .footer__logo-container {
     display: none;
   }
-}
-
-
-@media (max-width: 620px) {
-  .footer{
-    height: 100%;
+  .footer {
+    padding: 30px 0;
   }
 }
-
