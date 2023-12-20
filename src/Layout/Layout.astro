@@ -4,7 +4,7 @@ import '../styles/main.scss';
 import Footer from '../components/footer/Footer.astro';
 import { Modal } from '../components/Modal/Modal';
 import { ViewTransitions } from 'astro:transitions';
-import Header from '../components/Header/Header';
+import { Header } from '../components/Header/Header';
 import { pages } from '../components/Header/NavigationHeader';
 
 interface Props {
@@ -93,7 +93,7 @@ const { id, path, pageTitle, description, noindex, page } = Astro.props;
   </head>
   <body>
     <main id={`page-${id}`} class="page">
-      <Header page={page} client:load />
+      <Header page={page} client:load transition:name="header" />
       <div id={id} class="layout"><slot /></div>
       <Footer />
     </main>

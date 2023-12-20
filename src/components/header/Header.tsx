@@ -8,7 +8,7 @@ import NavigationBurger from './NavigationBurger';
 interface HeaderProps {
   page: pages;
 }
-const Header: Component<HeaderProps> = (props: HeaderProps) => {
+export const Header: Component<HeaderProps> = (props: HeaderProps) => {
   const [myMethodPopup, setMyMethodPopup] = createSignal(false);
   const [aboutPopup, setAboutPopup] = createSignal(false);
   const [headerSize, setHeaderSize] = createSignal(150);
@@ -48,5 +48,3 @@ const Header: Component<HeaderProps> = (props: HeaderProps) => {
     </div>
   );
 };
-
-export default Header;
