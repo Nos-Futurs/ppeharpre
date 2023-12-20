@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 import solid from '@astrojs/solid-js';
 import sitemap from '@astrojs/sitemap';
-import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,7 +10,6 @@ export default defineConfig({
       page !== 'https://gestalt.peharpre.fr/mention-legales/'
   })],
   compressHTML: true,
-  output: 'server',
-  adapter: netlify(),
+  output: 'static',
   site: 'https://gestalt.peharpre.fr/',
 });
