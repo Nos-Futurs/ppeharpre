@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
-import nodejs from '@astrojs/node';
 import solid from '@astrojs/solid-js';
 import sitemap from '@astrojs/sitemap';
+import netlify from '@astrojs/netlify/functions';
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,8 +12,6 @@ export default defineConfig({
   })],
   compressHTML: true,
   output: 'server',
-  adapter: nodejs({
-    mode: 'standalone',
-  }),
+  adapter: netlify(),
   site: 'https://gestalt.peharpre.fr/',
 });

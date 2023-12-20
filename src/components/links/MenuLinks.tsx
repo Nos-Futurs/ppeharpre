@@ -1,7 +1,7 @@
-import { A } from "@solidjs/router";
+import { Component } from "solid-js";
 import "./links.scss";
 
-interface menuLinkProps {
+interface MenuLinkProps {
   name: string;
   href: string;
   border?: boolean;
@@ -9,7 +9,7 @@ interface menuLinkProps {
 }
 
 // https://github.com/solidjs/solid/discussions/287
-const MenuLink = (props: menuLinkProps) => {
+const MenuLink: Component<MenuLinkProps> = (props: MenuLinkProps) => {
   return (
     <a
       class={props.border ? "menuLinkBordered" : "menuLink"}

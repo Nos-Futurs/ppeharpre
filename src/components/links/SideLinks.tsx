@@ -1,4 +1,3 @@
-import { A } from '@solidjs/router';
 import './links.scss';
 import { Component } from 'solid-js';
 
