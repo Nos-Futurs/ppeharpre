@@ -1,0 +1,118 @@
+---
+import './layout.scss';
+import '../styles/main.scss';
+import Footer from '../components/footer/Footer.astro';
+import { Modal } from '../components/Modal/Modal';
+import { ViewTransitions } from 'astro:transitions';
+import { pages } from '../components/header/NavigationHeader';
+import { Header } from '../components/header/Header';
+
+interface Props {
+  id: string;
+  path: string;
+  page: pages;
+  pageTitle: string;
+  description: string;
+  noindex?: boolean;
+  ecoBadge?: boolean;
+  mainPage?: boolean;
+}
+
+const { id, path, pageTitle, description, noindex, page } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{pageTitle}</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={`https://nosfuturs.dev${path}`} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Philippe Péharpré, praticien en Gestalt Thérapie à Saint Malo.",
+          "url": "https://gestalt.peharpre.fr/"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Philippe Péharpré, praticien en Gestalt Thérapie à Saint Malo.",
+              "item": "https://gestalt.peharpre.fr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Portfolio Nos Futurs: Projets en Développement Web et Applications Mobiles.",
+              "item": "https://gestalt.peharpre.fr/method/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Nos Futurs: Experts en Éco-Conception et Green IT pour un Web Durable",
+              "item": "https://gestalt.peharpre.fr/about/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Nos Futurs: Experts en Éco-Conception et Green IT pour un Web Durable",
+              "item": "https://gestalt.peharpre.fr/gestalt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Nos Futurs: Experts en Éco-Conception et Green IT pour un Web Durable",
+              "item": "https://gestalt.peharpre.fr/contact/"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://gestalt.peharpre.fr/",
+          "name": "Tro Vale",
+          "description": "Tro Vale, Philippe Péharpré, praticien en Gestalt Thérapie à Saint Malo.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact.peharpre@gmail.com"
+          }
+        }
+      ]
+    </script>
+    <ViewTransitions />
+  </head>
+  <body>
+    <main id={`page-${id}`} class="page">
+      <Header page={page} client:load transition:name="header" />
+      <div id={id} class="layout"><slot /></div>
+      <Footer />
+    </main>
+    <Modal client:load />
+    <style is:global>
+      body {
+        margin: 0;
+        background-color: black;
+        font-family: 'century', 'larken', sans-serif, 'handsomeregular';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </body>
+</html>

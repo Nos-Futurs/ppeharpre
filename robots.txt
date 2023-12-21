@@ -4,3 +4,5 @@ Allow: /
 Disallow: /contact*
 Disallow: /gestalt*
 Disallow: /method*
+
+Sitemap: https://gestalt.peharpre.fr/sitemap.xml

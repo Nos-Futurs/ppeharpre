@@ -1,4 +1,3 @@
-import { A } from "@solidjs/router";
 import { Accessor, For, Setter } from "solid-js";
 import "./links.scss";
 interface section {
@@ -34,14 +33,14 @@ const DropDownLink = (props: dropDownLinkProps) => {
       {props.popup() && (
         <For each={props.sections} fallback={<div>Loading...</div>}>
           {(item) => (
-            <A
+            <a
               class="dropDownLink"
               href={item.path}
               onclick={item.onClick}
               style={{ color: `${item.color ? item.color : "white"}` }}
             >
               {item.name}
-            </A>
+            </a>
           )}
         </For>
       )}

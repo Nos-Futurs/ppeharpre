@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
     "esModuleInterop": true,
+    "isolatedModules": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "types": ["vite/client"],
+    "lib": ["DOM"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "types": ["astro/client"],
     "noEmit": true,
-    "isolatedModules": true
   }
 }

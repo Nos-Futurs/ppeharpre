@@ -1,25 +1,23 @@
-import { A } from "@solidjs/router";
+import { Component } from "solid-js";
 import "./links.scss";
 
-interface menuLinkProps {
+interface MenuLinkProps {
   name: string;
   href: string;
-  onClick: () => void;
   border?: boolean;
   selected?: boolean;
 }
 
 // https://github.com/solidjs/solid/discussions/287
-const MenuLink = (props: menuLinkProps) => {
+const MenuLink: Component<MenuLinkProps> = (props: MenuLinkProps) => {
   return (
-    <A
+    <a
       class={props.border ? "menuLinkBordered" : "menuLink"}
       href={props.href}
-      onclick={props.onClick}
       style={{ "font-weight": `${props.selected ? "800" : "500"}` }}
     >
       {props.name}
-    </A>
+    </a>
   );
 };
 

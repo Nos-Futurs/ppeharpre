@@ -1,0 +1,14 @@
+---
+// Import your root App component
+import { pages } from '../components/header/NavigationHeader';
+import Layout from '../Layout/Layout.astro';
+import Accompaniment from '../components/Accompaniment/Accompaniment.astro';
+import How from '../components/How/How';
+import Why from '../components/Why/Why';
+---
+
+<Layout pageTitle="test" description="test" id="test" path="/" page={pages.MY_METHOD}>
+  <Accompaniment />
+  <Why />
+  <How />
+</Layout>

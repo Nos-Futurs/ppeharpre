@@ -1,0 +1,63 @@
+---
+import cabinet_800 from '../../assets/images/cabinet/cabinet-800.png';
+import cabinet_600 from '../../assets/images/cabinet/cabinet-600.png';
+import cabinet_400 from '../../assets/images/cabinet/cabinet-400.png';
+import cabinet_250 from '../../assets/images/cabinet/cabinet-250.png';
+import CropedImage from '../CropedImage/CropedImage';
+import './ethics.scss';
+---
+
+<section class="ethics" id="ethics">
+  <h1>Ma déontologie et éthique</h1>
+  <p class="ethics__paragraphe">
+    <b>La confidentialité et le non jugement</b>font partie de ma façon d'être
+    et de mon accompagnement. <br />
+    {' '}
+    <b>Je suis supervisé en groupe et individuellement.</b> Je me forme de façon
+    continue afin d'enrichir mon approche. <br /> Mes séances ne sont pas
+    remboursées par la sécurité sociale.
+    <br />Je suis signataire du code de déontologie de la FF2P.
+  </p>
+  <div class="ethics__image">
+    <CropedImage
+      src={cabinet_800.src}
+      srcSet={`${cabinet_250.src} 250w, ${cabinet_400.src} 400w, ${cabinet_600.src} 600w, ${cabinet_800.src} 800w`}
+      sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
+      alt={'face_cabinet'}
+      width={'800px'}
+      height={'160px'}
+      zoom={11}
+      offsetX={1.6}
+      offsetY={2.5}
+      willChange={'left'}
+    />
+  </div>
+  <div class="ethics__image-responsive-medium">
+    <CropedImage
+      srcSet={`${cabinet_250.src} 250w, ${cabinet_400.src} 400w, ${cabinet_600.src} 600w, ${cabinet_800.src} 800w`}
+      sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
+      src={cabinet_800.src}
+      alt={'face_cabinet'}
+      width={'490px'}
+      height={'140px'}
+      zoom={8}
+      offsetX={1}
+      offsetY={1.8}
+      willChange={'left'}
+    />
+  </div>
+  <div class="ethics__image-responsive-small">
+    <CropedImage
+      srcSet={`${cabinet_250.src} 250w, ${cabinet_400.src} 400w, ${cabinet_600.src} 600w, ${cabinet_800.src} 800w`}
+      sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
+      src={cabinet_800.src}
+      alt={'face_cabinet'}
+      width={'290px'}
+      height={'100px'}
+      zoom={6}
+      offsetX={1}
+      offsetY={1.4}
+      willChange={'left'}
+    />
+  </div>
+</section>

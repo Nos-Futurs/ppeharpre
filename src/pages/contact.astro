@@ -1,0 +1,86 @@
+---
+// Import your root App component
+import Layout from '../Layout/Layout.astro';
+import ContactForm from '../components/Contact/contactForm/ContactForm';
+import Map from '../components/map/map';
+
+import cabinet_800 from '../assets/images/cabinet/cabinet-800.png';
+import cabinet_600 from '../assets/images/cabinet/cabinet-600.png';
+import cabinet_400 from '../assets/images/cabinet/cabinet-400.png';
+import cabinet_250 from '../assets/images/cabinet/cabinet-250.png';
+import sea_rocks_800 from '../assets/images/sea_rocks/sea_rocks-800.png';
+import sea_rocks_600 from '../assets/images/sea_rocks/sea_rocks-600.png';
+import sea_rocks_400 from '../assets/images/sea_rocks/sea_rocks-400.png';
+import sea_rocks_250 from '../assets/images/sea_rocks/sea_rocks-250.png';
+import lighthouse_800 from '../assets/images/lighthouse/lighthouse-800.png';
+import lighthouse_600 from '../assets/images/lighthouse/lighthouse-600.png';
+import lighthouse_400 from '../assets/images/lighthouse/lighthouse-400.png';
+import lighthouse_250 from '../assets/images/lighthouse/lighthouse-250.png';
+import CropedImage from '../components/CropedImage/CropedImage';
+import './contact.scss';
+import { pages } from '../components/header/NavigationHeader';
+---
+
+<Layout pageTitle="test" description="test" id="test" path="/" page={pages.CONTACT}>
+  <div class="contact">
+    <div class="contact__face left">
+      <CropedImage
+        alt={'philippe_face_left'}
+        src={cabinet_800.src}
+        srcSet={`${cabinet_250.src} 250w, ${cabinet_400.src} 400w, ${cabinet_600.src} 600w, ${cabinet_800.src} 800w`}
+        sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
+        width={'70%'}
+        height={'100%'}
+        zoom={11}
+        offsetX={2}
+        offsetY={1.8}
+        willChange={'right'}
+      />
+    </div>
+
+    <div class="contact__information">
+      <div>Philippe Péharpré</div>
+      <a class="contact__email" href="mailto:ph.peharpre@gmail.com"
+        >contact.peharpre@gmail.com</a
+      >
+      <div>06 07 79 62 12</div>
+      <br />
+      <div>8 Bld Villebois Mareuil</div>
+      <div>35 400 Saint Malo</div>
+    </div>
+    <div class="contact__face">
+      <CropedImage
+        alt={'philippe_face_right'}
+        src={sea_rocks_800.src}
+        srcSet={`${sea_rocks_250.src} 250w, ${sea_rocks_400.src} 400w, ${sea_rocks_600.src} 600w, ${sea_rocks_800.src} 800w`}
+        sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
+        width={'70%'}
+        height={'100%'}
+        zoom={11}
+        offsetX={5.3}
+        offsetY={1}
+        willChange={'right'}
+      />
+    </div>
+    <div class="contact__grid-1">
+      <Map client:only="solid-js"/>
+    </div>
+    <div class="contact__grid-2">
+      <ContactForm />
+    </div>
+    <div class="contact__cropped-image">
+      <CropedImage
+        alt={'philippe_face'}
+        src={lighthouse_800.src}
+        srcSet={`${lighthouse_250.src} 250w, ${lighthouse_400.src} 400w, ${lighthouse_600.src} 600w, ${lighthouse_800.src} 800w`}
+        sizes="(max-width: 250px) 80vw, (max-width: 400px) 80vw, (max-width: 600px) 80vw, 80vw"
+        width={'70%'}
+        maxWidth={'1106px'}
+        height={'100%'}
+        zoom={11}
+        offsetX={0}
+        offsetY={1.3}
+      />
+    </div>
+  </div>
+</Layout>

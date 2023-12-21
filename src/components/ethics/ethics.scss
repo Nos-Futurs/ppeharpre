@@ -1,0 +1,49 @@
+@use "src/styles/abstracts/text";
+@use "src/styles/abstracts/spacings";
+@use "src/styles/abstracts/image" as i;
+
+.ethics {
+  display: grid;
+
+  &__paragraphe {
+    line-height: 1.8;
+  }
+
+  &__image {
+    @include i.sketch-container($width: 100%);
+    height: 200px;
+    margin-top: spacings.$m;
+  }
+  &__image-responsive-medium {
+    @include i.sketch-container($width: 100%);
+    display: none;
+    margin-top: spacings.$m;
+  }
+  &__image-responsive-small {
+    @include i.sketch-container($width: 100%);
+    display: none;
+    margin-top: spacings.$m;
+  }
+}
+
+@media (max-width: 900px) {
+  .ethics {
+    &__image-responsive-medium {
+      display: flex;
+    }
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .ethics {
+    &__image-responsive-medium {
+      display: none;
+    }
+    &__image-responsive-small {
+      display: flex;
+    }
+  }
+}

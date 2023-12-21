@@ -1,37 +1,37 @@
-import { createSignal } from "solid-js";
-import { createStore } from "solid-js/store";
-import Input from "../../Input/Input";
-import SubmitButton from "../../buttons/SubmitButton";
-import "./contactForm.scss";
-import { checkEmailValidity } from "./methods/checkEmailValidity";
-import { sendEmail } from "./methods/sendEmail";
+import { Component, createSignal } from 'solid-js';
+import { createStore } from 'solid-js/store';
+import Input from '../../Input/Input';
+import SubmitButton from '../../buttons/SubmitButton';
+import './contactForm.scss';
+import { checkEmailValidity } from './methods/checkEmailValidity';
+import { sendEmail } from './methods/sendEmail';
 
-const ContactForm = () => {
+const ContactForm: Component = () => {
   const [form, setForm] = createStore({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
-  const [validForm, setValidForm] = createSignal({ valid: true, field: [""] });
+  const [validForm, setValidForm] = createSignal({ valid: true, field: [''] });
   const [messageSent, setMessageSent] = createSignal(false);
 
-  const checkFormValidity = (): Boolean => {
+  const checkFormValidity = (): boolean => {
     const fieldArray: string[] = [];
     let valid = true;
-    if (form.name == "") {
+    if (form.name == '') {
       valid = false;
-      fieldArray.push("Le champ Nom ne doit pas être vide.");
+      fieldArray.push('Le champ Nom ne doit pas être vide.');
     }
-    if (form.email == "") {
+    if (form.email == '') {
       valid = false;
-      fieldArray.push("Le champ Email ne doit pas être vide.");
+      fieldArray.push('Le champ Email ne doit pas être vide.');
     } else if (!checkEmailValidity(form.email)) {
       valid = false;
       fieldArray.push("Le format de l'Email n'est pas valide.");
     }
-    if (form.email == "") {
+    if (form.email == '') {
       valid = false;
-      fieldArray.push("Le champ Message ne doit pas être vide.");
+      fieldArray.push('Le champ Message ne doit pas être vide.');
     }
     if (!valid) {
       setValidForm({ valid: false, field: fieldArray });
@@ -39,7 +39,7 @@ const ContactForm = () => {
     return valid;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (): void => {
     if (checkFormValidity()) {
       setValidForm({ valid: true, field: [] });
       sendEmail(form)
@@ -47,7 +47,7 @@ const ContactForm = () => {
           setMessageSent(true);
         })
         .catch((err) => {
-          console.log("FAILED...", err);
+          console.log('FAILED...', err);
           setValidForm({
             valid: false,
             field: ["Une erreur est apparue lors de l'envoie du mail."],
@@ -64,8 +64,8 @@ const ContactForm = () => {
           type="text"
           name="name"
           displayName="Nom"
-          onInput={(value: string) => {
-            setForm("name", value);
+          onInput={(value: string): void => {
+            setForm('name', value);
           }}
         />
       </div>
@@ -74,8 +74,8 @@ const ContactForm = () => {
           type="email"
           name="email"
           displayName="E-Mail"
-          onInput={(value: string) => {
-            setForm("email", value);
+          onInput={(value: string): void => {
+            setForm('email', value);
           }}
         />
       </div>
@@ -83,14 +83,19 @@ const ContactForm = () => {
         <div class="form__message">Message</div>
         <textarea
           class="form__textarea"
-          onInput={(event) => {
-            setForm("message", event.currentTarget.value);
+          onInput={(
+            event: InputEvent & {
+              currentTarget: HTMLTextAreaElement;
+              target: HTMLTextAreaElement;
+            },
+          ): void => {
+            setForm('message', event.currentTarget.value);
           }}
           name="message"
         />
       </div>
       <SubmitButton
-        onClick={() => {
+        onClick={(): void => {
           handleSubmit();
         }}
         name="ENVOYER"

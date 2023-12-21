@@ -1,16 +1,16 @@
-import { useNavigate } from "@solidjs/router";
-import "./header.scss";
+import './header.scss';
 
-import { Accessor, Setter, createSignal } from "solid-js";
-import DropDownLink from "../links/DropDownLink";
-import MenuLink from "../links/MenuLinks";
+import { Accessor, Component, Setter } from 'solid-js';
+import DropDownLink from '../links/DropDownLink';
+import MenuLink from '../links/MenuLinks';
 
-enum pages {
-  HOME = "home",
-  ABOUT = "about",
-  MY_METHOD = "myMethod",
-  GESTALT = "gestalt",
-  CONTACT = "contact",
+export enum pages {
+  HOME = 'home',
+  ABOUT = 'about',
+  MY_METHOD = 'myMethod',
+  GESTALT = 'gestalt',
+  CONTACT = 'contact',
+  MENTION_LEGALES = "mention-legales"
 }
 
 interface NavigationHeaderProps {
@@ -18,51 +18,45 @@ interface NavigationHeaderProps {
   setMyMethodPopup: Setter<boolean>;
   aboutPopup: Accessor<boolean>;
   setAboutPopup: Setter<boolean>;
+  page: pages;
 }
 
-function NavigationHeader(props: NavigationHeaderProps) {
-  const [selectedLink, setSelectedLink] = createSignal<pages>(pages.HOME);
-  const navigate = useNavigate();
-
+const NavigationHeader: Component<NavigationHeaderProps> = (
+  props: NavigationHeaderProps,
+) => {
   return (
     <div class="header__navigation">
       <MenuLink
         name="Accueil"
-        selected={selectedLink() == pages.HOME}
+        selected={props.page == pages.HOME}
         href="/"
-        onClick={() => {
-          setSelectedLink(pages.HOME);
-        }}
       />
       <div class="header__sections">
         <DropDownLink
           isModal={false}
           name="Accompagnement"
-          selected={selectedLink() == pages.MY_METHOD}
+          selected={props.page == pages.MY_METHOD}
           popup={props.myMethodPopup}
           setPopup={props.setMyMethodPopup}
           sections={[
             {
-              name: "Votre accompagnement",
-              path: "/method",
-              onClick: () => {
-                setSelectedLink(pages.MY_METHOD);
+              name: 'Votre accompagnement',
+              path: '/method',
+              onClick: (): void => {
                 props.setMyMethodPopup(false);
               },
             },
             {
-              name: "Pourquoi se faire accompagner?",
-              path: "/method#why",
-              onClick: () => {
-                setSelectedLink(pages.MY_METHOD);
+              name: 'Pourquoi se faire accompagner?',
+              path: '/method#why',
+              onClick: (): void => {
                 props.setMyMethodPopup(false);
               },
             },
             {
               name: "Le déroulement d'une séance",
-              path: "/method#how",
-              onClick: () => {
-                setSelectedLink(pages.MY_METHOD);
+              path: '/method#how',
+              onClick: (): void => {
                 props.setMyMethodPopup(false);
               },
             },
@@ -73,31 +67,28 @@ function NavigationHeader(props: NavigationHeaderProps) {
         <DropDownLink
           isModal={false}
           name="A propos de moi"
-          selected={selectedLink() == pages.ABOUT}
+          selected={props.page == pages.ABOUT}
           popup={props.aboutPopup}
           setPopup={props.setAboutPopup}
           sections={[
             {
-              name: "Mes spécificités",
-              path: "/about",
-              onClick: () => {
-                setSelectedLink(pages.ABOUT);
+              name: 'Mes spécificités',
+              path: '/about',
+              onClick: (): void => {
                 props.setAboutPopup(false);
               },
             },
             {
-              name: "Mon parcours",
-              path: "/about#carreer",
-              onClick: () => {
-                setSelectedLink(pages.ABOUT);
+              name: 'Mon parcours',
+              path: '/about#carreer',
+              onClick: (): void => {
                 props.setAboutPopup(false);
               },
             },
             {
-              name: "Ma déontologie",
-              path: "/about#ethics",
-              onClick: () => {
-                setSelectedLink(pages.ABOUT);
+              name: 'Ma déontologie',
+              path: '/about#ethics',
+              onClick: (): void => {
                 props.setAboutPopup(false);
               },
             },
@@ -106,23 +97,17 @@ function NavigationHeader(props: NavigationHeaderProps) {
       </div>
       <MenuLink
         name="Gestalt thérapie"
-        selected={selectedLink() == pages.GESTALT}
+        selected={props.page == pages.GESTALT}
         href="/gestalt"
-        onClick={() => {
-          setSelectedLink(pages.GESTALT);
-        }}
       />
       <MenuLink
         name="Contactez moi"
         border={true}
-        selected={selectedLink() == pages.CONTACT}
+        selected={props.page == pages.CONTACT}
         href="/contact"
-        onClick={() => {
-          setSelectedLink(pages.CONTACT);
-        }}
       />
     </div>
   );
-}
+};
 
 export default NavigationHeader;

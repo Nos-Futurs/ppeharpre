@@ -1,0 +1,72 @@
+@use "src/styles/abstracts/text";
+@use "src/styles/abstracts/layouts";
+@use "src/styles/abstracts/image";
+
+.gestalt {
+  @include layouts.grid(45% 10% 45%, repeat(4, auto));
+  margin-top: 0;
+  row-gap: 30px;
+
+  &__title {
+    grid-column: 1/4;
+  }
+
+  &__paragraphe {
+    grid-column: 1/4;
+  }
+
+  &__cropped-paragraphe {
+    @extend %text-paragraphe;
+    @include layouts.flex(column, $align-axis: center);
+  }
+
+  &__cropped-image {
+    display: none;
+    justify-content: center;
+  }
+
+  &__reverse-cropped-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    grid-column: 1/4;
+    @include image.sketch-container(100%);
+    &__sketch {
+      @include image.sketch(70%);
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .gestalt {
+   grid-template-columns: 100%;
+
+    &__title {
+      grid-column: 1;
+    }
+
+    &__paragraphe {
+      grid-column: 1;
+    }
+
+    &__cropped-paragraphe {
+      grid-column: 1;
+    }
+
+    &__reverse-cropped-image {
+      display: none;
+    }
+
+    &__cropped-image {
+      @include layouts.flex(column, center, center);
+      grid-column: 1;
+    }
+    &__image {
+      &__sketch {
+        width: 90%;
+      }
+    }
+  }
+}

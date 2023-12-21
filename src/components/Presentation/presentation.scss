@@ -1,0 +1,38 @@
+@use "src/styles/abstracts/text";
+@use "src/styles/abstracts/layouts";
+@use "src/styles/abstracts/spacings";
+@use "src/styles/abstracts/image" as i;
+@use "src/styles/abstracts/font" as f;
+
+#presentation {
+  display: grid;
+  margin-top: 0;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 3%;
+}
+
+.presentation {
+  &__sketch-container {
+    @include i.sketch-container;
+    grid-column: 1/3;
+    margin-bottom: 70px;
+  }
+  &__sketch {
+    @include i.sketch($width: 80%);
+  }
+}
+
+@media (max-width: 850px) {
+  #presentation {
+    @include layouts.grid(1fr, repeat(3, auto));
+  }
+  .presentation {
+    &__sketch-container {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    &__sketch {
+      @include i.sketch($width: 90%);
+    }
+  }
+}
