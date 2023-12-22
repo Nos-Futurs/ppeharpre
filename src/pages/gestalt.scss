@@ -18,6 +18,10 @@
   &__cropped-paragraphe {
     @extend %text-paragraphe;
     @include layouts.flex(column, $align-axis: center);
+    a {
+      color: black;
+      font-style: italic;
+    }
   }
 
   &__cropped-image {

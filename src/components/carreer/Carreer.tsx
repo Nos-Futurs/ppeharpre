@@ -15,8 +15,11 @@ const Carreer: Component = () => {
         J'ai eu un parcours professionnel en entreprise avec des responsabilités
         de dirigeant. Diplômé <b>coach professionnel</b> en 2010 à HEC Paris,
         j'accompagne également des cadres et des manageurs.euses. En 2013, j'ai
-        commencé mon parcours en gestalt thérapie à l'EPG (Ecole Parisienne de
-        Gestalt). Je suis diplômé <b>gestalt praticien.</b>
+        commencé mon parcours en gestalt thérapie à l'EPG (
+        <a id="link-EPG" href="https://www.epg-gestalt.fr/" target="_blank">
+          Ecole Parisienne de Gestalt
+        </a>
+        ). Je suis diplômé <b>gestalt praticien.</b>
       </p>
       <div class="carreer__items-1">
         <div class="carreer__item1">
@@ -103,10 +106,32 @@ const Carreer: Component = () => {
         <a id="link-ff2P" href="https://www.ff2p.fr/" target="_blank">
           Fédération Française de Psychothérapie et de Psychanalyse
         </a>
-        ), de En Contacts (Association des anciens de l'EPG) et de RGO (Réseau
-        Gestalt Ouest). A ce jour, je suis engagé dans des associations de
-        soutien d'étudiants.es au sein de Tous Egaux à l'Ecole et de femmes
-        dirigeantes au sein de{' '}
+        ), de{' '}
+        <a
+          id="link-en-contact"
+          href="https://encontacts-gestalt.org/"
+          target="_blank"
+        >
+          En Contacts
+        </a>{' '}
+        (Association des anciens de l'EPG) et de RGO (
+        <a
+          id="link-RGO"
+          href="https://reseau-gestalt-ouest.asso.fr/"
+          target="_blank"
+        >
+          Réseau Gestalt Ouest
+        </a>
+        ). A ce jour, je suis engagé dans des associations de soutien
+        d'étudiants.es au sein de{' '}
+        <a
+          id="link-tous-egaux-ecole"
+          href="https://tousegauxalecole.fr/"
+          target="_blank"
+        >
+          Tous Egaux à l'Ecole
+        </a>{' '}
+        et de femmes dirigeantes au sein de{' '}
         <a
           id="link-Ewa-Boost"
           href="https://ewaboost.wordpress.com/"
@@ -115,8 +140,21 @@ const Carreer: Component = () => {
           EWA Boost
         </a>{' '}
         (ESSEC Woman Association). Je réalise des accompagnements solidaires au
-        sein de l'APSoS (Accès à la Psychothérapie en Soutien Social) et des
-        écoutes au sein de l'association Les Ecouteurs de Rues.
+        sein de l'APSoS (
+        <a
+          id="link-apsos"
+          href="https://www.apsos.fr/"
+          target="_blank"
+        >
+          Accès à la Psychothérapie en Soutien Social
+        </a>
+        ) et des écoutes au sein de l'association <a
+          id="link-ecouteurs-de-rues"
+          href="https://www.lesecouteursderues.com/"
+          target="_blank"
+        >
+          Les Ecouteurs de Rues
+        </a>.
       </p>
       <div class="carreer__items">
         <div class="carreer__item1">
