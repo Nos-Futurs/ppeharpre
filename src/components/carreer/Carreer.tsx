@@ -99,13 +99,24 @@ const Carreer: Component = () => {
         Association for Psychotherapy) et la FF2P.
       </p>
       <p class="carreer__paragraphe">
-        <b>Je suis membre de la FF2P</b> (Fédération Française de Psychothérapie
-        et de Psychanalyse), de En Contact (Association des anciens de l'EPG) et
-        de RGO (Réseau Gestalt Ouest). A ce jour, je suis engagé dans des
-        associations de soutien d'étudiants.es au sein de Tous Egaux à l'Ecole
-        et de femmes dirigeantes au sein de EWA Boost (ESSEC Woman Association).
-        Je réalise des accompagnements solidaires pour des étudiants.es ou des
-        personnes aux revenus modestes.
+        <b>Je suis membre de la FF2P</b> (
+        <a id="link-ff2P" href="https://www.ff2p.fr/" target="_blank">
+          Fédération Française de Psychothérapie et de Psychanalyse
+        </a>
+        ), de En Contacts (Association des anciens de l'EPG) et de RGO (Réseau
+        Gestalt Ouest). A ce jour, je suis engagé dans des associations de
+        soutien d'étudiants.es au sein de Tous Egaux à l'Ecole et de femmes
+        dirigeantes au sein de{' '}
+        <a
+          id="link-Ewa-Boost"
+          href="https://ewaboost.wordpress.com/"
+          target="_blank"
+        >
+          EWA Boost
+        </a>{' '}
+        (ESSEC Woman Association). Je réalise des accompagnements solidaires au
+        sein de l'APSoS (Accès à la Psychothérapie en Soutien Social) et des
+        écoutes au sein de l'association Les Ecouteurs de Rues.
       </p>
       <div class="carreer__items">
         <div class="carreer__item1">
