@@ -1,5 +1,5 @@
-import { Accessor, For, Setter } from "solid-js";
-import "./links.scss";
+import { Accessor, For, Setter } from 'solid-js';
+import './links.scss';
 interface section {
   name: string;
   path: string;
@@ -20,24 +20,26 @@ const DropDownLink = (props: dropDownLinkProps) => {
     <>
       <button
         name={props.name}
-        class={props.isModal ?"sideLink": "menuLink"}
+        class={props.isModal ? 'sideLink' : 'menuLink'}
         style={{
-          "font-weight": `${
-            props.isModal ? "bold" : (props.selected ? "800" : "500")
+          'font-weight': `${
+            props.isModal ? 'bold' : props.selected ? '800' : '500'
           }`,
         }}
-        onClick={() => {
+        onClick={(): void => {
           props.setPopup(!props.popup());
         }}
-      >{props.name}</button>
+      >
+        {props.name}
+      </button>
       {props.popup() && (
         <For each={props.sections} fallback={<div>Loading...</div>}>
           {(item) => (
             <a
               class="dropDownLink"
               href={item.path}
-              onclick={item.onClick}
-              style={{ color: `${item.color ? item.color : "white"}` }}
+              onClick={item.onClick}
+              style={{ color: `${item.color ? item.color : 'white'}` }}
             >
               {item.name}
             </a>
