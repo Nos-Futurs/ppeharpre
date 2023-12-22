@@ -2,10 +2,15 @@
 // Import your root App component
 import { pages } from '../components/header/NavigationHeader';
 import Layout from '../Layout/Layout.astro';
-
 ---
 
-<Layout pageTitle="test" description="test" id="test" path="/" page={pages.MENTION_LEGALES}>
+<Layout
+  pageTitle="Mentions Légales - Site Gestalt Péharpré"
+  description="Mentions légales"
+  id="mention-legal"
+  path="/"
+  page={pages.MENTION_LEGALES}
+>
   <section>
     <hgroup>
       <h1>Mentions légales</h1>

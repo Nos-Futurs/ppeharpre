@@ -9,6 +9,13 @@
     padding-bottom: spacings.$s;
     text-align: center;
   }
+  #badge {
+    text-align: center;
+    b {
+      color: white;
+      font-weight: bold;
+    }
+  }
 }
 
 @media (max-width: 1000px) {

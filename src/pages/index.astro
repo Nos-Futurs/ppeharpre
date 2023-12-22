@@ -6,7 +6,13 @@ import Description from '../components/Description/Description.astro';
 import { pages } from '../components/header/NavigationHeader';
 ---
 
-<Layout pageTitle="test" description="test" id="test" path="/" page={pages.HOME}>
+<Layout
+  pageTitle="Philippe PEHARPRE : Psychopraticien, Gestalt Thérapie"
+  description="Découvrez la Gestalt Thérapie avec un Psychopraticien à Saint-Malo. Accompagnement spécialisé pour adultes."
+  id="home-page"
+  path="/"
+  page={pages.HOME}
+>
   <Presentation />
   <Description />
 </Layout>

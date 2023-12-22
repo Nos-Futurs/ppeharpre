@@ -21,7 +21,13 @@ import './contact.scss';
 import { pages } from '../components/header/NavigationHeader';
 ---
 
-<Layout pageTitle="test" description="test" id="test" path="/" page={pages.CONTACT}>
+<Layout
+  pageTitle="Contact - Philippe Péharpré"
+  description="Psychopraticien à Saint Malo, n'hésitez pas à me contacter par mail ou téléphone."
+  id="contact-page"
+  path="/"
+  page={pages.CONTACT}
+>
   <div class="contact">
     <div class="contact__face left">
       <CropedImage
@@ -45,7 +51,7 @@ import { pages } from '../components/header/NavigationHeader';
       >
       <div>06 07 79 62 12</div>
       <br />
-      <div>8 Bld Villebois Mareuil</div>
+      <div>18 Avenue Jean Jaurès</div>
       <div>35 400 Saint Malo</div>
     </div>
     <div class="contact__face">
@@ -63,7 +69,7 @@ import { pages } from '../components/header/NavigationHeader';
       />
     </div>
     <div class="contact__grid-1">
-      <Map client:only="solid-js"/>
+      <Map client:only="solid-js" />
     </div>
     <div class="contact__grid-2">
       <ContactForm />

@@ -6,6 +6,7 @@ import { Modal } from '../components/Modal/Modal';
 import { ViewTransitions } from 'astro:transitions';
 import { pages } from '../components/header/NavigationHeader';
 import { Header } from '../components/header/Header';
+import logo from '../assets/images/logo.png';
 
 interface Props {
   id: string;
@@ -31,6 +32,7 @@ const { id, path, pageTitle, description, noindex, page } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={`https://nosfuturs.dev${path}`} />
+    <link rel="icon" type="image/png" href={logo.src} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script type="application/ld+json">
       [

@@ -20,7 +20,7 @@ const EcoBadge: Component<EcoBadgeProps> = (props: EcoBadgeProps) => {
       </p>
       <Show when={!badge.loading && badge()} fallback={<></>}>
         <p class="badge">
-          <b>{badge().c.toString()}g</b> of CO<sub>2</sub>/view, plus propre que <b>{badge().p.toString()}%</b> des
+          <b>{badge().c.toString()}g</b> of CO<sub>2</sub>/vue, plus propre que <b>{badge().p.toString()}%</b> des
           pages testés
         </p>
         <p class="badge">

@@ -1,5 +1,5 @@
-@use "src/styles/abstracts/colours";
-@use "../../styles/abstracts/image" as i;
+@use 'src/styles/abstracts/colours';
+@use '../../styles/abstracts/image' as i;
 
 .header {
   width: 100%;
@@ -44,15 +44,15 @@
     display: flex;
     flex-direction: column;
   }
+}
 
-  @media (max-width: 980px) {
-    .header {
-      &__navigation {
-        display: none;
-      }
-      &__logo-container {
-        padding-left: 15%;
-      }
+@media (max-width: 980px) {
+  .header {
+    &__navigation {
+      display: none;
+    }
+    &__logo-container {
+      padding-left: 15%;
     }
   }
 }
