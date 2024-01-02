@@ -1,11 +1,18 @@
-@use "src/styles/abstracts/font";
-@use "src/styles/abstracts/spacings";
+@use 'src/styles/abstracts/font';
+@use 'src/styles/abstracts/spacings';
+@use 'src/styles/abstracts/text';
 
 .contact {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   row-gap: 8%;
   margin-bottom: 30%;
+
+  h1 {
+    @extend %text-paragraphe;
+    padding: 0;
+    margin: 0;
+  }
 
   &__email {
     color: black;
