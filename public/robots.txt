@@ -1,8 +1,7 @@
 user-agent: *
 Disallow: /?blackhole
 Allow: /
-Disallow: /contact*
-Disallow: /gestalt*
-Disallow: /method*
+Disallow: /mention-legales*
+Disallow: /404
 
-Sitemap: https://gestalt.peharpre.fr/sitemap.xml
+Sitemap: https://gestalt.peharpre.fr/sitemap-index.xml
