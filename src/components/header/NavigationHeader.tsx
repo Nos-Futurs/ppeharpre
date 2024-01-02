@@ -41,21 +41,21 @@ const NavigationHeader: Component<NavigationHeaderProps> = (
           sections={[
             {
               name: 'Votre accompagnement',
-              path: '/method',
+              path: '/method/',
               onClick: (): void => {
                 props.setMyMethodPopup(false);
               },
             },
             {
               name: 'Pourquoi se faire accompagner?',
-              path: '/method#why',
+              path: '/method/#why',
               onClick: (): void => {
                 props.setMyMethodPopup(false);
               },
             },
             {
               name: "Le déroulement d'une séance",
-              path: '/method#how',
+              path: '/method/#how',
               onClick: (): void => {
                 props.setMyMethodPopup(false);
               },
@@ -73,21 +73,21 @@ const NavigationHeader: Component<NavigationHeaderProps> = (
           sections={[
             {
               name: 'Mes spécificités',
-              path: '/about',
+              path: '/about/',
               onClick: (): void => {
                 props.setAboutPopup(false);
               },
             },
             {
               name: 'Mon parcours',
-              path: '/about#carreer',
+              path: '/about/#carreer',
               onClick: (): void => {
                 props.setAboutPopup(false);
               },
             },
             {
               name: 'Ma déontologie',
-              path: '/about#ethics',
+              path: '/about/#ethics',
               onClick: (): void => {
                 props.setAboutPopup(false);
               },
@@ -104,7 +104,7 @@ const NavigationHeader: Component<NavigationHeaderProps> = (
         name="Contactez moi"
         border={true}
         selected={props.page == pages.CONTACT}
-        href="/contact"
+        href="/contact/"
       />
     </div>
   );
