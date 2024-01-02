@@ -40,14 +40,14 @@ const ModalSideBar: Component = () => {
                 {
                   name: 'Votre accompagnement',
                   color: 'black',
-                  path: '/method',
+                  path: '/method/',
                   onClick: (): void => {
                     setIsModalOpen(false);
                   },
                 },
                 {
                   name: 'Pourquoi se faire accompagner?',
-                  path: '/method#why',
+                  path: '/method/#why',
                   color: 'black',
                   onClick: (): void => {
                     setIsModalOpen(false);
@@ -55,7 +55,7 @@ const ModalSideBar: Component = () => {
                 },
                 {
                   name: "Le déroulement d'une séance",
-                  path: '/method#how',
+                  path: '/method/#how',
                   color: 'black',
                   onClick: (): void => {
                     setIsModalOpen(false);
@@ -74,7 +74,7 @@ const ModalSideBar: Component = () => {
               sections={[
                 {
                   name: 'Mes spécificités',
-                  path: '/about',
+                  path: '/about/',
                   color: 'black',
                   onClick: (): void => {
                     setIsModalOpen(false);
@@ -82,7 +82,7 @@ const ModalSideBar: Component = () => {
                 },
                 {
                   name: 'Mon parcours',
-                  path: '/about#carreer',
+                  path: '/about/#carreer',
                   color: 'black',
                   onClick: (): void => {
                     setIsModalOpen(false);
@@ -90,7 +90,7 @@ const ModalSideBar: Component = () => {
                 },
                 {
                   name: 'Ma déontologie',
-                  path: '/about#ethics',
+                  path: '/about/#ethics',
                   color: 'black',
                   onClick: (): void => {
                     setIsModalOpen(false);
@@ -101,7 +101,7 @@ const ModalSideBar: Component = () => {
           </div>
           <SideLinks
             name="Gestalt thérapie"
-            href="/gestalt"
+            href="/gestalt/"
             onClick={(): void => {
               setIsModalOpen(false);
             }}

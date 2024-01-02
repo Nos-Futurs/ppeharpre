@@ -98,7 +98,7 @@ const NavigationHeader: Component<NavigationHeaderProps> = (
       <MenuLink
         name="Gestalt thérapie"
         selected={props.page == pages.GESTALT}
-        href="/gestalt"
+        href="/gestalt/"
       />
       <MenuLink
         name="Contactez moi"
