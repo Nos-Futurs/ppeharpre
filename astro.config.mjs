@@ -6,10 +6,10 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   integrations: [solid(), sitemap({
     filter: (page) =>
-      page !== 'https://gestalt.peharpre.fr/404/' &&
-      page !== 'https://gestalt.peharpre.fr/mention-legales/'
+      page !== 'https://gestalt.philippe.peharpre.fr/404/' &&
+      page !== 'https://gestalt.philippe.peharpre.fr/mention-legales/'
   })],
   compressHTML: true,
   output: 'static',
-  site: 'https://gestalt.peharpre.fr/',
+  site: 'https://gestalt.philippe.peharpre.fr/',
 });
